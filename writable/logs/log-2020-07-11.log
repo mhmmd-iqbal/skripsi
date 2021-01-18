@@ -1,0 +1,14 @@
+CRITICAL - 2020-07-11 20:37:07 --> Call to undefined method App\Controllers\Admin\Biodata::setResponseFormat()
+#0 D:\xampp\htdocs\project-root\system\CodeIgniter.php(914): App\Controllers\Admin\Biodata->updatePhoto()
+#1 D:\xampp\htdocs\project-root\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Biodata))
+#2 D:\xampp\htdocs\project-root\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\project-root\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\xampp\htdocs\project-root\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-07-11 20:37:08 --> Call to undefined method App\Controllers\Admin\Biodata::setResponseFormat()
+#0 D:\xampp\htdocs\project-root\system\CodeIgniter.php(914): App\Controllers\Admin\Biodata->updatePhoto()
+#1 D:\xampp\htdocs\project-root\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Biodata))
+#2 D:\xampp\htdocs\project-root\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\project-root\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\xampp\htdocs\project-root\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp\\htdocs...')
+#5 {main}

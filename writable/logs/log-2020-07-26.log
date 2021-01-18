@@ -1,0 +1,133 @@
+CRITICAL - 2020-07-26 06:09:20 --> Undefined variable: base_url
+#0 D:\My Project\project-dekor\app\Views\login.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 45, Array)
+#1 D:\My Project\project-dekor\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project-dekor\system\Common.php(1087): CodeIgniter\View\View->render('login', Array, true)
+#3 D:\My Project\project-dekor\app\Controllers\Login.php(19): view('login', Array)
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\Login->index()
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2020-07-26 06:44:32 --> Undefined variable: validation
+#0 D:\My Project\project-dekor\app\Views\login.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 29, Array)
+#1 D:\My Project\project-dekor\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project-dekor\system\Common.php(1087): CodeIgniter\View\View->render('login', Array, true)
+#3 D:\My Project\project-dekor\app\Controllers\Admin\Login.php(21): view('login')
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\Admin\Login->index()
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Login))
+#6 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2020-07-26 06:53:22 --> Cannot call constructor
+#0 D:\My Project\project-dekor\system\CodeIgniter.php(886): App\Controllers\User\Dashboard->__construct()
+#1 D:\My Project\project-dekor\system\CodeIgniter.php(395): CodeIgniter\CodeIgniter->createController()
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-07-26 07:20:58 --> Cannot declare class App\Controllers\User\Dashboard, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-07-26 07:39:55 --> Undefined property: App\Filters\AdminSession::$before
+#0 D:\My Project\project-dekor\app\Controllers\User\Dashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 19, Array)
+#1 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\User\Dashboard->index()
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-07-26 07:40:17 --> Undefined property: App\Filters\AdminSession::$before
+#0 D:\My Project\project-dekor\app\Controllers\User\Dashboard.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 19, Array)
+#1 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\User\Dashboard->index()
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-07-26 07:40:26 --> Too few arguments to function App\Filters\AdminSession::before(), 0 passed in D:\My Project\project-dekor\app\Controllers\User\Dashboard.php on line 19 and at least 1 expected
+#0 D:\My Project\project-dekor\app\Controllers\User\Dashboard.php(19): App\Filters\AdminSession->before()
+#1 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\User\Dashboard->index()
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-07-26 09:40:37 --> Undefined offset: 1
+#0 D:\My Project\project-dekor\system\Router\Router.php(482): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\My Project\\p...', 482, Array)
+#1 D:\My Project\project-dekor\system\Router\Router.php(174): CodeIgniter\Router\Router->checkRoutes('admin/dashboard')
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(789): CodeIgniter\Router\Router->handle('admin/dashboard')
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2020-07-26 10:23:05 --> Undefined variable: username
+#0 D:\My Project\project-dekor\app\Views\admin\admin-template.php(118): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 118, Array)
+#1 D:\My Project\project-dekor\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project-dekor\system\Common.php(1087): CodeIgniter\View\View->render('admin/admin-tem...', Array, true)
+#3 D:\My Project\project-dekor\app\Controllers\Admin\Dashboard.php(19): view('admin/admin-tem...', Array)
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\Admin\Dashboard->index()
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#6 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2020-07-26 11:27:58 --> Invalid file: {0}
+#0 D:\My Project\project-dekor\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin-admin-foo...')
+#1 D:\My Project\project-dekor\system\View\View.php(525): CodeIgniter\View\View->render('admin-admin-foo...', NULL, true)
+#2 D:\My Project\project-dekor\app\Views\admin\admin-template.php(20): CodeIgniter\View\View->include('admin-admin-foo...')
+#3 D:\My Project\project-dekor\system\View\View.php(246): include('D:\\My Project\\p...')
+#4 D:\My Project\project-dekor\system\View\View.php(257): CodeIgniter\View\View->render('admin/admin-tem...', Array, true)
+#5 D:\My Project\project-dekor\system\Common.php(1087): CodeIgniter\View\View->render('admin/template', Array, true)
+#6 D:\My Project\project-dekor\app\Controllers\Admin\Dashboard.php(22): view('admin/template', Array)
+#7 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\Admin\Dashboard->index()
+#8 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#9 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#12 {main}
+CRITICAL - 2020-07-26 11:28:53 --> Invalid file: {0}
+#0 D:\My Project\project-dekor\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin-admin-foo...')
+#1 D:\My Project\project-dekor\system\View\View.php(525): CodeIgniter\View\View->render('admin-admin-foo...', NULL, true)
+#2 D:\My Project\project-dekor\app\Views\admin\admin-template.php(20): CodeIgniter\View\View->include('admin-admin-foo...')
+#3 D:\My Project\project-dekor\system\View\View.php(246): include('D:\\My Project\\p...')
+#4 D:\My Project\project-dekor\system\Common.php(1087): CodeIgniter\View\View->render('admin/admin-tem...', Array, true)
+#5 D:\My Project\project-dekor\app\Controllers\Admin\Dashboard.php(22): view('admin/admin-tem...', Array)
+#6 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\Admin\Dashboard->index()
+#7 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#8 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#11 {main}
+CRITICAL - 2020-07-26 11:29:20 --> Invalid file: {0}
+#0 D:\My Project\project-dekor\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/dashboard...')
+#1 D:\My Project\project-dekor\system\Common.php(1087): CodeIgniter\View\View->render('admin/dashboard', Array, true)
+#2 D:\My Project\project-dekor\app\Controllers\Admin\Dashboard.php(22): view('admin/dashboard', Array)
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\Admin\Dashboard->index()
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2020-07-26 12:26:25 --> Call to undefined method CodeIgniter\Session\Session::username()
+#0 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\Login->signOut()
+#1 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-07-26 12:29:48 --> Invalid file: {0}
+#0 D:\My Project\project-dekor\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/admin-css....')
+#1 D:\My Project\project-dekor\system\View\View.php(525): CodeIgniter\View\View->render('user/admin-css', NULL, true)
+#2 D:\My Project\project-dekor\app\Views\user\user-template.php(5): CodeIgniter\View\View->include('user/admin-css')
+#3 D:\My Project\project-dekor\system\View\View.php(246): include('D:\\My Project\\p...')
+#4 D:\My Project\project-dekor\system\Common.php(1087): CodeIgniter\View\View->render('user/user-templ...', Array, true)
+#5 D:\My Project\project-dekor\app\Controllers\User\Dashboard.php(22): view('user/user-templ...', Array)
+#6 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\User\Dashboard->index()
+#7 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\Dashboard))
+#8 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#11 {main}

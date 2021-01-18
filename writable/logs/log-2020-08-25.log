@@ -1,0 +1,20 @@
+CRITICAL - 2020-08-25 00:01:32 --> syntax error, unexpected ';', expecting ']'
+#0 D:\My Project\project-dekor\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\My Project\\p...')
+#1 D:\My Project\project-dekor\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(865): class_exists('\\App\\Controller...', true)
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->startController()
+#6 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2020-08-25 01:43:13 --> The original file is not a valid file.
+#0 D:\My Project\project-dekor\system\HTTP\Files\UploadedFile.php(172): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 D:\My Project\project-dekor\app\Controllers\Admin\CategoryProductController.php(43): CodeIgniter\HTTP\Files\UploadedFile->move('assets/cover', '1598337791_037f...')
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\Admin\CategoryProductController->create()
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CategoryProductController))
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}

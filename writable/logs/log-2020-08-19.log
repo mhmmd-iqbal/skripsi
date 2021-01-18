@@ -1,0 +1,231 @@
+CRITICAL - 2020-08-19 08:00:12 --> Argument 1 passed to CodeIgniter\Router\RouteCollection::group() must be of the type string, array given, called in D:\My Project\project-dekor\app\Config\Routes.php on line 54
+#0 D:\My Project\project-dekor\app\Config\Routes.php(54): CodeIgniter\Router\RouteCollection->group(Array, Object(Closure))
+#1 D:\My Project\project-dekor\system\CodeIgniter.php(776): require('D:\\My Project\\p...')
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project-dekor\system\CLI\Console.php(86): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project-dekor\spark(57): CodeIgniter\CLI\Console->run()
+#6 {main}
+CRITICAL - 2020-08-19 08:00:20 --> Argument 1 passed to CodeIgniter\Router\RouteCollection::group() must be of the type string, array given, called in D:\My Project\project-dekor\app\Config\Routes.php on line 54
+#0 D:\My Project\project-dekor\app\Config\Routes.php(54): CodeIgniter\Router\RouteCollection->group(Array, Object(Closure))
+#1 D:\My Project\project-dekor\system\CodeIgniter.php(776): require('D:\\My Project\\p...')
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project-dekor\system\CLI\Console.php(86): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project-dekor\spark(57): CodeIgniter\CLI\Console->run()
+#6 {main}
+CRITICAL - 2020-08-19 08:08:08 --> syntax error, unexpected '}', expecting ';'
+#0 D:\My Project\project-dekor\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\My Project\\p...')
+#1 D:\My Project\project-dekor\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\Dev...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\Dev...')
+#3 D:\My Project\project-dekor\system\Filters\Filters.php(164): spl_autoload_call('App\\Filters\\Dev...')
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(378): CodeIgniter\Filters\Filters->run('dev', 'before')
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2020-08-19 08:08:21 --> Undefined variable: tittle
+#0 D:\My Project\project-dekor\app\Views\main\main-template.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 8, Array)
+#1 D:\My Project\project-dekor\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project-dekor\system\View\View.php(257): CodeIgniter\View\View->render('main/main-templ...', Array, true)
+#3 D:\My Project\project-dekor\system\Common.php(1087): CodeIgniter\View\View->render('konten-main/hom...', Array, true)
+#4 D:\My Project\project-dekor\app\Filters\Development.php(19): view('konten-main/hom...')
+#5 D:\My Project\project-dekor\system\Filters\Filters.php(173): App\Filters\Development->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#6 D:\My Project\project-dekor\system\CodeIgniter.php(378): CodeIgniter\Filters\Filters->run('dev', 'before')
+#7 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#10 {main}
+CRITICAL - 2020-08-19 08:08:34 --> Invalid file: {0}
+#0 D:\My Project\project-dekor\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('konten-main/dev...')
+#1 D:\My Project\project-dekor\system\Common.php(1087): CodeIgniter\View\View->render('konten-main/dev...', Array, true)
+#2 D:\My Project\project-dekor\app\Filters\Development.php(19): view('konten-main/dev...')
+#3 D:\My Project\project-dekor\system\Filters\Filters.php(173): App\Filters\Development->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(378): CodeIgniter\Filters\Filters->run('dev', 'before')
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2020-08-19 08:11:17 --> Undefined variable: active
+#0 D:\My Project\project-dekor\app\Views\main\main-navbar.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 13, Array)
+#1 D:\My Project\project-dekor\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project-dekor\system\View\View.php(525): CodeIgniter\View\View->render('main/main-navba...', NULL, true)
+#3 D:\My Project\project-dekor\app\Views\konten-main\development.php(17): CodeIgniter\View\View->include('main/main-navba...')
+#4 D:\My Project\project-dekor\system\View\View.php(246): include('D:\\My Project\\p...')
+#5 D:\My Project\project-dekor\system\Common.php(1087): CodeIgniter\View\View->render('konten-main/dev...', Array, true)
+#6 D:\My Project\project-dekor\app\Filters\Development.php(19): view('konten-main/dev...')
+#7 D:\My Project\project-dekor\system\Filters\Filters.php(173): App\Filters\Development->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#8 D:\My Project\project-dekor\system\CodeIgniter.php(378): CodeIgniter\Filters\Filters->run('dev', 'before')
+#9 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#12 {main}
+CRITICAL - 2020-08-19 08:14:26 --> syntax error, unexpected '}', expecting ';'
+#0 D:\My Project\project-dekor\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\My Project\\p...')
+#1 D:\My Project\project-dekor\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\Dev...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\Dev...')
+#3 D:\My Project\project-dekor\system\Filters\Filters.php(164): spl_autoload_call('App\\Filters\\Dev...')
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(378): CodeIgniter\Filters\Filters->run('dev', 'before')
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2020-08-19 08:23:25 --> syntax error, unexpected '}', expecting ';'
+#0 D:\My Project\project-dekor\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\My Project\\p...')
+#1 D:\My Project\project-dekor\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\Dev...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\Dev...')
+#3 D:\My Project\project-dekor\system\Filters\Filters.php(164): spl_autoload_call('App\\Filters\\Dev...')
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(378): CodeIgniter\Filters\Filters->run('/', 'before')
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2020-08-19 08:24:59 --> Undefined variable: rouote
+#0 D:\My Project\project-dekor\app\Config\Routes.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 34, Array)
+#1 D:\My Project\project-dekor\system\CodeIgniter.php(776): require('D:\\My Project\\p...')
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-08-19 08:25:10 --> Invalid file: {0}
+#0 D:\My Project\project-dekor\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('konten-main/dev...')
+#1 D:\My Project\project-dekor\system\Common.php(1087): CodeIgniter\View\View->render('konten-main/dev...', Array, true)
+#2 D:\My Project\project-dekor\app\Controllers\Home.php(14): view('konten-main/dev...')
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\Home->index()
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2020-08-19 08:25:20 --> Invalid file: {0}
+#0 D:\My Project\project-dekor\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('konten-main/dev...')
+#1 D:\My Project\project-dekor\system\Common.php(1087): CodeIgniter\View\View->render('konten-main/dev...', Array, true)
+#2 D:\My Project\project-dekor\app\Controllers\Home.php(14): view('konten-main/dev...')
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\Home->index()
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2020-08-19 08:26:31 --> Invalid file: {0}
+#0 D:\My Project\project-dekor\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('konten-main/dev...')
+#1 D:\My Project\project-dekor\system\Common.php(1087): CodeIgniter\View\View->render('konten-main/dev...', Array, true)
+#2 D:\My Project\project-dekor\app\Controllers\Home.php(14): view('konten-main/dev...')
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\Home->index()
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2020-08-19 08:27:48 --> Invalid file: {0}
+#0 D:\My Project\project-dekor\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('konten-main/dev...')
+#1 D:\My Project\project-dekor\system\Common.php(1087): CodeIgniter\View\View->render('konten-main/dev...', Array, true)
+#2 D:\My Project\project-dekor\app\Controllers\Home.php(14): view('konten-main/dev...')
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\Home->index()
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2020-08-19 08:28:22 --> Invalid file: {0}
+#0 D:\My Project\project-dekor\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('konten-main/dev...')
+#1 D:\My Project\project-dekor\system\Common.php(1087): CodeIgniter\View\View->render('konten-main/dev...', Array, true)
+#2 D:\My Project\project-dekor\app\Controllers\Home.php(14): view('konten-main/dev...')
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\Home->index()
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2020-08-19 08:28:37 --> Invalid file: {0}
+#0 D:\My Project\project-dekor\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('konten-main/dev...')
+#1 D:\My Project\project-dekor\system\Common.php(1087): CodeIgniter\View\View->render('konten-main/dev...', Array, true)
+#2 D:\My Project\project-dekor\app\Controllers\Home.php(14): view('konten-main/dev...')
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\Home->index()
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2020-08-19 08:28:46 --> Invalid file: {0}
+#0 D:\My Project\project-dekor\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('konten-main/dev...')
+#1 D:\My Project\project-dekor\system\Common.php(1087): CodeIgniter\View\View->render('konten-main/dev...', Array, true)
+#2 D:\My Project\project-dekor\app\Controllers\Home.php(14): view('konten-main/dev...')
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\Home->index()
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2020-08-19 08:29:32 --> Invalid file: {0}
+#0 D:\My Project\project-dekor\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('konten-main/dev...')
+#1 D:\My Project\project-dekor\system\Common.php(1087): CodeIgniter\View\View->render('konten-main/dev...', Array, true)
+#2 D:\My Project\project-dekor\app\Controllers\Home.php(14): view('konten-main/dev...')
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\Home->index()
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2020-08-19 08:30:33 --> No connection could be made because the target machine actively refused it.
+
+#0 D:\My Project\project-dekor\system\Database\BaseConnection.php(377): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\My Project\project-dekor\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\My Project\project-dekor\system\Database\BaseBuilder.php(1845): CodeIgniter\Database\BaseConnection->query('SELECT `usernam...', Array, false)
+#3 D:\My Project\project-dekor\system\Model.php(489): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\My Project\project-dekor\app\Controllers\Admin\Login.php(49): CodeIgniter\Model->first()
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\Admin\Login->validasi()
+#6 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Login))
+#7 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#10 {main}
+CRITICAL - 2020-08-19 08:30:47 --> No connection could be made because the target machine actively refused it.
+
+#0 D:\My Project\project-dekor\system\Database\BaseConnection.php(377): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\My Project\project-dekor\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\My Project\project-dekor\system\Database\BaseBuilder.php(1845): CodeIgniter\Database\BaseConnection->query('SELECT `usernam...', Array, false)
+#3 D:\My Project\project-dekor\system\Model.php(489): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\My Project\project-dekor\app\Controllers\Admin\Login.php(49): CodeIgniter\Model->first()
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\Admin\Login->validasi()
+#6 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Login))
+#7 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#10 {main}
+CRITICAL - 2020-08-19 08:31:06 --> No connection could be made because the target machine actively refused it.
+
+#0 D:\My Project\project-dekor\system\Database\BaseConnection.php(377): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\My Project\project-dekor\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\My Project\project-dekor\system\Database\BaseBuilder.php(1845): CodeIgniter\Database\BaseConnection->query('SELECT `usernam...', Array, false)
+#3 D:\My Project\project-dekor\system\Model.php(489): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\My Project\project-dekor\app\Controllers\Admin\Login.php(49): CodeIgniter\Model->first()
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\Admin\Login->validasi()
+#6 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Login))
+#7 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#10 {main}
+CRITICAL - 2020-08-19 08:31:34 --> Return value of CodeIgniter\Router\RouteCollection::getFilterForRoute() must be of the type string, array returned
+#0 D:\My Project\project-dekor\system\Router\Router.php(178): CodeIgniter\Router\RouteCollection->getFilterForRoute('admin')
+#1 D:\My Project\project-dekor\system\CodeIgniter.php(789): CodeIgniter\Router\Router->handle('admin')
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-08-19 08:32:26 --> Return value of CodeIgniter\Router\RouteCollection::getFilterForRoute() must be of the type string, array returned
+#0 D:\My Project\project-dekor\system\Router\Router.php(178): CodeIgniter\Router\RouteCollection->getFilterForRoute('admin')
+#1 D:\My Project\project-dekor\system\CodeIgniter.php(789): CodeIgniter\Router\Router->handle('admin')
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-08-19 08:35:53 --> syntax error, unexpected 'if' (T_IF), expecting ')'
+#0 D:\My Project\project-dekor\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#3 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#4 {main}

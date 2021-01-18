@@ -1,0 +1,37 @@
+CRITICAL - 2020-07-21 03:34:52 --> syntax error, unexpected ',', expecting ';'
+#0 D:\My Project\project-dekor\system\Router\Router.php(192): CodeIgniter\Router\Router->autoRoute('jasa')
+#1 D:\My Project\project-dekor\system\CodeIgniter.php(789): CodeIgniter\Router\Router->handle('jasa')
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-07-21 04:25:15 --> Undefined variable: base_url
+#0 D:\My Project\project-dekor\app\Views\main\jasa.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 8, Array)
+#1 D:\My Project\project-dekor\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project-dekor\system\Common.php(1087): CodeIgniter\View\View->render('main/jasa', Array, true)
+#3 D:\My Project\project-dekor\app\Controllers\Jasa.php(13): view('main/jasa', Array)
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\Jasa->index()
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jasa))
+#6 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2020-07-21 05:29:38 --> Call to undefined function csrf_fiel()
+#0 D:\My Project\project-dekor\system\View\View.php(246): include()
+#1 D:\My Project\project-dekor\system\Common.php(1087): CodeIgniter\View\View->render('main/jasa', Array, true)
+#2 D:\My Project\project-dekor\app\Controllers\Jasa.php(13): view('main/jasa', Array)
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\Jasa->index()
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jasa))
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2020-07-21 07:05:52 --> syntax error, unexpected '}', expecting ';' or ','
+#0 D:\My Project\project-dekor\system\Router\Router.php(192): CodeIgniter\Router\Router->autoRoute('jasa')
+#1 D:\My Project\project-dekor\system\CodeIgniter.php(789): CodeIgniter\Router\Router->handle('jasa')
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}

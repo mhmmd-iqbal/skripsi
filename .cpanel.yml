@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/aqilatec/dekoraceh.com
+
+    - /usr/bin/rsync -Paz * $DEPLOYPATH --delete

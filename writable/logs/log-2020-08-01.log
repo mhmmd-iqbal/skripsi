@@ -1,0 +1,78 @@
+CRITICAL - 2020-08-01 01:55:34 --> Call to a member function first() on null
+#0 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\User\AksiProfile->getDataUser()
+#1 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\AksiProfile))
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-08-01 01:56:11 --> Call to a member function result_array() on null
+#0 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\User\AksiProfile->getDataUser()
+#1 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\AksiProfile))
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-08-01 02:00:54 --> Indirect modification of overloaded property CodeIgniter\Session\Session::$username has no effect
+#0 D:\My Project\project-dekor\app\Controllers\User\AksiProfile.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Indirect modifi...', 'D:\\My Project\\p...', 24, Array)
+#1 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\User\AksiProfile->getDataUser()
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\AksiProfile))
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-08-01 02:03:33 --> Call to a member function setContentType() on null
+#0 D:\My Project\project-dekor\system\API\ResponseTrait.php(134): App\Controllers\User\AksiProfile->format(Array)
+#1 D:\My Project\project-dekor\app\Controllers\User\AksiProfile.php(19): App\Controllers\User\AksiProfile->respond(Array, 400)
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(886): App\Controllers\User\AksiProfile->__construct()
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(395): CodeIgniter\CodeIgniter->createController()
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2020-08-01 02:04:12 --> Call to a member function setContentType() on null
+#0 D:\My Project\project-dekor\system\API\ResponseTrait.php(134): App\Controllers\User\AksiProfile->format(Array)
+#1 D:\My Project\project-dekor\app\Controllers\User\AksiProfile.php(19): App\Controllers\User\AksiProfile->respond(Array, 200)
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(886): App\Controllers\User\AksiProfile->__construct()
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(395): CodeIgniter\CodeIgniter->createController()
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2020-08-01 02:05:10 --> Call to a member function setContentType() on null
+#0 D:\My Project\project-dekor\system\API\ResponseTrait.php(134): App\Controllers\User\AksiProfile->format(Array)
+#1 D:\My Project\project-dekor\app\Controllers\User\AksiProfile.php(19): App\Controllers\User\AksiProfile->respond(Array)
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(886): App\Controllers\User\AksiProfile->__construct()
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(395): CodeIgniter\CodeIgniter->createController()
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2020-08-01 02:51:41 --> Call to undefined function App\Controllers\User\length()
+#0 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\User\AksiProfile->update()
+#1 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\AksiProfile))
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-08-01 02:59:53 --> {0} is not a valid rule.
+#0 D:\My Project\project-dekor\system\Validation\Validation.php(302): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('icon.png')
+#1 D:\My Project\project-dekor\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('cek', 'cek', NULL, Array, Array)
+#2 D:\My Project\project-dekor\system\Controller.php(219): CodeIgniter\Validation\Validation->run()
+#3 D:\My Project\project-dekor\app\Controllers\User\AksiProfile.php(70): CodeIgniter\Controller->validate(Array)
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\User\AksiProfile->update()
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\AksiProfile))
+#6 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2020-08-01 03:00:19 --> {0} is not a valid rule.
+#0 D:\My Project\project-dekor\system\Validation\Validation.php(302): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('icon.png')
+#1 D:\My Project\project-dekor\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('cek', 'cek', NULL, Array, Array)
+#2 D:\My Project\project-dekor\system\Controller.php(219): CodeIgniter\Validation\Validation->run()
+#3 D:\My Project\project-dekor\app\Controllers\User\AksiProfile.php(70): CodeIgniter\Controller->validate(Array)
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\User\AksiProfile->update()
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\AksiProfile))
+#6 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}

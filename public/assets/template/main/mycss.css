@@ -1,0 +1,176 @@
+body {
+  font-family: "Open Sans", cursive;
+  color: #444;
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  right: 15px;
+  bottom: 15px;
+  background: #b22222;
+  color: #fff;
+  transition: display 0.5s ease-in-out;
+  z-index: 99999;
+}
+
+.back-to-top:hover {
+  color: #fff;
+  background: #b22222;
+  transition: background 0.2s ease-in-out;
+}
+
+#hero-no-slider::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, #b22222c5, #b222229d),
+    url(bg2.jpg) center top no-repeat;
+}
+
+.nav-menu a:hover,
+.nav-menu .active > a,
+.nav-menu li:hover > a {
+  color: #f5c483;
+  text-decoration: none;
+}
+.nav-menu .drop-down ul a:hover,
+.nav-menu .drop-down ul .active > a,
+.nav-menu .drop-down ul li:hover > a {
+  color: #f5c483;
+}
+#header.header-transparent {
+  /* background: none; */
+  background: #b22222;
+  padding: 10px 0;
+}
+
+#header.header-scrolled {
+  height: 60px;
+  padding: 10px 0;
+}
+
+#hero-no-slider p {
+  font-size: 27px;
+}
+
+#hero-no-slider .btn-get-started {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #fff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #f26522;
+}
+
+#hero-no-slider .btn-get-started:hover {
+  background: #f26522;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Mobile Version  */
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow-y: auto;
+  left: -260px;
+  width: 260px;
+  padding-top: 18px;
+  background: #cc4848;
+  transition: 0.4s;
+}
+
+.mobile-nav-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 9997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: #b22222c5;
+  overflow: hidden;
+  display: none;
+}
+
+.mobile-nav a:hover,
+.mobile-nav .active > a,
+.mobile-nav li:hover > a {
+  color: #f5c483;
+  text-decoration: none;
+}
+
+.section-bg-red {
+  background-color: #dea0a0;
+}
+
+.section-bg-orange {
+  background-color: #f26522;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #f26522;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+/* My Only CSS  */
+.why-us h3 {
+  color: white;
+  font-family: cursive;
+  text-align: center;
+  font-style: italic;
+}
+
+.info-jasa h3 a {
+  color: #f26522;
+}
+
+.info-jasa h3 a:hover {
+  color: #f5c483;
+  transition: 0.2s;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  background-color: #fff;
+  margin-right: 1px;
+}
+
+.pagination a.active {
+  background-color: #b22222;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}

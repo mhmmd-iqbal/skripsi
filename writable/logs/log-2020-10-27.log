@@ -1,0 +1,21 @@
+CRITICAL - 2020-10-27 23:44:31 --> Invalid file: {0}
+#0 D:\My Project\project_ta\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/konten/ca...')
+#1 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/ca...', Array, true)
+#2 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(24): view('admin/konten/ca...', Array)
+#3 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#4 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#5 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2020-10-27 23:45:47 --> Undefined variable: kecamatan
+#0 D:\My Project\project_ta\app\Views\admin\konten\calculate.php(93): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 93, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/ca...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(24): view('admin/konten/ca...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}

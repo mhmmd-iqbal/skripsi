@@ -1,0 +1,141 @@
+CRITICAL - 2020-07-18 08:18:54 --> Invalid file: {0}
+#0 D:\My Project\project-discution\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/conatct.p...')
+#1 D:\My Project\project-discution\system\Common.php(1087): CodeIgniter\View\View->render('admin/conatct', Array, true)
+#2 D:\My Project\project-discution\app\Controllers\Admin\Contact.php(16): view('admin/conatct', Array)
+#3 D:\My Project\project-discution\system\CodeIgniter.php(914): App\Controllers\Admin\Contact->index()
+#4 D:\My Project\project-discution\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Contact))
+#5 D:\My Project\project-discution\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project-discution\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project-discution\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2020-07-18 08:29:09 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 536870920 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-07-18 08:29:24 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 536870920 bytes)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-07-18 08:29:55 --> Undefined variable: x
+#0 D:\My Project\project-discution\app\Controllers\Admin\Profile.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 15, Array)
+#1 D:\My Project\project-discution\system\CodeIgniter.php(914): App\Controllers\Admin\Profile->index()
+#2 D:\My Project\project-discution\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Profile))
+#3 D:\My Project\project-discution\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project-discution\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project-discution\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-07-18 08:31:06 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-07-18 11:07:12 --> Undefined variable: echo
+#0 D:\My Project\project-discution\app\Views\admin\contact.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 27, Array)
+#1 D:\My Project\project-discution\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project-discution\system\Common.php(1087): CodeIgniter\View\View->render('admin/contact', Array, true)
+#3 D:\My Project\project-discution\app\Controllers\Admin\Contact.php(16): view('admin/contact', Array)
+#4 D:\My Project\project-discution\system\CodeIgniter.php(914): App\Controllers\Admin\Contact->index()
+#5 D:\My Project\project-discution\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Contact))
+#6 D:\My Project\project-discution\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project-discution\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project-discution\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2020-07-18 11:39:49 --> syntax error, unexpected '}', expecting ';'
+#0 D:\My Project\project-discution\system\Router\Router.php(192): CodeIgniter\Router\Router->autoRoute('admin/team')
+#1 D:\My Project\project-discution\system\CodeIgniter.php(789): CodeIgniter\Router\Router->handle('admin/team')
+#2 D:\My Project\project-discution\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\My Project\project-discution\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project-discution\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project-discution\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-07-18 11:40:26 --> Invalid file: {0}
+#0 D:\My Project\project-discution\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/admin-tem...')
+#1 D:\My Project\project-discution\system\View\View.php(257): CodeIgniter\View\View->render('admin/admin-tem...', Array, true)
+#2 D:\My Project\project-discution\system\Common.php(1087): CodeIgniter\View\View->render('admin/team', Array, true)
+#3 D:\My Project\project-discution\app\Controllers\Admin\Team.php(17): view('admin/team', Array)
+#4 D:\My Project\project-discution\system\CodeIgniter.php(914): App\Controllers\Admin\Team->index()
+#5 D:\My Project\project-discution\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Team))
+#6 D:\My Project\project-discution\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project-discution\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project-discution\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2020-07-18 11:52:39 --> Cannot instantiate interface CodeIgniter\Encryption\EncrypterInterface
+#0 D:\My Project\project-discution\system\CodeIgniter.php(914): App\Controllers\Login->coba()
+#1 D:\My Project\project-discution\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 D:\My Project\project-discution\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project-discution\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project-discution\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-07-18 12:13:15 --> Unknown column 'nama' in 'field list'
+#0 D:\My Project\project-discution\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `nama`\nF...')
+#1 D:\My Project\project-discution\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama`\nF...')
+#2 D:\My Project\project-discution\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama`\nF...')
+#3 D:\My Project\project-discution\system\Database\BaseBuilder.php(2004): CodeIgniter\Database\BaseConnection->query('SELECT `nama`\nF...', Array, false)
+#4 D:\My Project\project-discution\system\Model.php(1716): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\My Project\project-discution\app\Controllers\Login.php(27): CodeIgniter\Model->__call('getWhere', Array)
+#6 D:\My Project\project-discution\system\CodeIgniter.php(914): App\Controllers\Login->signIn()
+#7 D:\My Project\project-discution\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\My Project\project-discution\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\My Project\project-discution\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\My Project\project-discution\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#11 {main}
+CRITICAL - 2020-07-18 12:13:41 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::first()
+#0 D:\My Project\project-discution\system\CodeIgniter.php(914): App\Controllers\Login->signIn()
+#1 D:\My Project\project-discution\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 D:\My Project\project-discution\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project-discution\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project-discution\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-07-18 12:13:47 --> Unknown column 'nama' in 'field list'
+#0 D:\My Project\project-discution\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `nama`\nF...')
+#1 D:\My Project\project-discution\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nama`\nF...')
+#2 D:\My Project\project-discution\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nama`\nF...')
+#3 D:\My Project\project-discution\system\Database\BaseBuilder.php(2004): CodeIgniter\Database\BaseConnection->query('SELECT `nama`\nF...', Array, false)
+#4 D:\My Project\project-discution\system\Model.php(1716): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 D:\My Project\project-discution\app\Controllers\Login.php(27): CodeIgniter\Model->__call('getWhere', Array)
+#6 D:\My Project\project-discution\system\CodeIgniter.php(914): App\Controllers\Login->signIn()
+#7 D:\My Project\project-discution\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\My Project\project-discution\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\My Project\project-discution\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\My Project\project-discution\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#11 {main}
+CRITICAL - 2020-07-18 12:13:50 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::first()
+#0 D:\My Project\project-discution\system\CodeIgniter.php(914): App\Controllers\Login->signIn()
+#1 D:\My Project\project-discution\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 D:\My Project\project-discution\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project-discution\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project-discution\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-07-18 12:14:31 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::first()
+#0 D:\My Project\project-discution\system\CodeIgniter.php(914): App\Controllers\Login->signIn()
+#1 D:\My Project\project-discution\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 D:\My Project\project-discution\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project-discution\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project-discution\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-07-18 12:18:50 --> Call to undefined method App\Models\Admin\ModelUser::count
+#0 D:\My Project\project-discution\app\Controllers\Login.php(31): CodeIgniter\Model->__call('count', Array)
+#1 D:\My Project\project-discution\system\CodeIgniter.php(914): App\Controllers\Login->signIn()
+#2 D:\My Project\project-discution\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\My Project\project-discution\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project-discution\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project-discution\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-07-18 12:19:04 --> Empty statement is given for the field `{0}`
+#0 D:\My Project\project-discution\system\Database\BaseBuilder.php(492): CodeIgniter\Database\Exceptions\DataException::forEmptyInputGiven('Select')
+#1 D:\My Project\project-discution\system\Database\BaseBuilder.php(467): CodeIgniter\Database\BaseBuilder->maxMinAvgSum('', '', 'COUNT')
+#2 D:\My Project\project-discution\system\Model.php(1716): CodeIgniter\Database\BaseBuilder->selectCount()
+#3 D:\My Project\project-discution\app\Controllers\Login.php(31): CodeIgniter\Model->__call('selectCount', Array)
+#4 D:\My Project\project-discution\system\CodeIgniter.php(914): App\Controllers\Login->signIn()
+#5 D:\My Project\project-discution\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 D:\My Project\project-discution\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project-discution\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project-discution\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2020-07-18 12:20:00 --> Empty statement is given for the field `{0}`
+#0 D:\My Project\project-discution\system\Database\BaseBuilder.php(492): CodeIgniter\Database\Exceptions\DataException::forEmptyInputGiven('Select')
+#1 D:\My Project\project-discution\system\Database\BaseBuilder.php(467): CodeIgniter\Database\BaseBuilder->maxMinAvgSum('', '', 'COUNT')
+#2 D:\My Project\project-discution\system\Model.php(1716): CodeIgniter\Database\BaseBuilder->selectCount()
+#3 D:\My Project\project-discution\app\Controllers\Login.php(32): CodeIgniter\Model->__call('selectCount', Array)
+#4 D:\My Project\project-discution\system\CodeIgniter.php(914): App\Controllers\Login->signIn()
+#5 D:\My Project\project-discution\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 D:\My Project\project-discution\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project-discution\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project-discution\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}

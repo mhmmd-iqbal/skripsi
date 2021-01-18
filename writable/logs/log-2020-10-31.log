@@ -1,0 +1,71 @@
+CRITICAL - 2020-10-31 01:15:18 --> Undefined variable: penjualan
+#0 D:\My Project\project_ta\app\Views\admin\konten\account.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 53, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/ac...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\AccountController.php(25): view('admin/konten/ac...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\AccountController->index()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AccountController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2020-10-31 01:15:48 --> Undefined variable: penjualan
+#0 D:\My Project\project_ta\app\Views\admin\konten\account.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 53, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/ac...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\AccountController.php(25): view('admin/konten/ac...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\AccountController->index()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AccountController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2020-10-31 01:20:26 --> Call to undefined method App\Controllers\Admin\AccountController::session()
+#0 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\AccountController->index()
+#1 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AccountController))
+#2 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-10-31 01:31:02 --> Trying to get property 'id' of non-object
+#0 D:\My Project\project_ta\app\Views\admin\konten\account.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\My Project\\p...', 53, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/ac...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\AccountController.php(33): view('admin/konten/ac...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\AccountController->index()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AccountController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2020-10-31 03:14:30 --> Undefined index: kecamatan
+#0 D:\My Project\project_ta\app\Models\ModelPenjualan.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\My Project\\p...', 67, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\PenjualanController.php(135): App\Models\ModelPenjualan->get_datatables('2020')
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\PenjualanController->get()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PenjualanController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2020-10-31 03:50:27 --> Undefined variable: produksi
+#0 D:\My Project\project_ta\app\Views\admin\konten\laporan.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 99, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/la...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(62): view('admin/konten/la...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->laporan()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2020-10-31 03:51:16 --> Array to string conversion
+#0 D:\My Project\project_ta\app\Views\admin\konten\laporan.php(98): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\My Project\\p...', 98, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/la...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(62): view('admin/konten/la...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->laporan()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}

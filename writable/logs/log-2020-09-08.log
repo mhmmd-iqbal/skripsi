@@ -1,0 +1,15 @@
+CRITICAL - 2020-09-08 05:12:11 --> syntax error, unexpected 'if' (T_IF), expecting ':'
+#0 D:\My Project\project-dekor\system\Common.php(1087): CodeIgniter\View\View->render('konten-main/hom...', Array, true)
+#1 D:\My Project\project-dekor\app\Controllers\HomeController.php(27): view('konten-main/hom...', Array)
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\HomeController->index()
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2020-09-08 09:40:07 --> syntax error, unexpected '}'
+#0 D:\My Project\project-dekor\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#3 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#4 {main}

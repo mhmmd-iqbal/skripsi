@@ -1,0 +1,131 @@
+CRITICAL - 2020-08-23 03:58:07 --> Class 'App\Models\ModelUser' not found
+#0 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\User\AksiProfile->getDataUser()
+#1 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\AksiProfile))
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-08-23 04:15:33 --> Class 'App\Models\ModelUser' not found
+#0 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\User\AksiProfile->getDataUser()
+#1 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\AksiProfile))
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-08-23 04:16:24 --> Class 'App\Models\ModelUser' not found
+#0 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\User\AksiProfile->getDataUser()
+#1 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\AksiProfile))
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-08-23 04:17:03 --> Class 'App\Models\ModelUser' not found
+#0 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\User\AksiProfile->getDataUser()
+#1 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\AksiProfile))
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-08-23 04:31:50 --> Class 'App\Models\ModelUser' not found
+#0 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\User\AksiProfile->getDataUser()
+#1 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\AksiProfile))
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-08-23 04:53:41 --> Undefined variable: seller
+#0 D:\My Project\project-dekor\app\Views\konten-user\profile.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 76, Array)
+#1 D:\My Project\project-dekor\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project-dekor\system\Common.php(1087): CodeIgniter\View\View->render('konten-user/pro...', Array, true)
+#3 D:\My Project\project-dekor\app\Controllers\User\ProfileController.php(28): view('konten-user/pro...', Array)
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\User\ProfileController->index()
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\ProfileController))
+#6 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2020-08-23 04:54:24 --> Class 'App\Models\ModelUser' not found
+#0 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\User\AksiProfile->getDataUser()
+#1 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\AksiProfile))
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-08-23 05:08:33 --> Call to a member function getName() on null
+#0 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\User\ProfileController->update()
+#1 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\ProfileController))
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-08-23 22:41:32 --> Class 'App\Models\ModelUser' not found
+#0 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\User\AksiProfile->getDataUser()
+#1 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\AksiProfile))
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-08-23 22:41:32 --> Table 'db_dekor.tb_paket' doesn't exist
+#0 D:\My Project\project-dekor\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT COUNT(*)...')
+#1 D:\My Project\project-dekor\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\My Project\project-dekor\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\My Project\project-dekor\system\Database\BaseBuilder.php(1937): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\My Project\project-dekor\app\Models\User\ModelPaket.php(87): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 D:\My Project\project-dekor\app\Controllers\User\AksiPaket.php(140): App\Models\User\ModelPaket->count_all('IQB95372')
+#6 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\User\AksiPaket->totalPaket()
+#7 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\AksiPaket))
+#8 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#11 {main}
+CRITICAL - 2020-08-23 22:41:32 --> Table 'db_dekor.tb_review_paket' doesn't exist
+#0 D:\My Project\project-dekor\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT COUNT(*)...')
+#1 D:\My Project\project-dekor\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\My Project\project-dekor\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\My Project\project-dekor\system\Database\BaseBuilder.php(1937): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\My Project\project-dekor\app\Models\User\ModelReviewPaket.php(73): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 D:\My Project\project-dekor\app\Controllers\User\AksiReviewPaket.php(26): App\Models\User\ModelReviewPaket->count_all('IQB95372')
+#6 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\User\AksiReviewPaket->totalReview()
+#7 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\AksiReviewPaket))
+#8 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#11 {main}
+CRITICAL - 2020-08-23 22:55:41 --> Undefined variable: username
+#0 D:\My Project\project-dekor\app\Controllers\User\ProfileController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 41, Array)
+#1 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\User\ProfileController->tes()
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\ProfileController))
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-08-23 22:59:09 --> Allowed fields must be specified for model: {0}
+#0 D:\My Project\project-dekor\system\Model.php(1234): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\User...')
+#1 D:\My Project\project-dekor\system\Model.php(845): CodeIgniter\Model->doProtectFields(Array)
+#2 D:\My Project\project-dekor\app\Controllers\User\ProfileController.php(134): CodeIgniter\Model->update()
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\User\ProfileController->update()
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\ProfileController))
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2020-08-23 23:00:50 --> Allowed fields must be specified for model: {0}
+#0 D:\My Project\project-dekor\system\Model.php(1234): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\User...')
+#1 D:\My Project\project-dekor\system\Model.php(845): CodeIgniter\Model->doProtectFields(Array)
+#2 D:\My Project\project-dekor\app\Controllers\User\ProfileController.php(134): CodeIgniter\Model->update()
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\User\ProfileController->update()
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\ProfileController))
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2020-08-23 23:01:37 --> Allowed fields must be specified for model: {0}
+#0 D:\My Project\project-dekor\system\Model.php(1234): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\User...')
+#1 D:\My Project\project-dekor\system\Model.php(845): CodeIgniter\Model->doProtectFields(Array)
+#2 D:\My Project\project-dekor\app\Controllers\User\ProfileController.php(134): CodeIgniter\Model->update()
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\User\ProfileController->update()
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\ProfileController))
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}

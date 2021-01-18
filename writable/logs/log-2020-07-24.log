@@ -1,0 +1,10 @@
+CRITICAL - 2020-07-24 10:04:15 --> Invalid file: {0}
+#0 D:\My Project\project-dekor\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('main/contact.ph...')
+#1 D:\My Project\project-dekor\system\Common.php(1087): CodeIgniter\View\View->render('main/contact', Array, true)
+#2 D:\My Project\project-dekor\app\Controllers\Contact.php(13): view('main/contact', Array)
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\Contact->index()
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contact))
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}

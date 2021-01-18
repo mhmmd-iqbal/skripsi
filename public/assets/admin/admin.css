@@ -1,0 +1,18 @@
+.panel-heading {
+  /* background-color: #a94442; */
+  background-color: #e15960;
+  color: white;
+}
+.badge {
+  margin-right: 2em;
+}
+
+.badge.badge-blue {
+  background-color: deepskyblue;
+  padding: 0.7em;
+}
+
+.badge.badge-red {
+  background-color: tomato;
+  padding: 0.7em;
+}

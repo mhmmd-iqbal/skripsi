@@ -1,0 +1,46 @@
+CRITICAL - 2020-09-07 21:42:16 --> No connection could be made because the target machine actively refused it.
+
+#0 D:\My Project\project-dekor\system\Database\BaseConnection.php(377): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\My Project\project-dekor\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\My Project\project-dekor\system\Database\BaseBuilder.php(1845): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\My Project\project-dekor\system\Model.php(445): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\My Project\project-dekor\app\Controllers\HomeController.php(18): CodeIgniter\Model->findAll(6, 0)
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\HomeController->index()
+#6 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#7 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#10 {main}
+CRITICAL - 2020-09-07 21:43:07 --> No connection could be made because the target machine actively refused it.
+
+#0 D:\My Project\project-dekor\system\Database\BaseConnection.php(377): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\My Project\project-dekor\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\My Project\project-dekor\system\Database\BaseBuilder.php(1845): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\My Project\project-dekor\system\Model.php(445): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\My Project\project-dekor\app\Controllers\HomeController.php(18): CodeIgniter\Model->findAll(6, 0)
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\HomeController->index()
+#6 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#7 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#10 {main}
+CRITICAL - 2020-09-07 23:00:11 --> syntax error, unexpected end of file
+#0 D:\My Project\project-dekor\system\Common.php(1087): CodeIgniter\View\View->render('konten-main/hom...', Array, true)
+#1 D:\My Project\project-dekor\app\Controllers\HomeController.php(24): view('konten-main/hom...', Array)
+#2 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\HomeController->index()
+#3 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2020-09-07 23:41:54 --> Trying to get property 'product_image' of non-object
+#0 D:\My Project\project-dekor\app\Views\konten-main\home.php(331): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\My Project\\p...', 331, Array)
+#1 D:\My Project\project-dekor\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project-dekor\system\Common.php(1087): CodeIgniter\View\View->render('konten-main/hom...', Array, true)
+#3 D:\My Project\project-dekor\app\Controllers\HomeController.php(26): view('konten-main/hom...', Array)
+#4 D:\My Project\project-dekor\system\CodeIgniter.php(914): App\Controllers\HomeController->index()
+#5 D:\My Project\project-dekor\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\My Project\project-dekor\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project-dekor\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project-dekor\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}

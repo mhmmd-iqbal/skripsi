@@ -1,0 +1,353 @@
+CRITICAL - 2020-10-30 02:06:51 --> Cannot use object of type stdClass as array
+#0 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#1 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#2 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-10-30 02:07:28 --> Cannot use object of type stdClass as array
+#0 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#1 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#2 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-10-30 02:08:16 --> Cannot use object of type stdClass as array
+#0 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#1 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#2 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-10-30 02:08:18 --> Cannot use object of type stdClass as array
+#0 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#1 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#2 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-10-30 02:08:45 --> Cannot use object of type stdClass as array
+#0 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#1 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#2 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-10-30 02:10:00 --> Cannot use object of type stdClass as array
+#0 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#1 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#2 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-10-30 02:10:10 --> Cannot use object of type stdClass as array
+#0 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#1 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#2 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-10-30 02:10:15 --> Cannot use object of type stdClass as array
+#0 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#1 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#2 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-10-30 02:10:22 --> Cannot use object of type stdClass as array
+#0 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#1 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#2 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-10-30 02:11:09 --> Cannot use object of type stdClass as array
+#0 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#1 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#2 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-10-30 02:12:47 --> Cannot use object of type stdClass as array
+#0 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#1 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#2 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-10-30 02:12:51 --> Cannot use object of type stdClass as array
+#0 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#1 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#2 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-10-30 02:12:56 --> Cannot use object of type stdClass as array
+#0 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#1 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#2 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-10-30 02:14:50 --> Undefined property: stdClass::$id_desa
+#0 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 71, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-10-30 02:17:39 --> Creating default object from empty value
+#0 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Creating defaul...', 'D:\\My Project\\p...', 73, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-10-30 02:17:53 --> Creating default object from empty value
+#0 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Creating defaul...', 'D:\\My Project\\p...', 73, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-10-30 02:18:26 --> Undefined property: stdClass::$tahun
+#0 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 73, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-10-30 02:23:53 --> Undefined property: stdClass::$penjualan
+#0 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 73, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-10-30 02:24:10 --> Cannot use object of type stdClass as array
+#0 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#1 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#2 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-10-30 02:24:19 --> Undefined property: stdClass::$penjualan
+#0 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 73, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-10-30 02:26:12 --> Cannot use object of type stdClass as array
+#0 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#1 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#2 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-10-30 02:27:25 --> Undefined property: stdClass::$penjualan
+#0 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 75, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-10-30 02:27:34 --> Undefined property: stdClass::$penjualan
+#0 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 75, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-10-30 02:27:39 --> Undefined property: stdClass::$penjualan
+#0 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 73, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-10-30 02:27:53 --> Undefined property: stdClass::$penjualan
+#0 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 73, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-10-30 02:30:33 --> syntax error, unexpected '}'
+#0 D:\My Project\project_ta\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\My Project\\p...')
+#1 D:\My Project\project_ta\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\My Project\project_ta\system\CodeIgniter.php(865): class_exists('\\App\\Controller...', true)
+#5 D:\My Project\project_ta\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->startController()
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2020-10-30 02:40:26 --> Undefined property: stdClass::$penjualan
+#0 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 77, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-10-30 02:41:00 --> Undefined property: stdClass::$total
+#0 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 77, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-10-30 02:41:07 --> Undefined property: stdClass::$total_penjualan
+#0 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 77, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-10-30 02:41:15 --> Undefined property: stdClass::$total_produksi
+#0 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 77, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-10-30 02:53:20 --> Trying to get property 'total_produksi' of non-object
+#0 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\My Project\\p...', 89, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-10-30 04:57:37 --> Undefined variable: penjualan
+#0 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(88): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 88, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-10-30 04:58:05 --> Undefined variable: penjualan
+#0 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(88): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 88, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-10-30 04:58:17 --> Undefined variable: penjualan
+#0 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(88): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 88, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-10-30 05:09:09 --> Trying to get property 'tahun' of non-object
+#0 D:\My Project\project_ta\app\Views\admin\konten\kalkulasi.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\My Project\\p...', 71, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/ka...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(100): view('admin/konten/ka...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2020-10-30 05:24:46 --> Undefined index: tahun
+#0 D:\My Project\project_ta\app\Views\admin\konten\kalkulasi.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\My Project\\p...', 71, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/ka...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(106): view('admin/konten/ka...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2020-10-30 05:52:37 --> Creating default object from empty value
+#0 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Creating defaul...', 'D:\\My Project\\p...', 74, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-10-30 05:53:03 --> Creating default object from empty value
+#0 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Creating defaul...', 'D:\\My Project\\p...', 74, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->show()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2020-10-30 07:54:51 --> Column 'id' in where clause is ambiguous
+#0 D:\My Project\project_ta\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT *\nFROM `...')
+#1 D:\My Project\project_ta\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\My Project\project_ta\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\My Project\project_ta\system\Database\BaseBuilder.php(1845): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\My Project\project_ta\system\Model.php(489): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\My Project\project_ta\app\Controllers\Admin\PenjualanController.php(53): CodeIgniter\Model->first()
+#6 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\PenjualanController->edit('158')
+#7 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PenjualanController))
+#8 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#11 {main}
+CRITICAL - 2020-10-30 07:54:59 --> Column 'id' in where clause is ambiguous
+#0 D:\My Project\project_ta\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT *\nFROM `...')
+#1 D:\My Project\project_ta\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\My Project\project_ta\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\My Project\project_ta\system\Database\BaseBuilder.php(1845): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\My Project\project_ta\system\Model.php(489): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\My Project\project_ta\app\Controllers\Admin\PenjualanController.php(53): CodeIgniter\Model->first()
+#6 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\PenjualanController->edit('158')
+#7 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PenjualanController))
+#8 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#11 {main}
+CRITICAL - 2020-10-30 08:00:29 --> Trying to get property 'tahun' of non-object
+#0 D:\My Project\project_ta\app\Views\admin\konten\editpenjualan.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\My Project\\p...', 61, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/ed...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\PenjualanController.php(60): view('admin/konten/ed...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\PenjualanController->edit('158')
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PenjualanController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2020-10-30 08:01:12 --> Call to a member function getResultObject() on array
+#0 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\PenjualanController->edit('158')
+#1 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PenjualanController))
+#2 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2020-10-30 08:06:26 --> Undefined variable: d
+#0 D:\My Project\project_ta\app\Views\admin\konten\editpenjualan.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 53, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/ed...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\PenjualanController.php(61): view('admin/konten/ed...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\PenjualanController->edit('158')
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PenjualanController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
