@@ -11,11 +11,11 @@ trait AlgoritmaTrait
     public function tableData()
     {
         // get start year from first data
-        $db            = new ModelPenjualan();
+        $dbPenjualan   = new ModelPenjualan();
         $dbDesa        = new ModelDesa();
         $dbKecamatan   = new ModelKecamatan();
 
-        $data['tahunMulai'] = $db->orderBy('tahun', 'ASC')->first();
+        $data['tahunMulai'] = $dbPenjualan->orderBy('tahun', 'ASC')->first();
         $data['tahunMulai'] = $data['tahunMulai']['tahun'] ?? date('Y');
         $data['totalData'] = null;
 
@@ -30,6 +30,7 @@ trait AlgoritmaTrait
         foreach ($data['kecamatan'] as $kecamatan) {
             // initialize total penjualan in each tahun for data kecamatan until today year
             for ($tahun = $data['tahunMulai']; $tahun <= date('Y'); $tahun++) {
+                $kecamatan->harga[$tahun] = 0;
                 $kecamatan->total[$tahun] = 0;
             }
 
@@ -42,16 +43,51 @@ trait AlgoritmaTrait
                 ->findAll();
 
             foreach ($allDesa as $desa) {
+                // total semua desa dalam satu kecamatan yang ada transaksi
+                $harga = 0;
                 for ($tahun = $data['tahunMulai']; $tahun <= date('Y'); $tahun++) {
-                    $desa->penjualan['tahun'][$tahun] = $db
+                    $penjualan = $dbPenjualan
                         ->where([
                             'id_desa' => $desa->id,
                             'tahun' => $tahun
                         ])
                         ->first();
-                    $total = (int) $desa->penjualan['tahun'][$tahun]['total_produksi'];
+
+                    // $db      = \Config\Database::connect();
+                    // $table = $db->table('users');
+
+                    $penjualanCount = $dbPenjualan
+                        ->join('tb_desa', 'tb_desa.id = tb_penjualan.id_desa')
+                        ->where([
+                            'tb_desa.id_kecamatan' => $kecamatan->id,
+                            'tahun' => $tahun,
+                            'harga !=' => 0,
+                        ])
+                        ->countAllResults();
+
+                    $penjualans = $dbPenjualan
+                        ->join('tb_desa', 'tb_desa.id = tb_penjualan.id_desa')
+                        ->where([
+                            'tb_desa.id_kecamatan' => $kecamatan->id,
+                            'tahun' => $tahun,
+                            'harga !=' => 0,
+                        ])
+                        ->asObject()
+                        ->findAll();
+
+                    $penjualanHarga = 0;
+                    foreach ($penjualans as $d) {
+                        $penjualanHarga += (float) $d->harga;
+                    }
+                    $total = (int) $penjualan['total_produksi'];
+
 
                     // sum each data on same year's period but difference kecamatan to kecamatan data
+                    if ($penjualanCount > 0) {
+                        $kecamatan->harga[$tahun] = $penjualanHarga / $penjualanCount;
+                    } else {
+                        $kecamatan->harga[$tahun] = 0;
+                    }
                     $kecamatan->total[$tahun] += $total;
                     $data['totalData'][$tahun] += $total;
                 }
@@ -61,24 +97,24 @@ trait AlgoritmaTrait
         return $data;
     }
 
-    public function itemSet($data)
+    public function itemSet($data, $limit)
     {
         $data = $data;
         foreach ($data['kecamatan'] as $item) {
             $item->totalTransaksi = null;
             foreach ($item->total as $tahun => $total) {
-                $item->transaksi[$tahun] = $total < 100 ? 0 : 1;
+                $item->transaksi[$tahun] = $total < $limit ? 0 : 1;
                 $item->totalTransaksi     += $item->transaksi[$tahun];
             }
         }
         $result = [
             'totalKecamatan'    => $data['totalKecamatan'],
-            'dataKecamatan'     => $data['kecamatan']
+            'dataKecamatan'     => $data['kecamatan'],
         ];
         return $result;
     }
 
-    public function support($data)
+    public function support($data, $supportSearch)
     {
         $result = $data;
         foreach ($result['dataKecamatan'] as $item) {
@@ -89,7 +125,7 @@ trait AlgoritmaTrait
         $newResult = array();
         $newItem = array();
         foreach ($result['dataKecamatan'] as $d) {
-            if ($d->support >= 30) {
+            if ($d->support >= $supportSearch) {
                 $newItem[$x] = $d;
                 $x++;
             }
@@ -101,33 +137,61 @@ trait AlgoritmaTrait
         return $newResult;
     }
 
+
     public function newItemSet($data)
     {
+        $dbPenjualan = new ModelPenjualan();
         $count = count($data['dataKecamatan']);
         $i = 0;
-        foreach ($data['dataKecamatan'] as $x => $data1) {
-            foreach ($data['dataKecamatan'] as $y => $data2) {
-                if (
-                    $x !== $y
-                    && $x < $y
-                    && $data1->totalTransaksi === $data2->totalTransaksi
-                ) {
-                    $result['dataKecamatan'][$i] = (object) [
-                        'kecamatan1'    => [
-                            'uid'       => $data1->uid,
-                            'kecamatan' => $data1->kecamatan,
-                            'totalTransaksi' => $data1->totalTransaksi
-                        ],
-                        'kecamatan2'    => [
-                            'uid'       => $data2->uid,
-                            'kecamatan' => $data2->kecamatan,
-                            'totalTransaksi' => $data2->totalTransaksi
-                        ],
-                        'totalTransaksi'     => $data1->totalTransaksi,
-                    ];
-                    $i++;
+        if ($count > 0) {
+            foreach ($data['dataKecamatan'] as $x => $data1) {
+                foreach ($data['dataKecamatan'] as $y => $data2) {
+                    if (
+                        $x !== $y
+                        && $x < $y
+                        && $data1->totalTransaksi === $data2->totalTransaksi
+                    ) {
+                        $result['dataKecamatan'][$i] = (object) [
+                            'kecamatan1'    => [
+                                'id'             => $data1->id,
+                                'kecamatan'      => $data1->kecamatan,
+                                'totalTransaksi' => $data1->totalTransaksi,
+                                'hargaRata'      => $data1->harga
+                            ],
+                            'kecamatan2'    => [
+                                'id'             => $data2->id,
+                                'kecamatan'      => $data2->kecamatan,
+                                'totalTransaksi' => $data2->totalTransaksi,
+                                'hargaRata'      => $data2->harga
+                            ],
+                            'totalTransaksi'     => $data1->totalTransaksi,
+                        ];
+
+                        foreach ($result['dataKecamatan'][$i]->kecamatan1['hargaRata'] as $tahun => $eachYear) {
+                            $result['dataKecamatan'][$i]->hargaRata[$tahun] = ($result['dataKecamatan'][$i]->kecamatan1['hargaRata'][$tahun] + $result['dataKecamatan'][$i]->kecamatan2['hargaRata'][$tahun]) / 2;
+                        }
+
+                        foreach ($result['dataKecamatan'][$i]->kecamatan1['hargaRata'] as $year => $harga) {
+                            if ($harga === 0) {
+                                unset($result['dataKecamatan'][$i]->kecamatan1['hargaRata'][$year]);
+                            }
+                        }
+                        foreach ($result['dataKecamatan'][$i]->kecamatan2['hargaRata'] as $year => $harga) {
+                            if ($harga === 0) {
+                                unset($result['dataKecamatan'][$i]->kecamatan2['hargaRata'][$year]);
+                            }
+                        }
+                        foreach ($result['dataKecamatan'][$i]->hargaRata as $year => $harga) {
+                            if ($harga === 0) {
+                                unset($result['dataKecamatan'][$i]->hargaRata[$year]);
+                            }
+                        }
+                        $i++;
+                    }
                 }
             }
+        } else {
+            $result['dataKecamatan'] = [];
         }
         $result['totalKecamatan'] = $data['totalKecamatan'];
         return $result;

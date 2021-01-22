@@ -11,7 +11,7 @@ use PHPExcel;
 use PHPExcel_IOFactory;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
-
+use Ramsey\Uuid\Uuid;
 
 class PenjualanController extends BaseController
 {
@@ -73,7 +73,7 @@ class PenjualanController extends BaseController
         $total_pendapatan = $this->request->getVar('total_pendapatan');
 
         $data = [
-            'uid'   => uniqid(),
+            'uid'   => Uuid::uuid4(),
             'id_desa' => $id_desa,
             'tahun' => $tahun,
             'total_produksi' => $total_produksi,
@@ -105,7 +105,7 @@ class PenjualanController extends BaseController
         $total_pendapatan = $this->request->getVar('total_pendapatan');
 
         $data = [
-            'uid'   => uniqid(),
+            'uid'   => Uuid::uuid4(),
             'id_desa' => $id_desa,
             'tahun' => $tahun,
             'total_produksi' => $total_produksi,
@@ -200,6 +200,17 @@ class PenjualanController extends BaseController
                     ];
 
                     $validate = $this->validation->run($data, 'penjualan');
+                    $checkPenjualan = $this->db->where('id_desa', $desa['id'])
+                        ->where('tahun', $d['C']);
+                    if ($checkPenjualan->countAllResults() === 0) {
+                        $this->db->save($data);
+                    } else {
+                        $this->db->where('id_desa', $desa['id'])
+                            ->where('tahun', $d['C'])
+                            ->set($data)
+                            ->update();
+                    }
+
                     $this->db->save($data);
                     // if ($validate) {
                     $countSuccess++;

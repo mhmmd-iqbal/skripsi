@@ -67,14 +67,22 @@ class CalculateController extends BaseController
 
     public function index()
     {
-
         $data['raw']        = $this->tableData();
-        $data['itemSet']    = $this->itemSet($data['raw']);
-        $data['support']    = $this->support($data['itemSet']);
-        $data['newItemSet'] = $this->newItemSet($data['support']);
-        $data['support']    = $this->support($data['newItemSet']);
-        $data['confidence'] = $this->confidence($data['support']);
-        // return $this->respond($data, 200);
+        $data['analist']    = false;
+        $data['supportSearch'] = 0;
+        $data['limitSearch'] = 0;
+        if ($this->request->getMethod() === 'post') {
+            $data['supportSearch'] = $this->request->getVar('support');
+            $data['limitSearch'] = $this->request->getVar('limit');
+            $data['analist']    = true;
+            $data['itemSet']    = $this->itemSet($data['raw'], $data['limitSearch']);
+            $data['support']    = $this->support($data['itemSet'], $data['supportSearch']);
+            $data['newItemSet'] = $this->newItemSet($data['support']);
+            $data['support']    = $this->support($data['newItemSet'], $data['supportSearch']);
+            $data['confidence'] = $this->confidence($data['support']);
+            // return $this->respond($data['confidence'], 200);
+        }
+
 
         $data['judul'] = 'DATA MINING | Algoritma';
         $data['username'] = $this->session->username;
