@@ -1,0 +1,189 @@
+CRITICAL - 2021-01-20 08:16:52 --> Division by zero
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', 'D:\\My Project\\p...', 178, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(79): App\Controllers\Admin\CalculateController->confidence(Array)
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-20 08:17:11 --> Division by zero
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', 'D:\\My Project\\p...', 178, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(79): App\Controllers\Admin\CalculateController->confidence(Array)
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-20 08:20:17 --> Undefined index: dataKecamatan
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(120): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\My Project\\p...', 120, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(79): App\Controllers\Admin\CalculateController->support(Array, '100')
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-20 08:21:10 --> Undefined index: confidence
+#0 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\My Project\\p...', 77, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2021-01-20 08:21:36 --> Undefined index: dataKecamatan
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(120): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\My Project\\p...', 120, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(79): App\Controllers\Admin\CalculateController->support(Array, '100')
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-20 08:22:57 --> Undefined index: dataKecamatan
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(120): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\My Project\\p...', 120, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(79): App\Controllers\Admin\CalculateController->support(Array, '100')
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-20 08:24:12 --> Undefined index: dataKecamatan
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(143): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\My Project\\p...', 143, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(79): App\Controllers\Admin\CalculateController->support2(Array, '100')
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-20 08:40:36 --> Undefined variable: limitSearch
+#0 D:\My Project\project_ta\app\Views\admin\konten\kalkulasi.php(103): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 103, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/ka...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(87): view('admin/konten/ka...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2021-01-20 08:40:50 --> Undefined variable: limitSearch
+#0 D:\My Project\project_ta\app\Views\admin\konten\kalkulasi.php(103): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 103, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/ka...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(87): view('admin/konten/ka...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2021-01-20 09:05:55 --> Unsupported operand types
+#0 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(80): App\Controllers\Admin\CalculateController->newItemSet(Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2021-01-20 09:08:14 --> Unsupported operand types
+#0 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(80): App\Controllers\Admin\CalculateController->newItemSet(Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2021-01-20 09:12:44 --> Unsupported operand types
+#0 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(80): App\Controllers\Admin\CalculateController->newItemSet(Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2021-01-20 09:31:52 --> Undefined offset: 2015
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(181): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\My Project\\p...', 181, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(80): App\Controllers\Admin\CalculateController->newItemSet(Array)
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-20 09:32:25 --> Undefined offset: 2015
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(181): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\My Project\\p...', 181, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(80): App\Controllers\Admin\CalculateController->newItemSet(Array)
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-20 09:33:05 --> Undefined offset: 2015
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(181): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\My Project\\p...', 181, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(80): App\Controllers\Admin\CalculateController->newItemSet(Array)
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-20 09:34:05 --> Undefined variable: serchYear
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(181): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 181, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(80): App\Controllers\Admin\CalculateController->newItemSet(Array)
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-20 09:34:18 --> Undefined variable: searchYear
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(181): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 181, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(80): App\Controllers\Admin\CalculateController->newItemSet(Array)
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-20 09:35:52 --> Undefined offset: 2015
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(181): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\My Project\\p...', 181, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(80): App\Controllers\Admin\CalculateController->newItemSet(Array)
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-20 09:36:10 --> Undefined offset: 2015
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(181): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\My Project\\p...', 181, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(80): App\Controllers\Admin\CalculateController->newItemSet(Array)
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-20 09:37:24 --> Undefined offset: 2019
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(181): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\My Project\\p...', 181, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(80): App\Controllers\Admin\CalculateController->newItemSet(Array)
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-20 09:37:40 --> Undefined offset: 2019
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(181): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\My Project\\p...', 181, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(80): App\Controllers\Admin\CalculateController->newItemSet(Array)
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}

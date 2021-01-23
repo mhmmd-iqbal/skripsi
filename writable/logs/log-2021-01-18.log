@@ -1,0 +1,68 @@
+CRITICAL - 2021-01-18 19:48:15 --> Undefined variable: db
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 18, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(71): App\Controllers\Admin\CalculateController->tableData()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-18 19:48:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '!=' at line 5
+#0 D:\My Project\project_ta\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT AVG(`har...')
+#1 D:\My Project\project_ta\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT AVG(`har...')
+#2 D:\My Project\project_ta\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT AVG(`har...')
+#3 D:\My Project\project_ta\system\Database\BaseBuilder.php(1845): CodeIgniter\Database\BaseConnection->query('SELECT AVG(`har...', Array, false)
+#4 D:\My Project\project_ta\system\Model.php(1716): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(60): CodeIgniter\Model->__call('get', Array)
+#6 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(71): App\Controllers\Admin\CalculateController->tableData()
+#7 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#8 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#9 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#12 {main}
+CRITICAL - 2021-01-18 19:59:40 --> Trying to get property 'id' of non-object
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(157): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\My Project\\p...', 157, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(77): App\Controllers\Admin\CalculateController->prices(Array)
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-18 20:00:05 --> Trying to get property 'id' of non-object
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(157): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\My Project\\p...', 157, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(77): App\Controllers\Admin\CalculateController->prices(Array)
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-18 20:00:10 --> Trying to get property 'id' of non-object
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(157): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\My Project\\p...', 157, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(77): App\Controllers\Admin\CalculateController->prices(Array)
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-18 20:00:31 --> Trying to get property 'id' of non-object
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(157): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\My Project\\p...', 157, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(77): App\Controllers\Admin\CalculateController->prices(Array)
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-18 20:00:45 --> Attempt to assign property 'desa' of non-object
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to assi...', 'D:\\My Project\\p...', 156, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(77): App\Controllers\Admin\CalculateController->prices(Array)
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}

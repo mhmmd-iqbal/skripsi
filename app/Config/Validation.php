@@ -37,24 +37,36 @@ class Validation
 	];
 
 	public $desa = [
-		'id_kecamatan' => 'required',
-		'desa' => 'required',
+		'id_kecamatan' 	=> 'required',
+		'desa' 			=> 'required',
 	];
 
 	public $penjualan = [
-		'id_desa' => 'required',
-		'tahun' => 'required',
-		'total_produksi' => 'required',
-		'harga' => 'required',
+		'id_desa' 		   => 'required',
+		'tahun' 		   => 'required',
+		'total_produksi'   => 'required',
+		'harga' 		   => 'required',
 		'total_pendapatan' => 'required',
-		'created_by' => 'required'
+		'created_by' 	   => 'required'
 	];
 
 	public $user = [
-		'username' => 'required',
-		'email' => 'required',
-		'password' => 'required',
-		'level' => 'required',
+		'username' 	=> 'required',
+		'email' 	=> 'required',
+		'password' 	=> 'required',
+		'level' 	=> 'required',
+	];
+
+	public $lahan = [
+		'id_desa' 		 => 'required',
+		'tahun' 		 => 'required',
+		'tbm'			 => 'permit_empty',
+		'tm'			 => 'permit_empty',
+		'ttr'			 => 'permit_empty',
+		'total'		 	 => 'required',
+		'produksi'		 => 'required',
+		'produktivitas'  => 'required',
+		'jml_petani' 	 => 'required',
 	];
 
 	//--------------------------------------------------------------------

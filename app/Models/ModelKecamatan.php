@@ -70,4 +70,5 @@ class ModelKecamatan extends Model
         $db    = \Config\Database::connect()->table($this->table);
         return $db->countAllResults();
     }
+
 }

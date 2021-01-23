@@ -258,6 +258,7 @@
                     <p class="title">Prediksi Rata-rata Harga</p>
                 </div>
                 <div class="panel-body">
+                    <button class="btn btn-success"><i class="fa fa-print"></i> Cetak Data</button>
                     <div class="responsive-table">
                         <table class="table table-bordered table-hover" id="">
                             <thead>

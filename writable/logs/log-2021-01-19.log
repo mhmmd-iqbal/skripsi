@@ -1,0 +1,225 @@
+CRITICAL - 2021-01-19 03:14:01 --> Undefined index: kecamatan
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\My Project\\p...', 75, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(72): App\Controllers\Admin\CalculateController->itemSet(Array)
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-19 03:14:14 --> Use of undefined constant dd - assumed 'dd' (this will throw an Error in a future version of PHP)
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'D:\\My Project\\p...', 53, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(71): App\Controllers\Admin\CalculateController->tableData()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-19 03:15:15 --> Call to undefined method App\Models\ModelPenjualan::getArray
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(58): CodeIgniter\Model->__call('getArray', Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(71): App\Controllers\Admin\CalculateController->tableData()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-19 03:15:22 --> Call to undefined method App\Models\ModelPenjualan::getResultObject
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(58): CodeIgniter\Model->__call('getResultObject', Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(71): App\Controllers\Admin\CalculateController->tableData()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-19 03:23:58 --> Trying to get property 'harga' of non-object
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\My Project\\p...', 58, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(71): App\Controllers\Admin\CalculateController->tableData()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-19 03:24:06 --> Trying to get property 'harga' of non-object
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\My Project\\p...', 58, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(71): App\Controllers\Admin\CalculateController->tableData()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-19 03:26:18 --> Undefined property: stdClass::$harga
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 62, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(71): App\Controllers\Admin\CalculateController->tableData()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-19 04:24:25 --> Call to undefined method App\Models\ModelPenjualan::count
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(61): CodeIgniter\Model->__call('count', Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(71): App\Controllers\Admin\CalculateController->tableData()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-19 04:25:09 --> Undefined index: dataKecamatan
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\My Project\\p...', 99, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(75): App\Controllers\Admin\CalculateController->support(Array)
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-19 04:33:45 --> Division by zero
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', 'D:\\My Project\\p...', 73, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(71): App\Controllers\Admin\CalculateController->tableData()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-19 04:34:13 --> Division by zero
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', 'D:\\My Project\\p...', 73, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(71): App\Controllers\Admin\CalculateController->tableData()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-19 04:34:37 --> Division by zero
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', 'D:\\My Project\\p...', 71, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(71): App\Controllers\Admin\CalculateController->tableData()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-19 04:34:44 --> Division by zero
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', 'D:\\My Project\\p...', 71, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(71): App\Controllers\Admin\CalculateController->tableData()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-19 04:36:33 --> Division by zero
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', 'D:\\My Project\\p...', 71, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(71): App\Controllers\Admin\CalculateController->tableData()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-19 04:46:17 --> Undefined index: total_produksi
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\My Project\\p...', 77, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(71): App\Controllers\Admin\CalculateController->tableData()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-19 04:46:56 --> Undefined index: total_produksi
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\My Project\\p...', 77, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(71): App\Controllers\Admin\CalculateController->tableData()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-19 04:48:09 --> Undefined index: total_produksi
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\My Project\\p...', 79, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(71): App\Controllers\Admin\CalculateController->tableData()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-19 04:49:31 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to number
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'D:\\My Project\\p...', 74, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(71): App\Controllers\Admin\CalculateController->tableData()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-19 04:53:31 --> Call to undefined method App\Models\ModelPenjualan::countAllResult
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(66): CodeIgniter\Model->__call('countAllResult', Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(71): App\Controllers\Admin\CalculateController->tableData()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-19 05:04:55 --> Call to undefined method App\Models\ModelPenjualan::getResultObject
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(75): CodeIgniter\Model->__call('getResultObject', Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(71): App\Controllers\Admin\CalculateController->tableData()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-19 05:05:11 --> Object of class stdClass could not be converted to int
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'D:\\My Project\\p...', 86, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(71): App\Controllers\Admin\CalculateController->tableData()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-19 05:05:34 --> Object of class stdClass could not be converted to int
+#0 D:\My Project\project_ta\app\Controllers\Traits\AlgoritmaTrait.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Object of class...', 'D:\\My Project\\p...', 86, Array)
+#1 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(71): App\Controllers\Admin\CalculateController->tableData()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-19 05:26:37 --> syntax error, unexpected ''hargaRata'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 D:\My Project\project_ta\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\My Project\\p...')
+#1 D:\My Project\project_ta\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(15): spl_autoload_call('App\\Controllers...')
+#4 D:\My Project\project_ta\system\Autoloader\Autoloader.php(365): require_once('D:\\My Project\\p...')
+#5 D:\My Project\project_ta\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\My Project\\p...')
+#6 D:\My Project\project_ta\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#7 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#8 [internal function]: spl_autoload_call('App\\Controllers...')
+#9 D:\My Project\project_ta\system\CodeIgniter.php(865): class_exists('\\App\\Controller...', true)
+#10 D:\My Project\project_ta\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->startController()
+#11 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#13 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#14 {main}
+CRITICAL - 2021-01-19 09:56:54 --> Trying to get property 'kecamatan' of non-object
+#0 D:\My Project\project_ta\app\Views\admin\konten\kalkulasi.php(245): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\My Project\\p...', 245, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/ka...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(82): view('admin/konten/ka...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}

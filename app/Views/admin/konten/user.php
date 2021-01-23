@@ -264,11 +264,12 @@
                             <label for="kecamatan" class="">Email</label>
                             <input type="email" required id="email" name="email" placeholder="Input Email..." class="form-control">
                         </div>
-                        <div class="col-lg-5 form-group">
+                        <div class="col-lg-12 form-group">
                             <label for="kecamatan" class="">Level User</label>
                             <br>
-                            <input type="radio" id="level" name="level" value="admin" checked style="margin: 10px 20px;"> Admin
-                            <input type="radio" id="level" name="level" value="user" style="margin: 10px 20px;"> User
+                            <input type="radio" id="update-level" name="level" value="admin" checked style="margin: 10px 20px;"> Admin
+                            <input type="radio" id="update-level" name="level" value="kepala" style="margin: 10px 20px;"> Kepala Dinas
+                            <input type="radio" id="update-level" name="level" value="user" style="margin: 10px 20px;"> Masyarakat
                         </div>
                         <div class="col-lg-7 form-group">
                             <label for="kecamatan" class="">Password</label>
@@ -308,11 +309,12 @@
                             <label for="kecamatan" class="">Email</label>
                             <input type="email" required id="update-email" name="email" placeholder="Input Email..." class="form-control">
                         </div>
-                        <div class="col-lg-5 form-group">
+                        <div class="col-lg-12 form-group">
                             <label for="kecamatan" class="">Level User</label>
                             <br>
                             <input type="radio" id="update-level" name="level" value="admin" checked style="margin: 10px 20px;"> Admin
-                            <input type="radio" id="update-level" name="level" value="user" style="margin: 10px 20px;"> User
+                            <input type="radio" id="update-level" name="level" value="kepala" style="margin: 10px 20px;"> Kepala Dinas
+                            <input type="radio" id="update-level" name="level" value="user" style="margin: 10px 20px;"> Masyarakat
                         </div>
                         <div class="col-lg-7 form-group">
                             <label for="kecamatan" class="">Password</label>

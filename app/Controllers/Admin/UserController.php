@@ -122,4 +122,9 @@ class UserController extends BaseController
         );
         return $this->respond($output, 200);
     }
+
+    public function status($id)
+    {
+        
+    }
 }

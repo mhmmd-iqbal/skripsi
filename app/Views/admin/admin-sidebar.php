@@ -24,18 +24,19 @@
              </li>
 
              <li>
+                 <a href="/admin/lahan" class="<?= $active == 'lahan' ? 'active' : ''  ?>">
+                     <i class="fa fa-database"></i>
+                     <span>Data Lahan Kecamatan</span>
+                 </a>
+             </li>
+
+             <li>
                  <a href="/admin/penjualan" class="<?= $active == 'penjualan' ? 'active' : ''  ?>">
                      <i class="fa fa-database"></i>
                      <span>Data Penjualan Karet</span>
                  </a>
              </li>
 
-             <!-- <li>
-                 <a href="/admin/laporan" class="<?= $active == 'laporan' ? 'active' : '' ?>">
-                     <i class="fa fa-table"></i>
-                     <span>Laporan Data Penjualan</span>
-                 </a>
-             </li> -->
 
              <li>
                  <a href="/admin/calculate" class="<?= $active == 'calculate' ? 'active' : '' ?>">

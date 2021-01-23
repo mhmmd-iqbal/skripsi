@@ -52,7 +52,6 @@
             <div class="panel-body">
                 <div class="row" style="padding-bottom: 10px;">
                     <div class="col-lg-12">
-                        <!-- <a href="/admin/export/desa" class="btn btn-white btn-sm"><i class="fa fa-download"></i> Download Data ID Desa</a> -->
                         <a href="/admin/export/penjualan" class="btn btn-white btn-sm"><i class="fa fa-download"></i> Download Format Excel</a>
                         <button class="btn btn-white btn-sm" data-toggle="modal" href='#modal-id' data-backdrop="static"><i class="fa fa-file-excel"></i> Import Dari Excel</button>
                     </div>
@@ -197,7 +196,6 @@
 
 
     $('#upload').on('click', function() {
-        console.log('asd')
         $('#form-submit').trigger('submit');
     })
 </script>

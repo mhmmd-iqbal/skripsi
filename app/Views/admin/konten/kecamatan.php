@@ -32,6 +32,10 @@
     .aksi button {
         margin-right: 5px;
     }
+
+    .aksi a {
+        margin-right: 5px;
+    }
 </style>
 <?= $this->endSection('css') ?>
 

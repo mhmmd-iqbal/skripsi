@@ -40,7 +40,7 @@ class PenjualanController extends BaseController
 
     function new()
     {
-        $data['judul'] = 'MASTER DATA | Data Penjualan';
+        $data['judul'] = 'MASTER DATA | Data Lahan';
         $data['username'] = $this->session->username;
         $data['active'] = 'penjualan';
         $data['kecamatan'] = $this->kecamatan->get()->getResultObject();
@@ -212,12 +212,7 @@ class PenjualanController extends BaseController
                     }
 
                     $this->db->save($data);
-                    // if ($validate) {
                     $countSuccess++;
-                    // } else {
-                    //     $countError++;
-                    //     continue;
-                    // }
                 } else {
                     $countError;
                 }

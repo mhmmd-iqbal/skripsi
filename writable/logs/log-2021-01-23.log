@@ -1,0 +1,170 @@
+CRITICAL - 2021-01-23 06:09:14 --> Undefined property: App\Controllers\Admin\LahanController::$validation
+#0 D:\My Project\project_ta\app\Controllers\Admin\LahanController.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 71, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\LahanController->create()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LahanController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2021-01-23 06:10:14 --> Undefined property: App\Controllers\Admin\LahanController::$validation
+#0 D:\My Project\project_ta\app\Controllers\Admin\LahanController.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 71, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\LahanController->create()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LahanController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2021-01-23 06:11:33 --> nullable is not a valid rule.
+#0 D:\My Project\project_ta\system\Validation\Validation.php(302): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('nullable')
+#1 D:\My Project\project_ta\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('tbm', 'tbm', '10', Array, Array)
+#2 D:\My Project\project_ta\app\Controllers\Admin\LahanController.php(73): CodeIgniter\Validation\Validation->run(Array, 'lahan')
+#3 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\LahanController->create()
+#4 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LahanController))
+#5 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2021-01-23 06:12:53 --> nullable is not a valid rule.
+#0 D:\My Project\project_ta\system\Validation\Validation.php(302): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('nullable')
+#1 D:\My Project\project_ta\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('tbm', 'tbm', '10', Array, Array)
+#2 D:\My Project\project_ta\app\Controllers\Admin\LahanController.php(73): CodeIgniter\Validation\Validation->run(Array, 'lahan')
+#3 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\LahanController->create()
+#4 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LahanController))
+#5 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2021-01-23 06:13:42 --> nullable is not a valid rule.
+#0 D:\My Project\project_ta\system\Validation\Validation.php(302): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('nullable')
+#1 D:\My Project\project_ta\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('tbm', 'tbm', '10', Array, Array)
+#2 D:\My Project\project_ta\app\Controllers\Admin\LahanController.php(73): CodeIgniter\Validation\Validation->run(Array, 'lahan')
+#3 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\LahanController->create()
+#4 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LahanController))
+#5 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2021-01-23 06:15:30 --> nullable is not a valid rule.
+#0 D:\My Project\project_ta\system\Validation\Validation.php(302): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('nullable')
+#1 D:\My Project\project_ta\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('tbm', 'tbm', '10', Array, Array)
+#2 D:\My Project\project_ta\app\Controllers\Admin\LahanController.php(73): CodeIgniter\Validation\Validation->run(Array, 'lahan')
+#3 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\LahanController->create()
+#4 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LahanController))
+#5 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2021-01-23 07:11:01 --> Undefined variable: tahunMulai
+#0 D:\My Project\project_ta\app\Views\admin\konten\lahan.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 61, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/la...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\LahanController.php(35): view('admin/konten/la...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\LahanController->index()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LahanController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2021-01-23 07:12:26 --> Undefined property: App\Controllers\Admin\LahanController::$db
+#0 D:\My Project\project_ta\app\Controllers\Admin\LahanController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 32, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\LahanController->index()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LahanController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2021-01-23 07:12:39 --> Undefined variable: kecamatan
+#0 D:\My Project\project_ta\app\Views\admin\konten\lahan.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 69, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/la...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\LahanController.php(37): view('admin/konten/la...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\LahanController->index()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LahanController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2021-01-23 07:12:56 --> Undefined property: App\Controllers\Admin\LahanController::$kecamatan
+#0 D:\My Project\project_ta\app\Controllers\Admin\LahanController.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 37, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\LahanController->index()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LahanController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2021-01-23 07:39:06 --> Undefined property: App\Controllers\Admin\LahanController::$db
+#0 D:\My Project\project_ta\app\Controllers\Admin\LahanController.php(125): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 125, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\LahanController->get()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LahanController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2021-01-23 07:39:13 --> Undefined property: App\Controllers\Admin\LahanController::$db
+#0 D:\My Project\project_ta\app\Controllers\Admin\LahanController.php(125): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 125, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\LahanController->get()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LahanController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2021-01-23 07:41:27 --> Undefined property: stdClass::$jumlah_petani
+#0 D:\My Project\project_ta\app\Controllers\Admin\LahanController.php(116): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 116, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\LahanController->get()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LahanController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2021-01-23 07:41:31 --> Undefined property: stdClass::$jumlah_petani
+#0 D:\My Project\project_ta\app\Controllers\Admin\LahanController.php(116): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 116, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\LahanController->get()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LahanController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2021-01-23 08:35:37 --> Trying to get property 'kecamatan' of non-object
+#0 D:\My Project\project_ta\app\Views\admin\konten\detailKecamatan.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\My Project\\p...', 48, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/de...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\KecamatanController.php(36): view('admin/konten/de...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\KecamatanController->show('f19d764d-8d2e-4...')
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\KecamatanController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2021-01-23 09:36:01 --> Array to string conversion
+#0 D:\My Project\project_ta\app\Views\admin\konten\detailKecamatan.php(148): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\My Project\\p...', 148, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/de...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\KecamatanController.php(75): view('admin/konten/de...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\KecamatanController->show('f19d764d-8d2e-4...')
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\KecamatanController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2021-01-23 09:37:40 --> Array to string conversion
+#0 D:\My Project\project_ta\app\Views\admin\konten\detailKecamatan.php(148): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\My Project\\p...', 148, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/de...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\KecamatanController.php(75): view('admin/konten/de...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\KecamatanController->show('f19d764d-8d2e-4...')
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\KecamatanController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2021-01-23 09:43:32 --> Undefined variable: totalTahun
+#0 D:\My Project\project_ta\app\Views\admin\konten\detailKecamatan.php(131): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 131, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/de...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\KecamatanController.php(75): view('admin/konten/de...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\KecamatanController->show('f19d764d-8d2e-4...')
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\KecamatanController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}

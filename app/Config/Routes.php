@@ -47,10 +47,11 @@ $routes->group('admin', ['filter' => 'admin_auth', 'namespace' => 'App\Controlle
 		'only'		 => ['index', 'create', 'delete', 'update']
 	]);
 	$routes->post('master/get/user', 'UserController::get');
+	$routes->post('master/user/(:any)', 'UserController::update/$1');
 
 	$routes->resource('master/kecamatan', [
 		'controller' => 'KecamatanController',
-		'only'		 => ['index', 'create', 'delete', 'update']
+		'only'		 => ['index', 'show', 'create', 'delete', 'update']
 	]);
 	$routes->post('master/get/kecamatan', 'KecamatanController::get');
 
@@ -66,9 +67,17 @@ $routes->group('admin', ['filter' => 'admin_auth', 'namespace' => 'App\Controlle
 		'controller' => 'PenjualanController'
 	]);
 
+
 	$routes->post('get/penjualan', 'PenjualanController::get');
 	$routes->get('export/penjualan', 'PenjualanController::export');
 	$routes->post('import/penjualan', 'PenjualanController::import');
+
+	$routes->resource('lahan', [
+		'controller' => 'LahanController'
+	]);
+	$routes->post('get/lahan', 'LahanController::get');
+	$routes->post('import/lahan', 'LahanController::import');
+	$routes->get('export/lahan', 'LahanController::export');
 
 	$routes->get('calculate', 'CalculateController::index');
 	$routes->post('calculate', 'CalculateController::index');
