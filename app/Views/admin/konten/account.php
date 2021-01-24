@@ -51,38 +51,40 @@
             </div>
             <form action="<?= base_url() ?>/admin/account/<?= $user->id ?>" method="POST" enctype="multipart/form-data" id="add">
                 <div class="panel-body">
-                    <?php
-                    if (session()->getFlashdata('success')) :
-                    ?>
-                        <div class="alert alert-success alert-dismissible" role="alert">
-                            <?= session()->getFlashdata('success') ?>
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                    <?php
-                    endif;
-                    ?>
-                    <?= csrf_field() ?>
-                    <input type="hidden" name="_method" id="_method" value="PUT" />
-                    <div class="row">
-                        <div class="col-lg-6 form-group">
-                            <label for="kecamatan" class="">Username</label>
-                            <input type="text" placeholder="Input Username..." required id="update-username" value="<?= $user->username ?>" name="username" class="form-control">
-                        </div>
-                        <div class="col-lg-7 form-group">
-                            <label for="kecamatan" class="">Email</label>
-                            <input type="email" required id="update-email" name="email" placeholder="Input Email..." value="<?= $user->email ?>" class="form-control">
-                        </div>
-                        <div class="col-lg-5 form-group">
-                            <label for="kecamatan" class="">Level User</label>
-                            <br>
-                            <input type="radio" id="update-level" name="level" value="admin" <?= $user->level == 'admin' ? 'checked' : '' ?> style="margin: 10px 20px;"> Admin
-                            <input type="radio" id="update-level" name="level" value="user" <?= $user->level == 'user' ? 'checked' : '' ?> style="margin: 10px 20px;"> User
-                        </div>
-                        <div class="col-lg-7 form-group">
-                            <label for="kecamatan" class="">Password</label>
-                            <input type="password" id="update-password" name="password" placeholder="Password..." class="form-control">
+                    <div class="group" style="border: 1px solid #eee; border-radius: 5px; margin: 20px 5px; padding: 10px">
+                        <?php
+                        if (session()->getFlashdata('success')) :
+                        ?>
+                            <div class="alert alert-success alert-dismissible" role="alert">
+                                <?= session()->getFlashdata('success') ?>
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        <?php
+                        endif;
+                        ?>
+                        <?= csrf_field() ?>
+                        <input type="hidden" name="_method" id="_method" value="PUT" />
+                        <div class="row">
+                            <div class="col-lg-6 form-group">
+                                <label for="kecamatan" class="">Username</label>
+                                <input type="text" placeholder="Input Username..." required id="update-username" value="<?= $user->username ?>" name="username" class="form-control">
+                            </div>
+                            <div class="col-lg-7 form-group">
+                                <label for="kecamatan" class="">Email</label>
+                                <input type="email" required id="update-email" name="email" placeholder="Input Email..." value="<?= $user->email ?>" class="form-control">
+                            </div>
+                            <div class="col-lg-5 form-group">
+                                <label for="kecamatan" class="">Level User</label>
+                                <br>
+                                <input type="radio" id="update-level" name="level" value="admin" <?= $user->level == 'admin' ? 'checked' : '' ?> style="margin: 10px 20px;"> Admin
+                                <input type="radio" id="update-level" name="level" value="user" <?= $user->level == 'user' ? 'checked' : '' ?> style="margin: 10px 20px;"> User
+                            </div>
+                            <div class="col-lg-7 form-group">
+                                <label for="kecamatan" class="">Password</label>
+                                <input type="password" id="update-password" name="password" placeholder="Password..." class="form-control">
+                            </div>
                         </div>
                     </div>
                     <div class="row">
@@ -93,7 +95,6 @@
                             </div>
                         </div>
                     </div>
-                    <hr>
                     <div class="row">
                         <div class="col-lg-12 text-right" id="button-hide">
                             <button class="btn btn-danger btn-sm" id="reset"><i class="fa fa-refresh"></i> Batal</button>

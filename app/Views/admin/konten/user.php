@@ -60,21 +60,25 @@
                         <li><a href="">Trash 0</a></li>
                     </ul>
                 </div>
+
                 <button class="btn btn-primary btn-sm" id="add-data">Tambah Data</button>
-                <div class="responsive-table">
-                    <table class="table table-bordered table-hover" id="data-table">
-                        <thead>
-                            <tr>
-                                <th width="5%">No</th>
-                                <th>Username</th>
-                                <th>Email</th>
-                                <th>Status</th>
-                                <th>Level User</th>
-                                <th width="20%">Created At</th>
-                                <th width="15%">Aksi</th>
-                            </tr>
-                        </thead>
-                    </table>
+                <div class="group" style="border: 1px solid #eee; border-radius: 5px; margin: 20px 5px; padding: 5px">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover" id="data-table">
+                            <thead>
+                                <tr>
+                                    <th width="5%">No</th>
+                                    <th>Username</th>
+                                    <th>Email</th>
+                                    <th>Status</th>
+                                    <th>Level User</th>
+                                    <th width="20%">Created At</th>
+                                    <th width="15%">Aksi</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+
                 </div>
             </div>
         </div>

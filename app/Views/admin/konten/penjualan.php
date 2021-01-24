@@ -56,7 +56,7 @@
                         <li><a href="">Trash 0</a></li>
                     </ul>
                 </div>
-                <div class="row" style="padding-bottom: 50px;">
+                <div class="row">
                     <div class="col-lg-12">
                         <label for="">Cari berdasarkan</label>
                         <div class="row">
@@ -109,28 +109,31 @@
                 <?php
                 endif;
                 ?>
-
-                <div class="d-flex justify-content-lg-end">
-                    <a href="/admin/penjualan/new" class="btn btn-primary btn-sm" id="">Tambah Data</a>
-                    <div class="" style="float:right">
-                        <button class="btn btn-success btn-sm"><i class="fa fa-file-excel"></i> Cetak Excel</button>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <a href="/admin/penjualan/new" class="btn btn-primary btn-sm" id="">Tambah Data</a>
+                    </div>
+                    <div class="col-lg-6 text-right">
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-file-excel"></i> Export Data</button>
                     </div>
                 </div>
-                <div class="responsive-table">
-                    <table class="table table-bordered table-hover" id="data-table">
-                        <thead>
-                            <tr>
-                                <th width="5%">No</th>
-                                <th>Tahun</th>
-                                <th>Kecamatan</th>
-                                <th>Desa</th>
-                                <th>Produksi (Ton)</th>
-                                <th>Harga (Per/Kg)</th>
-                                <th>Total Pendapatan</th>
-                                <th width="15%">Aksi</th>
-                            </tr>
-                        </thead>
-                    </table>
+                <div class="group" style="border: 1px solid #eee; border-radius: 5px; margin: 20px 5px; padding: 5px">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover" id="data-table">
+                            <thead>
+                                <tr>
+                                    <th width="5%">No</th>
+                                    <th>Tahun</th>
+                                    <th>Kecamatan</th>
+                                    <th>Desa</th>
+                                    <th>Produksi (Ton)</th>
+                                    <th>Harga (Per/Kg)</th>
+                                    <th>Total Pendapatan</th>
+                                    <th width="15%">Aksi</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>

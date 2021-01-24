@@ -52,7 +52,7 @@
                         <li><a href="">Trash 0</a></li>
                     </ul>
                 </div>
-                <div class="row" style="padding-bottom: 50px;">
+                <div class="row">
                     <div class="col-lg-12">
                         <label for="">Cari berdasarkan</label>
                         <div class="row">
@@ -77,25 +77,37 @@
                         </div>
                     </div>
                 </div>
-                <a href="/admin/lahan/new" class="btn btn-primary btn-sm" id="">Tambah Data</a>
-                <table class="table table-bordered table-hover" id="data-table">
-                    <thead>
-                        <tr>
-                            <th width="5%">No</th>
-                            <th>Desa</th>
-                            <th>Tahun</th>
-                            <th>TBM</th>
-                            <th>TM</th>
-                            <th>TTM</th>
-                            <th>Jumlah</th>
-                            <th>Produksi (Ton)</th>
-                            <th>Produktivitas (Kg/Ha)</th>
-                            <th>Jumlah Petani (KK)</th>
-                            <th width="20%">Created At</th>
-                            <th width="15%">Aksi</th>
-                        </tr>
-                    </thead>
-                </table>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <a href="/admin/lahan/new" class="btn btn-primary btn-sm" id="">Tambah Data</a>
+                    </div>
+                    <div class="col-lg-6 text-right">
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-file-excel"></i> Export Data</button>
+                    </div>
+                </div>
+                <div class="group" style="border: 1px solid #eee; border-radius: 5px; margin: 20px 5px; padding: 5px">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover" id="data-table">
+                            <thead>
+                                <tr>
+                                    <th width="5%">No</th>
+                                    <th>Desa</th>
+                                    <th>Tahun</th>
+                                    <th>TBM</th>
+                                    <th>TM</th>
+                                    <th>TTM</th>
+                                    <th>Jumlah</th>
+                                    <th>Produksi (Ton)</th>
+                                    <th>Produktivitas (Kg/Ha)</th>
+                                    <th>Jumlah Petani (KK)</th>
+                                    <th width="20%">Created At</th>
+                                    <th width="15%">Aksi</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

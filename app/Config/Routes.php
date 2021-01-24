@@ -42,10 +42,12 @@ $routes->group('/', function ($routes) {
 
 $routes->group('admin', ['filter' => 'admin_auth', 'namespace' => 'App\Controllers\Admin'], function ($routes) {
 	$routes->get('', 'AdminController::index');
+
 	$routes->resource('master/user', [
 		'controller' => 'UserController',
 		'only'		 => ['index', 'create', 'delete', 'update']
 	]);
+
 	$routes->post('master/get/user', 'UserController::get');
 	$routes->post('master/user/(:any)', 'UserController::update/$1');
 
@@ -68,6 +70,7 @@ $routes->group('admin', ['filter' => 'admin_auth', 'namespace' => 'App\Controlle
 	]);
 
 
+	$routes->get('grafik/penjualan/(:any)', 'PenjualanController::grafik/$1');
 	$routes->post('get/penjualan', 'PenjualanController::get');
 	$routes->get('export/penjualan', 'PenjualanController::export');
 	$routes->post('import/penjualan', 'PenjualanController::import');

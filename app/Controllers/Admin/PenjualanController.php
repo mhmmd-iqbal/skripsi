@@ -253,4 +253,34 @@ class PenjualanController extends BaseController
 
         $writer->save('php://output');
     }
+
+    public function grafik($year = null)
+    {
+        if ($year === null)
+            $year = date('Y');
+        $response = $this->kecamatan
+            ->asObject()
+            ->findAll();
+
+        foreach ($response as $kecamatan) {
+            $kecamatan->totalPendapatan = 0;
+            $kecamatan->totalProduksi = 0;
+            $allDesa = $this->desa
+                ->where('id_kecamatan', $kecamatan->id)
+                ->asObject()
+                ->findAll();
+
+            foreach ($allDesa as $desa) {
+                $desa->penjualan = $this->db
+                    ->where('id_desa', $desa->id)
+                    ->where('tahun', $year)
+                    ->first();
+
+                $kecamatan->totalPendapatan += (int) $desa->penjualan['total_pendapatan'];
+                $kecamatan->totalProduksi += (int) $desa->penjualan['total_produksi'];
+            }
+        }
+
+        return $this->respond($response, 200);
+    }
 }
