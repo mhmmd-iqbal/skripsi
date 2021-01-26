@@ -25,13 +25,13 @@
                 <div class=" row">
                     <div class="col-lg-6 text-center">
                         <div class="group" style="border: 1px solid #eee; border-radius: 5px; margin: 20px 5px; padding: 10px">
-                            <h4>Jumlah Data Desa</h4>
+                            <h4 style="font-weight: bold; ">Jumlah Data Desa</h4>
                             <canvas id="chartKecamatan" width="auto" height="150"></canvas>
                         </div>
                     </div>
                     <div class="col-lg-6 text-center">
                         <div class="group" style="border: 1px solid #eee; border-radius: 5px; margin: 20px 5px; padding: 10px">
-                            <h4>Jumlah Data User</h4>
+                            <h4 style="font-weight: bold; ">Jumlah Data User</h4>
                             <canvas id="chartUser" width="auto" height="150"></canvas>
                         </div>
                     </div>
@@ -73,6 +73,10 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="col-lg-12">
+                                
     </div>
 </div>
 <?= $this->endSection('konten') ?>

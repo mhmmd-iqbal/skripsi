@@ -5,7 +5,7 @@
 
 <style>
     .title {
-        font-size: 15px;
+        font-size: 2.5vmin;
         font-weight: bold;
         text-align: center;
         text-transform: uppercase;

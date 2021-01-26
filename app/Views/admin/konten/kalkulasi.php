@@ -96,7 +96,7 @@
                             ?>
                                 <tr>
                                     <td><?= $no++ ?></td>
-                                    <td><?= $d->kecamatan ?></td>
+                                    <td><a href="master/kecamatan/<?= $d->uid ?>" class="text-success"><?= $d->kecamatan ?></a> </td>
                                     <?php
                                     for ($year = $raw['tahunMulai']; $year <= date('Y'); $year++) :
                                         foreach ($d->total as $ii => $dd) :
@@ -260,7 +260,7 @@
                 <div class="panel-body">
                     <button class="btn btn-success"><i class="fa fa-print"></i> Cetak Data</button>
                     <div class="responsive-table">
-                        <table class="table table-bordered table-hover" id="">
+                        <table class="table table-bordered" id="">
                             <thead>
                                 <tr>
                                     <th width="5%">No</th>
@@ -288,14 +288,43 @@
                                             <td>Rp. <?= number_format($hargaRata, 2, ",", ".") ?></td>
                                         <?php endforeach; ?>
                                     </tr>
-                                    <tr style="background-color: yellow;">
-                                        <td>Rata-Rata</td>
+                                    <?php
+                                    $color = null;
+                                    switch ($data->resultOfPrice) {
+                                        case 'minus':
+                                            $color = 'bg-danger text-white';
+                                            break;
+                                        case 'stable':
+                                            $color = 'bg-info text-white';
+                                            break;
+                                        case 'plus':
+                                            $color = 'bg-success text-white';
+                                            break;
+                                    }
+                                    ?>
+                                    <tr class="<?= $color ?>">
+                                        <th>Rata-Rata</th>
                                         <?php foreach ($data->hargaRata as $hargaRata) : ?>
-                                            <td>Rp. <?= number_format($hargaRata, 2, ",", ".") ?></td>
+                                            <th>Rp. <?= number_format($hargaRata['produksi'], 2, ",", ".") ?></th>
                                         <?php endforeach; ?>
                                     </tr>
                                 <?php endforeach; ?>
                             </tbody>
+                        </table>
+                        <h4 style="font-weight: bold">KETERANGAN WARNA</h4>
+                        <table class="table table-bordered">
+                            <tr>
+                                <td class="bg-success"></td>
+                                <th>Harga Rata-rata Meningkat</th>
+                            </tr>
+                            <tr>
+                                <td class="bg-info"></td>
+                                <th>Harga Rata-rata Tidak Ada Perubahan</th>
+                            </tr>
+                            <tr>
+                                <td class="bg-danger"></td>
+                                <th>Harga Rata-rata Menurun</th>
+                            </tr>
                         </table>
                     </div>
                 </div>

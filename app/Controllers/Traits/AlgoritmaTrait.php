@@ -166,9 +166,11 @@ trait AlgoritmaTrait
                             ],
                             'totalTransaksi'     => $data1->totalTransaksi,
                         ];
-
+                        $iterasi = 0;
                         foreach ($result['dataKecamatan'][$i]->kecamatan1['hargaRata'] as $tahun => $eachYear) {
-                            $result['dataKecamatan'][$i]->hargaRata[$tahun] = ($result['dataKecamatan'][$i]->kecamatan1['hargaRata'][$tahun] + $result['dataKecamatan'][$i]->kecamatan2['hargaRata'][$tahun]) / 2;
+                            $result['dataKecamatan'][$i]->hargaRata[$iterasi]['produksi'] = ($result['dataKecamatan'][$i]->kecamatan1['hargaRata'][$tahun] + $result['dataKecamatan'][$i]->kecamatan2['hargaRata'][$tahun]) / 2;
+                            $result['dataKecamatan'][$i]->hargaRata[$iterasi]['tahun'] = $tahun;
+                            $iterasi++;
                         }
 
                         foreach ($result['dataKecamatan'][$i]->kecamatan1['hargaRata'] as $year => $harga) {
@@ -181,9 +183,9 @@ trait AlgoritmaTrait
                                 unset($result['dataKecamatan'][$i]->kecamatan2['hargaRata'][$year]);
                             }
                         }
-                        foreach ($result['dataKecamatan'][$i]->hargaRata as $year => $harga) {
-                            if ($harga === 0) {
-                                unset($result['dataKecamatan'][$i]->hargaRata[$year]);
+                        foreach ($result['dataKecamatan'][$i]->hargaRata as $iterasi => $harga) {
+                            if ($harga['produksi'] === 0) {
+                                unset($result['dataKecamatan'][$i]->hargaRata[$iterasi]);
                             }
                         }
                         $i++;
@@ -202,6 +204,14 @@ trait AlgoritmaTrait
         $data = $data;
         foreach ($data['dataKecamatan'] as $kecamatan) {
             $kecamatan->confidence = $kecamatan->totalTransaksi /  $kecamatan->kecamatan1['totalTransaksi'] * 100;
+
+            if ($kecamatan->hargaRata[0]['produksi'] < $kecamatan->hargaRata[$kecamatan->totalTransaksi - 1]['produksi']) {
+                $kecamatan->resultOfPrice = 'plus';
+            } else if ($kecamatan->hargaRata[0] == $kecamatan->hargaRata[$kecamatan->totalTransaksi - 1]['produksi']) {
+                $kecamatan->resultOfPrice = 'stable';
+            } else {
+                $kecamatan->resultOfPrice = 'minus';
+            }
         }
 
         return $data;

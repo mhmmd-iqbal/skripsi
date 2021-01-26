@@ -4,7 +4,7 @@
 <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
 <style>
     .title {
-        font-size: 15px;
+        font-size: 2.5vmin;
         font-weight: bold;
         text-align: center;
         text-transform: uppercase;
