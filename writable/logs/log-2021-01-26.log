@@ -100,3 +100,191 @@ CRITICAL - 2021-01-26 01:44:00 --> number_format() expects parameter 1 to be flo
 #8 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #9 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
 #10 {main}
+CRITICAL - 2021-01-26 04:20:03 --> Class 'PDF' not found
+#0 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\LahanController->exportPdf()
+#1 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LahanController))
+#2 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2021-01-26 04:23:47 --> Call to undefined static function Mpdf\Mpdf::loadView()
+#0 D:\My Project\project_ta\app\Controllers\Admin\LahanController.php(235): Mpdf\Mpdf::__callStatic('loadView', Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\LahanController->exportPdf()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LahanController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2021-01-26 04:50:26 --> preg_match(): Compilation failed: missing closing parenthesis at offset 21
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): C...', 'D:\\My Project\\p...', 416, Array)
+#1 D:\My Project\project_ta\system\Router\Router.php(416): preg_match('#^admin/pdf/lah...', 'admin/pdf/lahan', Array)
+#2 D:\My Project\project_ta\system\Router\Router.php(173): CodeIgniter\Router\Router->checkRoutes('admin/pdf/lahan')
+#3 D:\My Project\project_ta\system\CodeIgniter.php(789): CodeIgniter\Router\Router->handle('admin/pdf/lahan')
+#4 D:\My Project\project_ta\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#5 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2021-01-26 04:50:46 --> preg_match(): Compilation failed: missing closing parenthesis at offset 21
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): C...', 'D:\\My Project\\p...', 416, Array)
+#1 D:\My Project\project_ta\system\Router\Router.php(416): preg_match('#^admin/pdf/lah...', 'admin/pdf/lahan', Array)
+#2 D:\My Project\project_ta\system\Router\Router.php(173): CodeIgniter\Router\Router->checkRoutes('admin/pdf/lahan')
+#3 D:\My Project\project_ta\system\CodeIgniter.php(789): CodeIgniter\Router\Router->handle('admin/pdf/lahan')
+#4 D:\My Project\project_ta\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#5 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2021-01-26 04:51:05 --> Too few arguments to function App\Controllers\Admin\LahanController::exportPdf(), 0 passed in D:\My Project\project_ta\system\CodeIgniter.php on line 914 and exactly 1 expected
+#0 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\LahanController->exportPdf()
+#1 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LahanController))
+#2 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2021-01-26 05:08:11 --> Cannot use object of type stdClass as array
+#0 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\LahanController->exportPdf()
+#1 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LahanController))
+#2 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2021-01-26 05:24:04 --> Undefined property: stdClass::$desa
+#0 D:\My Project\project_ta\app\Views\admin\konten\pdfLahan.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 55, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/pd...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\LahanController.php(253): view('admin/konten/pd...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\LahanController->exportPdf()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LahanController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2021-01-26 05:24:22 --> Undefined property: stdClass::$desa
+#0 D:\My Project\project_ta\app\Views\admin\konten\pdfLahan.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 55, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/pd...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\LahanController.php(253): view('admin/konten/pd...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\LahanController->exportPdf()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LahanController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2021-01-26 20:03:04 --> Undefined property: stdClass::$desa
+#0 D:\My Project\project_ta\app\Views\admin\konten\pdfLahan.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 56, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/pd...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\LahanController.php(253): view('admin/konten/pd...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\LahanController->exportPdf()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LahanController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2021-01-26 20:03:29 --> Undefined variable: allKecamatan
+#0 D:\My Project\project_ta\app\Controllers\Admin\LahanController.php(252): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 252, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\LahanController->exportPdf()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LahanController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2021-01-26 20:05:10 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::orderBy()
+#0 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\LahanController->exportPdf()
+#1 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LahanController))
+#2 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2021-01-26 20:07:06 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::orderBy()
+#0 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\LahanController->exportPdf()
+#1 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LahanController))
+#2 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#5 {main}
+CRITICAL - 2021-01-26 20:18:17 --> Undefined variable: tahun
+#0 D:\My Project\project_ta\app\Views\admin\konten\pdfLahan.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 37, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/pd...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\LahanController.php(259): view('admin/konten/pd...')
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\LahanController->exportPdf()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LahanController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2021-01-26 20:29:46 --> Trying to get property 'tbm' of non-object
+#0 D:\My Project\project_ta\app\Views\admin\konten\pdfLahan.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\My Project\\p...', 82, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/pd...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\LahanController.php(257): view('admin/konten/pd...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\LahanController->exportPdf()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LahanController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2021-01-26 20:54:20 --> Undefined property: App\Controllers\Admin\PenjualanController::$dbKecamatan
+#0 D:\My Project\project_ta\app\Controllers\Admin\PenjualanController.php(292): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 292, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\PenjualanController->exportPdf()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PenjualanController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2021-01-26 21:09:35 --> Undefined index: totalProduksi
+#0 D:\My Project\project_ta\app\Views\admin\konten\pdfPenjualan.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\My Project\\p...', 76, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/pd...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\PenjualanController.php(313): view('admin/konten/pd...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\PenjualanController->exportPdf()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PenjualanController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2021-01-26 21:13:50 --> Undefined variable: pendapatanSum
+#0 D:\My Project\project_ta\app\Views\admin\konten\pdfPenjualan.php(98): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 98, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/pd...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\PenjualanController.php(313): view('admin/konten/pd...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\PenjualanController->exportPdf()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PenjualanController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2021-01-26 21:24:38 --> Cannot use object of type stdClass as array
+#0 D:\My Project\project_ta\system\View\View.php(246): include()
+#1 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/pd...', Array, true)
+#2 D:\My Project\project_ta\app\Controllers\Admin\PenjualanController.php(313): view('admin/konten/pd...', Array)
+#3 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\PenjualanController->exportPdf()
+#4 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PenjualanController))
+#5 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2021-01-26 21:26:25 --> Division by zero
+#0 D:\My Project\project_ta\app\Views\admin\konten\pdfPenjualan.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', 'D:\\My Project\\p...', 111, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/pd...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\PenjualanController.php(315): view('admin/konten/pd...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\PenjualanController->exportPdf()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PenjualanController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2021-01-26 21:26:35 --> Division by zero
+#0 D:\My Project\project_ta\app\Views\admin\konten\pdfPenjualan.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', 'D:\\My Project\\p...', 111, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/pd...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\PenjualanController.php(315): view('admin/konten/pd...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\PenjualanController->exportPdf()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PenjualanController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}

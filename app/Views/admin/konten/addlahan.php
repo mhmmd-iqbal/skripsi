@@ -221,8 +221,8 @@
         var method = $(this).attr("method"); //get form GET/POST method
         var form_data = new FormData(this);
         var kecamatan = document.getElementById('kecamatan').value;
-        document.getElementById('button-hide').hidden = true
-        document.getElementById('load-hide').hidden = false
+        // document.getElementById('button-hide').hidden = true
+        // document.getElementById('load-hide').hidden = false
         $.ajax({
             url: post_url,
             type: method,

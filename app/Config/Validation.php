@@ -63,7 +63,7 @@ class Validation
 		'tbm'			 => 'permit_empty',
 		'tm'			 => 'permit_empty',
 		'ttr'			 => 'permit_empty',
-		'total'		 	 => 'required',
+		'jumlah'		 => 'required',
 		'produksi'		 => 'required',
 		'produktivitas'  => 'required',
 		'jml_petani' 	 => 'required',

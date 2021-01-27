@@ -7,6 +7,7 @@ use App\Models\ModelDesa;
 use App\Models\ModelKecamatan;
 use App\Models\ModelPenjualan;
 use CodeIgniter\API\ResponseTrait;
+use Mpdf\Mpdf;
 use PHPExcel;
 use PHPExcel_IOFactory;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
@@ -282,5 +283,37 @@ class PenjualanController extends BaseController
         }
 
         return $this->respond($response, 200);
+    }
+
+    public function exportPdf()
+    {
+        $data['tahun'] = $this->request->getVar('tahun');
+
+        $data['allKecamatan'] = $this->kecamatan
+            ->orderBy('kecamatan', 'ASC')
+            ->get()
+            ->getResultObject();
+
+        foreach ($data['allKecamatan'] as $kecamatan) {
+            $kecamatan->allDesa = $this->desa
+                ->where('id_kecamatan', $kecamatan->id)
+                ->orderBy('desa', 'ASC')
+                ->get()
+                ->getResultObject();
+
+            foreach ($kecamatan->allDesa as $desa) {
+                $desa->penjualan = $this->db
+                    ->where('id_desa', $desa->id)
+                    ->where('tahun', $data['tahun'])
+                    ->orderBy('created_at', 'ASC')
+                    ->first();
+            }
+        }
+        // return $this->respond($data, 200);
+        // return view('admin/konten/pdfPenjualan', $data);
+        $mpdf = new Mpdf(['debug' => FALSE, 'mode' => 'utf-8', 'orientation' => 'L']);
+        $mpdf->WriteHTML(view('admin/konten/pdfPenjualan', $data));
+        $mpdf->Output('Laporan_Data_Penjualan_Tahun_' . $data['tahun'] . '.pdf', 'I');
+        exit;
     }
 }

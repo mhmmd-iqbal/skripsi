@@ -7,6 +7,7 @@ use App\Models\ModelDesa;
 use App\Models\ModelKecamatan;
 use App\Models\ModelLahan;
 use CodeIgniter\API\ResponseTrait;
+use Mpdf\Mpdf;
 use PHPExcel;
 use PHPExcel_IOFactory;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
@@ -60,7 +61,6 @@ class LahanController extends BaseController
         $produksi   = $this->request->getVar('produksi');
         $produktivitas   = $this->request->getVar('produktivitas');
         $jml_petani      = $this->request->getVar('jml_petani');
-
         $data = [
             'uid'               => Uuid::uuid4(),
             'id_desa'           => $id_desa,
@@ -68,7 +68,7 @@ class LahanController extends BaseController
             'tbm'               => $tbm,
             'tm'                => $tm,
             'ttr'               => $ttr,
-            'total'            => $total,
+            'jumlah'            => $total,
             'produksi'          => $produksi,
             'produktivitas'     => $produktivitas,
             'jml_petani'        => $jml_petani,
@@ -226,5 +226,36 @@ class LahanController extends BaseController
         header('Cache-Control: max-age=0');
 
         $writer->save('php://output');
+    }
+
+    public function exportPdf()
+    {
+        $data['tahun'] = $this->request->getVar('tahun');
+
+        $data['allKecamatan'] = $this->dbKecamatan
+            ->orderBy('kecamatan', 'ASC')
+            ->get()
+            ->getResultObject();
+
+        foreach ($data['allKecamatan'] as $kecamatan) {
+            $kecamatan->allDesa = $this->dbDesa
+                ->where('id_kecamatan', $kecamatan->id)
+                ->orderBy('desa', 'ASC')
+                ->get()
+                ->getResultObject();
+
+            foreach ($kecamatan->allDesa as $desa) {
+                $desa->lahan = $this->dbLahan
+                    ->where('id_desa', $desa->id)
+                    ->where('tahun', $data['tahun'])
+                    ->orderBy('created_at', 'ASC')
+                    ->first();
+            }
+        }
+        // return view('admin/konten/pdfLahan', $data);
+        $mpdf = new Mpdf(['debug' => FALSE, 'mode' => 'utf-8', 'orientation' => 'L']);
+        $mpdf->WriteHTML(view('admin/konten/pdfLahan', $data));
+        $mpdf->Output('Laporan_Data_Lahan_Tahun_' . $data['tahun'] . '.pdf', 'I');
+        exit;
     }
 }

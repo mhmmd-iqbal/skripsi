@@ -74,6 +74,7 @@ $routes->group('admin', ['filter' => 'admin_auth', 'namespace' => 'App\Controlle
 	$routes->post('get/penjualan', 'PenjualanController::get');
 	$routes->get('export/penjualan', 'PenjualanController::export');
 	$routes->post('import/penjualan', 'PenjualanController::import');
+	$routes->get('pdf/penjualan', 'PenjualanController::exportPdf');
 
 	$routes->resource('lahan', [
 		'controller' => 'LahanController'
@@ -81,6 +82,7 @@ $routes->group('admin', ['filter' => 'admin_auth', 'namespace' => 'App\Controlle
 	$routes->post('get/lahan', 'LahanController::get');
 	$routes->post('import/lahan', 'LahanController::import');
 	$routes->get('export/lahan', 'LahanController::export');
+	$routes->get('pdf/lahan', 'LahanController::exportPdf');
 
 	$routes->get('calculate', 'CalculateController::index');
 	$routes->post('calculate', 'CalculateController::index');

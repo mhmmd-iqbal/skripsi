@@ -74,7 +74,8 @@ class Autoload extends \CodeIgniter\Config\AutoloadConfig
 		 *   ];
 		 */
 		$classmap = [
-			'PHPExcel' => APPPATH . 'ThirdParty/PHPExcel/PHPExcel.php'
+			'PHPExcel' => APPPATH . 'ThirdParty/PHPExcel/PHPExcel.php',
+			'Mpdf' => __DIR__ . '/vendor/autoload.php', //library mPDF
 		];
 
 		//--------------------------------------------------------------------

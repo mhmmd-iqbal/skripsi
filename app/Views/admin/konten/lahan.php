@@ -83,7 +83,7 @@
                         <a href="/admin/lahan/new" class="btn btn-primary btn-sm" id="">Tambah Data</a>
                     </div>
                     <div class="col-lg-6 text-right">
-                        <button class="btn btn-danger btn-sm"><i class="fa fa-file-excel"></i> Export Data</button>
+                        <button onclick="cetakPdf()" class="btn btn-danger btn-sm"><i class="fa fa-file-excel"></i> Export Data</button>
                     </div>
                 </div>
                 <div class="group" style="border: 1px solid #eee; border-radius: 5px; margin: 20px 5px; padding: 5px">
@@ -117,6 +117,12 @@
 <?= $this->section('js') ?>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 <script>
+    function cetakPdf() {
+        let year = $('#filter-year').val()
+        let url = '/admin/pdf/lahan?tahun=' + year
+        window.location.href = url
+    }
+
     $('.select2').select2({
         allowClear: true
     })
