@@ -121,7 +121,18 @@
     function cetakPdf() {
         let year = $('#filter-year').val()
         let url = '/admin/pdf/lahan?tahun=' + year
-        window.location.href = url
+
+        $.ajax({
+            type: "GET",
+            url: url,
+            dataType: "JSON",
+            beforeSend: function() {
+                loading()
+            },
+            complete: function() {
+                swal.close()
+            }
+        });
     }
 
     $('.select2').select2({

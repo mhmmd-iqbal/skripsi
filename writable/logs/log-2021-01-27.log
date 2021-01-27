@@ -239,3 +239,13 @@ CRITICAL - 2021-01-27 09:18:45 --> Undefined property: stdClass::$ttr
 #7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
 #9 {main}
+CRITICAL - 2021-01-27 09:36:46 --> Could not open  for reading! File does not exist.
+#0 D:\My Project\project_ta\app\ThirdParty\PHPExcel\PHPExcel\IOFactory.php(281): PHPExcel_Reader_Excel2007->canRead('')
+#1 D:\My Project\project_ta\app\ThirdParty\PHPExcel\PHPExcel\IOFactory.php(191): PHPExcel_IOFactory::createReaderForFile('')
+#2 D:\My Project\project_ta\app\Controllers\Admin\LahanController.php(212): PHPExcel_IOFactory::load('')
+#3 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\LahanController->import()
+#4 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LahanController))
+#5 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
