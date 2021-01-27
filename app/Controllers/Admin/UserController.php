@@ -85,6 +85,22 @@ class UserController extends BaseController
         return $this->respond($res, 200);
     }
 
+    function delete($username)
+    {
+        $delete = $this->db->delete([
+            'username' => $username
+        ]);
+
+        if ($delete) {
+            return $this->respond([
+                'err'   => FALSE
+            ], 200);
+        }
+        return $this->respond([
+            'err'   => TRUE
+        ], 200);
+    }
+
     function get()
     {
         $list = $this->db->get_datatables();
@@ -125,6 +141,5 @@ class UserController extends BaseController
 
     public function status($id)
     {
-        
     }
 }

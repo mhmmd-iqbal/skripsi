@@ -56,8 +56,8 @@
             <div class="panel-body">
                 <div class="filter">
                     <ul>
-                        <li><a href="">All <span id="record-total"></span> |</a></li>
-                        <li><a href="">Trash 0</a></li>
+                        <!-- <li><a href="">All <span id="record-total"></span> |</a></li> -->
+                        <!-- <li><a href="">Trash 0</a></li> -->
                     </ul>
                 </div>
 
@@ -133,6 +133,37 @@
         })
     })
 
+    $('#data-table').on('click', '.hapus', function() {
+        let uid = $(this).data('uid')
+        Swal.fire({
+            title: 'Menghapus Data!',
+            text: "Apa anda yakin akan menghapus data ini?",
+            type: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Lanjutkan Hapus Data!',
+            cancelButtonText: 'Batalkan'
+        }).then((result) => {
+            if (result.value) {
+                $.ajax({
+                    type: "DELETE",
+                    url: baseUrl + "/admin/master/user/" + uid,
+                    dataType: "JSON",
+                    beforeSend: function() {
+                        loading()
+                    },
+                    success: function(response) {
+                        swal.close()
+                        if (response.err === false) {
+                            toaster('Data Berhasil DIhapus', ' ', 'success')
+                        }
+                        showData()
+                    }
+                });
+            }
+        })
+    })
 
     $('#data-table').on('click', '.ubah', function() {
         let uid = $(this).data('uid')
@@ -196,7 +227,11 @@
                 'status': 1
             },
             dataType: "JSON",
+            beforeSend: function() {
+                loading()
+            },
             success: function(response) {
+                swal.close()
                 showData()
             }
         });
@@ -211,7 +246,11 @@
                 'status': 0
             },
             dataType: "JSON",
+            beforeSend: function() {
+                loading()
+            },
             success: function(response) {
+                swal.close()
                 showData()
             }
         });
@@ -220,7 +259,7 @@
     showData()
 
     function showData() {
-        return table = $("#data-table").DataTable({
+        let table = $("#data-table").DataTable({
             orderable: false,
             destroy: true,
             responsive: false,
@@ -236,14 +275,24 @@
 
             initComplete: function() {
                 $('#record-total').html(this.api().data().length)
-                console.log(this.api().data())
+                // console.log(this.api().data())
             },
-
+            dataSrc: function(response) {
+                response.recordsTotal = response.info.length;
+                console.log(response)
+                // response.recordsFiltered = response.info.length;
+                // atributte
+                // response.draw = 1;
+                // return response.info;
+            },
             columnDefs: [{
                 targets: [0],
                 orderable: false,
             }, ],
         });
+
+        // let info = table.page.info();
+        // console.log(info)
     }
 </script>
 <?= $this->endSection('js') ?>

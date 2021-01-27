@@ -86,6 +86,8 @@ $routes->group('admin', ['filter' => 'admin_auth', 'namespace' => 'App\Controlle
 
 	$routes->get('calculate', 'CalculateController::index');
 	$routes->post('calculate', 'CalculateController::index');
+	$routes->get('pdf/calculate', 'CalculateController::exportPdf');
+
 	$routes->get('laporan', 'CalculateController::laporan');
 
 	$routes->resource('account', [

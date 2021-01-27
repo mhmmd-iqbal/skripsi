@@ -44,19 +44,31 @@ class LahanController extends BaseController
     {
         $data['judul']      = 'MASTER DATA | Data Penjualan';
         $data['username']   = $this->session->username;
-        $data['active']     = 'penjualan';
+        $data['active']     = 'lahan';
         $data['kecamatan']  = $this->dbKecamatan->get()->getResultObject();
 
-        return view('admin/konten/addlahan', $data);
+        return view('admin/konten/addLahan', $data);
     }
 
+    public function show($uid)
+    {
+        $data['judul']      = 'MASTER DATA | Data Penjualan';
+        $data['username']   = $this->session->username;
+        $data['active']     = 'lahan';
+        $data['kecamatan']  = $this->dbKecamatan->get()->getResultObject();
+        $data['lahan']      = (object) $this->dbDesa
+            ->join('tb_lahan', 'tb_desa.id = tb_lahan.id_desa')
+            ->where('tb_lahan.uid', $uid)
+            ->first();;
+        return view('admin/konten/editLahan', $data);
+    }
     public function create()
     {
         $id_desa    = $this->request->getVar('id_desa');
         $tahun      = $this->request->getVar('tahun');
         $tbm        = $this->request->getVar('tbm');
         $tm         = $this->request->getVar('tm');
-        $ttr        = $this->request->getVar('ttr');
+        $ttm        = $this->request->getVar('ttm');
         $total     = $this->request->getVar('total');
         $produksi   = $this->request->getVar('produksi');
         $produktivitas   = $this->request->getVar('produktivitas');
@@ -67,7 +79,7 @@ class LahanController extends BaseController
             'tahun'             => $tahun,
             'tbm'               => $tbm,
             'tm'                => $tm,
-            'ttr'               => $ttr,
+            'ttm'               => $ttm,
             'jumlah'            => $total,
             'produksi'          => $produksi,
             'produktivitas'     => $produktivitas,
@@ -89,6 +101,64 @@ class LahanController extends BaseController
         return $this->respond($res, 200);
     }
 
+    function update($uid)
+    {
+        $id_desa    = $this->request->getVar('id_desa');
+        $tahun      = $this->request->getVar('tahun');
+        $tbm        = $this->request->getVar('tbm');
+        $tm         = $this->request->getVar('tm');
+        $ttm        = $this->request->getVar('ttm');
+        $total     = $this->request->getVar('total');
+        $produksi   = $this->request->getVar('produksi');
+        $produktivitas   = $this->request->getVar('produktivitas');
+        $jml_petani      = $this->request->getVar('jml_petani');
+        $data = [
+            'uid'               => Uuid::uuid4(),
+            'id_desa'           => $id_desa,
+            'tahun'             => $tahun,
+            'tbm'               => $tbm,
+            'tm'                => $tm,
+            'ttm'               => $ttm,
+            'jumlah'            => $total,
+            'produksi'          => $produksi,
+            'produktivitas'     => $produktivitas,
+            'jml_petani'        => $jml_petani,
+        ];
+        $validate = $this->validation->run($data, 'lahan');
+        if ($validate) {
+            $this->dbLahan->where('uid', $uid)
+                ->set($data)
+                ->update();
+            $res    = [
+                'err' => FALSE
+            ];
+        } else {
+            $res    = [
+                'err' => TRUE,
+                'msg' => $this->validation->getErrors()
+            ];
+        }
+        return $this->respond($res, 200);
+    }
+
+    function delete($uid)
+    {
+        $delete = $this->dbLahan->where([
+            'uid' => $uid
+        ])->delete();
+
+        if ($delete) {
+            return $this->respond([
+                'err'   => FALSE,
+                'uid'   => $uid
+            ], 200);
+        }
+        return $this->respond([
+            'err'   => TRUE
+        ], 200);
+    }
+
+
     function get()
     {
         $year = $this->request->getVar('year') ?? date('Y');
@@ -97,10 +167,10 @@ class LahanController extends BaseController
         $no = $this->request->getPost('start');
         foreach ($list as $field) {
             $aksi = '<div class="aksi">' .
-                '<button class="btn btn-success btn-sm ubah" 
-                    data-uid="' . $field->id . '" 
-                ><i class="fa fa-edit"></i> </button>' .
-                '<button class="btn btn-danger btn-sm hapus" data-uid="' . $field->id . '"><i class="fa fa-times"></i> </button>' .
+                '<a href="' . base_url() . '/admin/lahan/' . $field->uid . '" class="btn btn-success btn-sm ubah" 
+                    data-uid="' . $field->uid . '" 
+                ><i class="fa fa-edit"></i> </a>' .
+                '<button class="btn btn-danger btn-sm hapus" data-uid="' . $field->uid . '"><i class="fa fa-times"></i> </button>' .
                 '</div>';
             $no++;
             $row = array();
@@ -155,15 +225,15 @@ class LahanController extends BaseController
                 if ($desa !== null) {
                     $tbm    = $d['D'] ?? 0;
                     $tm     = $d['E'] ?? 0;
-                    $ttr    = $d['F'] ?? 0;
+                    $ttm    = $d['F'] ?? 0;
                     $data   = [
                         'uid'               => Uuid::uuid4(),
                         'id_desa'           => $desa['id'],
                         'tahun'             => $d['C'],
                         'tbm'               => $tbm,
                         'tm'                => $tm,
-                        'ttr'               => $ttr,
-                        'jumlah'            => (int) $tbm + $tm + $ttr,
+                        'ttm'               => $ttm,
+                        'jumlah'            => (int) $tbm + $tm + $ttm,
                         'produksi'          => $d['G'] ?? 0,
                         'produktivitas'     => $d['H'] ?? 0,
                         'jml_petani'        => $d['I'] ?? 0,

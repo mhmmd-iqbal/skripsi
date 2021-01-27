@@ -49,11 +49,11 @@
                     <div class="row">
                         <div class="col-lg-5 form-group">
                             <label for="">Batas Nilai Support Dicari (%)</label>
-                            <input type="number" min="0" max="100" value="<?= $supportSearch === 0 ? '' : $supportSearch ?>" name="support" class="form-control">
+                            <input type="number" min="0" max="100" value="<?= $supportSearch === 0 ? '' : $supportSearch ?>" name="support" id="support" class="form-control">
                         </div>
                         <div class="col-lg-5 form-group">
                             <label for="">Batas Ambang Data</label>
-                            <input type="number" min="0" value="<?= $limitSearch === 0 ? '' : $limitSearch ?>" name="limit" class="form-control">
+                            <input type="number" min="0" value="<?= $limitSearch === 0 ? '' : $limitSearch ?>" name="limit" id="limit" class="form-control">
                         </div>
                     </div>
                     <div class="row">
@@ -258,7 +258,7 @@
                     <p class="title">Prediksi Rata-rata Harga</p>
                 </div>
                 <div class="panel-body">
-                    <button class="btn btn-success"><i class="fa fa-print"></i> Cetak Data</button>
+                    <button onclick="cetakKalkulasi()" class="btn btn-success"><i class="fa fa-print"></i> Cetak Data</button>
                     <div class="responsive-table">
                         <table class="table table-bordered" id="">
                             <thead>
@@ -337,6 +337,12 @@
 
 <?= $this->section('js') ?>
 <script>
+    function cetakKalkulasi() {
+        let limit = $('#limit').val()
+        let support = $('#support').val()
+        let url = '/admin/pdf/calculate?limit=' + limit + '&support=' + support
+        window.location.href = url
+    }
 </script>
 <?= $this->endSection('js') ?>
 

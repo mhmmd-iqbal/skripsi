@@ -123,6 +123,24 @@ class KecamatanController extends BaseController
         return $this->respond($res, 200);
     }
 
+
+    function delete($uid)
+    {
+        $delete = $this->db->where([
+            'uid' => $uid
+        ])->delete();
+
+        if ($delete) {
+            return $this->respond([
+                'err'   => FALSE,
+                'uid'   => $uid
+            ], 200);
+        }
+        return $this->respond([
+            'err'   => TRUE
+        ], 200);
+    }
+
     function get()
     {
         $list = $this->db->get_datatables();

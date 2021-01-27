@@ -22,7 +22,7 @@ class ModelUser extends Model
 
     private function _get_query()
     {
-        $db    = \Config\Database::connect()->table($this->table);
+        $db    = \Config\Database::connect()->table($this->table)->where('deleted_at', null);
         $column_order = array(null, 'username', null);
         $column_search = array('username');
         $order = array('created_at' => 'desc');
@@ -52,7 +52,7 @@ class ModelUser extends Model
 
     function get_datatables()
     {
-        $db    = \Config\Database::connect()->table($this->table);
+        $db    = \Config\Database::connect()->table($this->table)->where('deleted_at', null);
         $this->_get_query();
         if ($_POST['length'] != -1) {
             $db->limit($_POST['length'], $_POST['start']);
@@ -63,14 +63,14 @@ class ModelUser extends Model
 
     function count_filtered()
     {
-        $db    = \Config\Database::connect()->table($this->table);
+        $db    = \Config\Database::connect()->table($this->table)->where('deleted_at', null);
         $this->_get_query();
         return $db->countAllResults();
     }
 
     public function count_all()
     {
-        $db    = \Config\Database::connect()->table($this->table);
+        $db    = \Config\Database::connect()->table($this->table)->where('deleted_at', null);
         return $db->countAllResults();
     }
 }

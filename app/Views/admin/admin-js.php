@@ -47,24 +47,7 @@
 <script>
     const baseUrl = '<?= base_url() ?>'
 
-    // function notif(title, text, icon) {
-    //     swal({
-    //         title: title,
-    //         text: text,
-    //         icon: icon,
-    //         buttons: false,
-    //         timer: 1500,
-    //     });
-    // }
 
-    // function loading() {
-    //     swal({
-    //         title: "Memeriksa...",
-    //         text: "Sedang diproses. Harap menunggu...",
-    //         icon: baseUrl + "/assets/sweetalert/loader.gif",
-    //         button: false,
-    //     });
-    // }
     function notif(tittle, text, icon) {
         swal.fire({
             title: tittle,

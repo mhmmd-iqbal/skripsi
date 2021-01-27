@@ -47,10 +47,10 @@ v<?= $this->extend('admin/admin-template') ?>
         <div class="panel">
             <div class="row"></div>
             <div class="panel-footer">
-                <p class="title">Edit Data Penjualan Karet <br>Kabupaten Aceh Tenggara</p>
+                <p class="title">Edit Data Lahan Pada Penjualan Karet <br>Kabupaten Aceh Tenggara</p>
             </div>
             <div class="panel-body">
-                <form action="<?= base_url() ?>/admin/penjualan/<?= $penjualan->uid ?>" method="POST" enctype="multipart/form-data" id="add">
+                <form action="<?= base_url() ?>/admin/lahan/<?= $lahan->uid ?>" method="POST" enctype="multipart/form-data" id="add">
                     <?= csrf_field() ?>
                     <input type="hidden" name="_method" id="_method" value="PUT" />
                     <div class="row form-group" style="padding-left: 10%">
@@ -58,7 +58,7 @@ v<?= $this->extend('admin/admin-template') ?>
                             <label>Tahun Penjualan</label>
                             <select name="tahun" id="tahun" class="form-control select2">
                                 <?php for ($i = date('Y'); $i > date('Y') - 15; $i--) : ?>
-                                    <option value="<?= $i ?>" <?= $penjualan->tahun == $i ? 'selected' : '' ?>><?= $i ?></option>
+                                    <option value="<?= $i ?>" <?= $lahan->tahun == $i ? 'selected' : '' ?>><?= $i ?></option>
                                 <?php endfor; ?>
                             </select>
                         </div>
@@ -69,7 +69,7 @@ v<?= $this->extend('admin/admin-template') ?>
                             <select name="" id="kecamatan" class="form-control select2" onchange="selectKecamatan()">
                                 <option value="" disabled selected>-- Pilih Kecamatan --</option>
                                 <?php foreach ($kecamatan as $d) : ?>
-                                    <option value="<?= $d->id ?>" <?= $penjualan->id_kecamatan == $d->id ? 'selected' : '' ?>> <?= $d->kecamatan ?></option>
+                                    <option value="<?= $d->id ?>" <?= $lahan->id_kecamatan == $d->id ? 'selected' : '' ?>> <?= $d->kecamatan ?></option>
                                 <?php endforeach; ?>
                             </select>
                         </div>
@@ -81,17 +81,43 @@ v<?= $this->extend('admin/admin-template') ?>
                         </div>
                     </div>
                     <div class="row form-group" style="padding-left: 10%">
-                        <div class="col-lg-3">
-                            <label for="">Total Produksi (ton)</label>
-                            <input type="number" value="<?= $penjualan->total_produksi ?>" name="total_produksi" class="form-control">
+                        <div class="col-lg-12">
+                            <label for="">Luas Areal (Ha)</label>
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <label for="">TBM</label>
+                                    <input type="number" class="form-control" min="0" value="<?= $lahan->tbm ?>" id="tbm" name="tbm">
+                                </div>
+                                <div class="col-lg-2">
+                                    <label for="">TM</label>
+                                    <input type="number" class="form-control" min="0" value="<?= $lahan->tm ?>" id="tm" name="tm">
+                                </div>
+                                <div class="col-lg-2">
+                                    <label for="">TTTR/TR</label>
+                                    <input type="number" class="form-control" min="0" value="<?= $lahan->ttm ?>" id="ttm" name="ttm">
+                                </div>
+                                <div class="col-lg-2">
+                                    <label for="">Total</label>
+                                    <input type="number" readonly min="0" value="<?= $lahan->jumlah ?>" class="form-control" id="total" name="total">
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-3">
-                            <label for="">Harga Per Kilo (Rp)</label>
-                            <input type="number" value="<?= $penjualan->harga ?>" class="form-control" name="harga">
-                        </div>
-                        <div class="col-lg-3">
-                            <label for="">Total Pendapatan (Rp)</label>
-                            <input type="number" value="<?= $penjualan->total_pendapatan ?>" class="form-control" name="total_pendapatan">
+
+                        <div class="col-lg-12" style="padding-top: 20px;">
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <label for="">Produksi (Ton)</label>
+                                    <input type="number" min="0" value="<?= $lahan->produksi ?>" class="form-control" name="produksi">
+                                </div>
+                                <div class="col-lg-2">
+                                    <label for="">Produktivitas (Kg/Ha)</label>
+                                    <input type="number" min="0" value="<?= $lahan->produktivitas ?>" class="form-control" name="produktivitas">
+                                </div>
+                                <div class="col-lg-2">
+                                    <label for="">Jumlah Petani (KK)</label>
+                                    <input type="number" min="0" value="<?= $lahan->jml_petani ?>" class="form-control" name="jml_petani">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </form>
@@ -118,8 +144,8 @@ v<?= $this->extend('admin/admin-template') ?>
         allowClear: true
     })
 
-    const idDesa = '<?= $penjualan->id_desa ?>'
-    const idKecamatan = '<?= $penjualan->id_kecamatan ?>'
+    const idDesa = '<?= $lahan->id_desa ?>'
+    const idKecamatan = '<?= $lahan->id_kecamatan ?>'
 
     function selectKecamatan() {
         let id = document.getElementById('kecamatan').value
@@ -173,7 +199,7 @@ v<?= $this->extend('admin/admin-template') ?>
                     toaster("Berhasil", "Data Telah Disimpan", "success")
                     $(this).trigger("reset");
                     setTimeout(() => {
-                        window.location.href = '/admin/penjualan'
+                        window.location.href = '/admin/lahan'
                     }, 1500);
                 } else {
                     document.getElementById('button-hide').hidden = false
@@ -186,9 +212,33 @@ v<?= $this->extend('admin/admin-template') ?>
     })
 
 
-    $('#upload').on('click', function() {
-        console.log('asd')
-        $('#form-submit').trigger('submit');
-    })
+    $('#tbm').on('keyup', function() {
+        let tbm = parseInt($('#tbm').val())
+        let tm = parseInt($('#tm').val())
+        let ttm = parseInt($('#ttm').val())
+
+        let total = tbm + tm + ttm
+        $('#total').val(total)
+    });
+
+    $('#tm').on('keyup', function() {
+        let tbm = parseInt($('#tbm').val())
+        let tm = parseInt($('#tm').val())
+        let ttm = parseInt($('#ttm').val())
+
+        let total = tbm + tm + ttm
+        $('#total').val(total)
+
+    });
+
+    $('#ttm').on('keyup', function() {
+        let tbm = parseInt($('#tbm').val())
+        let tm = parseInt($('#tm').val())
+        let ttm = parseInt($('#ttm').val())
+
+        let total = tbm + tm + ttm
+        $('#total').val(total)
+
+    });
 </script>
 <?= $this->endSection('js') ?>

@@ -31,7 +31,8 @@
         text-align: center;
     }
 
-    .aksi button {
+    .aksi button,
+    .aksi a {
         margin-right: 5px;
     }
 </style>
@@ -48,8 +49,8 @@
             <div class="panel-body">
                 <div class="filter">
                     <ul>
-                        <li><a href="">All <span id="record-total"></span> |</a></li>
-                        <li><a href="">Trash 0</a></li>
+                        <!-- <li><a href="">All <span id="record-total"></span> |</a></li>
+                        <li><a href="">Trash 0</a></li> -->
                     </ul>
                 </div>
                 <div class="row">
@@ -191,6 +192,39 @@
     $('#data-table').on('click', '.ubah', function(e) {
         let id = $(this).data('uid')
         window.location.href = '/admin/lahan/' + id + '/edit'
+    })
+
+    $('#data-table').on('click', '.hapus', function() {
+        let uid = $(this).data('uid')
+        Swal.fire({
+            title: 'Menghapus Data!',
+            text: "Apa anda yakin akan menghapus data ini?",
+            type: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Lanjutkan Hapus Data!',
+            cancelButtonText: 'Batalkan'
+        }).then((result) => {
+            if (result.value) {
+                $.ajax({
+                    type: "DELETE",
+                    url: baseUrl + "/admin/lahan/" + uid,
+                    dataType: "JSON",
+                    beforeSend: function() {
+                        loading()
+                    },
+                    success: function(response) {
+                        console.log(response)
+                        swal.close()
+                        if (response.err === false) {
+                            toaster('Data Berhasil Dihapus', ' ', 'success')
+                        }
+                        filterData()
+                    }
+                });
+            }
+        })
     })
 </script>
 <?= $this->endSection('js') ?>

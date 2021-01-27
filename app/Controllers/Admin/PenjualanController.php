@@ -46,14 +46,14 @@ class PenjualanController extends BaseController
         $data['active'] = 'penjualan';
         $data['kecamatan'] = $this->kecamatan->get()->getResultObject();
 
-        return view('admin/konten/addpenjualan', $data);
+        return view('admin/konten/addPenjualan', $data);
     }
 
-    function edit($id)
+    function edit($uid)
     {
         $data['penjualan'] = $this->desa
             ->join('tb_penjualan', 'tb_desa.id = tb_penjualan.id_desa')
-            ->where('tb_penjualan.id', $id)
+            ->where('tb_penjualan.uid', $uid)
             ->first();
         $data['penjualan'] = (object) $data['penjualan'];
         $data['judul'] = 'MASTER DATA | Data Penjualan';
@@ -62,7 +62,24 @@ class PenjualanController extends BaseController
         $data['kecamatan'] = $this->kecamatan->get()->getResultObject();
 
         // return $this->respond($data, 200);
-        return view('admin/konten/editpenjualan', $data);
+        return view('admin/konten/editPenjualan', $data);
+    }
+
+    function delete($uid)
+    {
+        $delete = $this->db->where([
+            'uid' => $uid
+        ])->delete();
+
+        if ($delete) {
+            return $this->respond([
+                'err'   => FALSE,
+                'uid'   => $uid
+            ], 200);
+        }
+        return $this->respond([
+            'err'   => TRUE
+        ], 200);
     }
 
     function create()
@@ -97,7 +114,7 @@ class PenjualanController extends BaseController
         return $this->respond($res, 200);
     }
 
-    function update($id)
+    function update($uid)
     {
         $id_desa = $this->request->getVar('id_desa');
         $tahun = $this->request->getVar('tahun');
@@ -116,7 +133,7 @@ class PenjualanController extends BaseController
         ];
         $validate = $this->validation->run($data, 'penjualan');
         if ($validate) {
-            $this->db->where('id', $id)
+            $this->db->where('uid', $uid)
                 ->set($data)
                 ->update();
             $res = [
@@ -140,9 +157,9 @@ class PenjualanController extends BaseController
         foreach ($list as $field) {
             $aksi = '<div class="aksi">' .
                 '<button class="btn btn-success btn-sm ubah" 
-                    data-uid="' . $field->id . '" 
+                    data-uid="' . $field->uid . '" 
                 ><i class="fa fa-edit"></i> </button>' .
-                '<button class="btn btn-danger btn-sm hapus" data-uid="' . $field->id . '"><i class="fa fa-times"></i> </button>' .
+                '<button class="btn btn-danger btn-sm hapus" data-uid="' . $field->uid . '"><i class="fa fa-times"></i> </button>' .
                 '</div>';
             $no++;
             $row = array();

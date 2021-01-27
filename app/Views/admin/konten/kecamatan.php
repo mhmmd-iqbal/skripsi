@@ -49,10 +49,10 @@
             </div>
             <div class="panel-body">
                 <div class="filter">
-                    <ul>
+                    <!-- <ul>
                         <li><a href="">All <span id="record-total"></span> |</a></li>
                         <li><a href="">Trash 0</a></li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <button class="btn btn-primary btn-sm" id="add-data">Tambah Data</button>
                 <div class="group" style="border: 1px solid #eee; border-radius: 5px; margin: 20px 5px; padding: 5px">
@@ -172,6 +172,38 @@
         });
 
     }
+
+    $('#data-table').on('click', '.hapus', function() {
+        let uid = $(this).data('uid')
+        Swal.fire({
+            title: 'Menghapus Data!',
+            text: "Apa anda yakin akan menghapus data ini?",
+            type: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Lanjutkan Hapus Data!',
+            cancelButtonText: 'Batalkan'
+        }).then((result) => {
+            if (result.value) {
+                $.ajax({
+                    type: "DELETE",
+                    url: baseUrl + "/admin/master/kecamatan/" + uid,
+                    dataType: "JSON",
+                    beforeSend: function() {
+                        loading()
+                    },
+                    success: function(response) {
+                        swal.close()
+                        if (response.err === false) {
+                            toaster('Data Berhasil Dihapus', ' ', 'success')
+                        }
+                        showData()
+                    }
+                });
+            }
+        })
+    })
 </script>
 <?= $this->endSection('js') ?>
 

@@ -8,6 +8,7 @@ use App\Models\ModelKecamatan;
 use App\Models\ModelPenjualan;
 use CodeIgniter\API\ResponseTrait;
 use App\Controllers\Traits\AlgoritmaTrait;
+use Mpdf\Mpdf;
 
 class CalculateController extends BaseController
 {
@@ -69,8 +70,8 @@ class CalculateController extends BaseController
     {
         $data['raw']        = $this->tableData();
         $data['analist']    = false;
-        $data['supportSearch'] = 0;
-        $data['limitSearch'] = 0;
+        $data['supportSearch']  = 0;
+        $data['limitSearch']    = 0;
         if ($this->request->getMethod() === 'post') {
             $data['supportSearch'] = $this->request->getVar('support');
             $data['limitSearch'] = $this->request->getVar('limit');
@@ -88,5 +89,24 @@ class CalculateController extends BaseController
         $data['username'] = $this->session->username;
         $data['active'] = 'calculate';
         return view('admin/konten/kalkulasi', $data);
+    }
+
+    public function exportPdf()
+    {
+        $data['raw']        = $this->tableData();
+        $data['supportSearch'] = $this->request->getVar('support');
+        $data['limitSearch'] = $this->request->getVar('limit');
+
+        $data['itemSet']    = $this->itemSet($data['raw'], $data['limitSearch']);
+        $data['support']    = $this->support($data['itemSet'], $data['supportSearch']);
+        $data['newItemSet'] = $this->newItemSet($data['support']);
+        $data['support']    = $this->support($data['newItemSet'], $data['supportSearch']);
+        $data['confidence'] = $this->confidence($data['support']);
+
+        // return view('admin/konten/pdfKalkulasi', $data);
+        $mpdf = new Mpdf(['debug' => FALSE, 'mode' => 'utf-8', 'orientation' => 'l']);
+        $mpdf->WriteHTML(view('admin/konten/pdfKalkulasi', $data));
+        $mpdf->Output('Analisa Penjualan.pdf', 'I');
+        exit;
     }
 }

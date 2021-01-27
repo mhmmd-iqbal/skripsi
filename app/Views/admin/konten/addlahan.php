@@ -106,7 +106,7 @@
                                 </div>
                                 <div class="col-lg-2">
                                     <label for="">TTTR/TR</label>
-                                    <input type="number" class="form-control" min="0" value="0" id="ttr" name="ttr">
+                                    <input type="number" class="form-control" min="0" value="0" id="ttm" name="ttm">
                                 </div>
                                 <div class="col-lg-2">
                                     <label for="">Total</label>
@@ -160,28 +160,28 @@
     $('#tbm').on('keyup', function() {
         let tbm = parseInt($('#tbm').val())
         let tm = parseInt($('#tm').val())
-        let ttr = parseInt($('#ttr').val())
+        let ttm = parseInt($('#ttm').val())
 
-        let total = tbm + tm + ttr
+        let total = tbm + tm + ttm
         $('#total').val(total)
     });
 
     $('#tm').on('keyup', function() {
         let tbm = parseInt($('#tbm').val())
         let tm = parseInt($('#tm').val())
-        let ttr = parseInt($('#ttr').val())
+        let ttm = parseInt($('#ttm').val())
 
-        let total = tbm + tm + ttr
+        let total = tbm + tm + ttm
         $('#total').val(total)
 
     });
 
-    $('#ttr').on('keyup', function() {
+    $('#ttm').on('keyup', function() {
         let tbm = parseInt($('#tbm').val())
         let tm = parseInt($('#tm').val())
-        let ttr = parseInt($('#ttr').val())
+        let ttm = parseInt($('#ttm').val())
 
-        let total = tbm + tm + ttr
+        let total = tbm + tm + ttm
         $('#total').val(total)
 
     });

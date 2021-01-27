@@ -31,6 +31,23 @@ class DesaController extends BaseController
         return view('admin/konten/desa', $data);
     }
 
+    function delete($uid)
+    {
+        $delete = $this->db->where([
+            'uid' => $uid
+        ])->delete();
+
+        if ($delete) {
+            return $this->respond([
+                'err'   => FALSE,
+                'uid'   => $uid
+            ], 200);
+        }
+        return $this->respond([
+            'err'   => TRUE
+        ], 200);
+    }
+
     public function create()
     {
         $id_kecamatan = $this->request->getVar('id_kecamatan');
@@ -55,7 +72,7 @@ class DesaController extends BaseController
         return $this->respond($res, 200);
     }
 
-    public function update($id)
+    public function update($uid)
     {
         $id_kecamatan = $this->request->getVar('id_kecamatan');
         $desa = $this->request->getVar('desa', FILTER_SANITIZE_STRING);
@@ -65,7 +82,7 @@ class DesaController extends BaseController
         ];
         $validate = $this->validation->run($data, 'desa');
         if ($validate) {
-            $this->db->where('id', $id)
+            $this->db->where('uid', $uid)
                 ->set($data)
                 ->update();
             $res = [
@@ -91,9 +108,9 @@ class DesaController extends BaseController
                     '<button class="btn btn-success btn-sm ubah" 
                         data-kecamatan="' . $field->id_kecamatan . '" 
                         data-desa="' . $field->desa . '"  
-                        data-uid="' . $field->id . '" 
+                        data-uid="' . $field->uid . '" 
                     ><i class="fa fa-edit"></i> </button>' .
-                    '<button class="btn btn-danger btn-sm hapus" data-uid="' . $field->id . '"><i class="fa fa-times"></i> </button>' .
+                    '<button class="btn btn-danger btn-sm hapus" data-uid="' . $field->uid . '"><i class="fa fa-times"></i> </button>' .
                     '</div>';
                 $no++;
                 $row = array();
