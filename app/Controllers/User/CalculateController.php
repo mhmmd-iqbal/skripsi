@@ -2,7 +2,7 @@
 
 namespace App\Controllers\User;
 
-use App\Controllers\Admin\CalculateController as BaseController;
+use App\Controllers\BaseController;
 
 class CalculateController extends BaseController
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Controllers\Admin;
+namespace App\Controllers\User;
 
-use App\Controllers\Admin\KecamatanController as BaseController;
+use App\Controllers\BaseController;
 
 
 class KecamatanController extends BaseController

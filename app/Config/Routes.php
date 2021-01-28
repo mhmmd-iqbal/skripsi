@@ -92,10 +92,13 @@ $routes->group('admin', ['namespace' => 'App\Controllers\Admin'], function ($rou
 
 	$routes->get('laporan', 'CalculateController::laporan');
 
-	$routes->resource('master/user', [
-		'controller' => 'UserController',
-		'only'		 => ['update']
-	]);
+	// $routes->resource('account', [
+	// 	'controller' => 'AccountController',
+	// 	'only'		 => ['update']
+	// ]);
+	$routes->put('account/(:any)', function () {
+		return 'ok';
+	});
 });
 
 $routes->group('admin', ['filter' => 'admin_auth', 'namespace' => 'App\Controllers\Admin'], function ($routes) {

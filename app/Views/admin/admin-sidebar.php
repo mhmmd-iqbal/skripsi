@@ -67,12 +67,12 @@ switch ($session->level) {
                 </a>
             </li>
 
-            <li>
+            <!-- <li>
                 <a href="">
                     <i class="fa fa-exclamation-triangle"></i>
                     <span>Tentang Aplikasi</span>
                 </a>
-            </li>
+            </li> -->
 
             <li>
                 <a href="/logout">

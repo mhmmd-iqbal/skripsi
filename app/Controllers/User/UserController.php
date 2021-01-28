@@ -2,7 +2,7 @@
 
 namespace App\Controllers\User;
 
-use App\Controllers\Admin\AdminController as BaseController;
+use App\Controllers\BaseController;
 
 class UserController extends BaseController
 {

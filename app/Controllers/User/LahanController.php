@@ -2,7 +2,7 @@
 
 namespace App\Controllers\User;
 
-use App\Controllers\Admin\LahanController as BaseController;
+use App\Controllers\BaseController;
 
 
 class LahanController extends BaseController
