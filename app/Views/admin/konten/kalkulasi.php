@@ -267,9 +267,11 @@
                                 <tr>
                                     <th width="5%">No</th>
                                     <th>Item</th>
-                                    <?php foreach ($data->kecamatan2['hargaRata'] as $year => $d) : ?>
-                                        <th><?= $year ?> </th>
-                                    <?php endforeach; ?>
+                                    <?php if (!empty($confidence['dataKecamatan'][0])) : ?>
+                                        <?php foreach ($confidence['dataKecamatan'][0]->hargaRata as $hargaRata) : ?>
+                                            <th><?= $hargaRata['tahun'] ?> </th>
+                                        <?php endforeach; ?>
+                                    <?php endif; ?>
                                 </tr>
                             </thead>
                             <tbody>

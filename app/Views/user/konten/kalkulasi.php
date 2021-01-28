@@ -96,7 +96,7 @@
                             ?>
                                 <tr>
                                     <td><?= $no++ ?></td>
-                                    <td><a href="calculate/kecamatan/<?= $d->uid ?>" class="text-success"><?= $d->kecamatan ?></a> </td>
+                                    <td><a href="master/kecamatan/<?= $d->uid ?>" class="text-success"><?= $d->kecamatan ?></a> </td>
                                     <?php
                                     for ($year = $raw['tahunMulai']; $year <= date('Y'); $year++) :
                                         foreach ($d->total as $ii => $dd) :
@@ -186,6 +186,7 @@
                             <tbody>
                                 <?php
                                 $no = 1;
+                                // if (count($itemSet['dataKecamatan'] !== 0)) :
                                 foreach ($itemSet['dataKecamatan'] as $item) :
                                     if ($item->support > 30) :
                                 ?>
@@ -200,6 +201,7 @@
                                 <?php
                                     endif;
                                 endforeach;
+                                // endif;
                                 ?>
                             </tbody>
                         </table>
@@ -265,9 +267,11 @@
                                 <tr>
                                     <th width="5%">No</th>
                                     <th>Item</th>
-                                    <?php foreach ($data->kecamatan2['hargaRata'] as $year => $d) : ?>
-                                        <th><?= $year ?> </th>
-                                    <?php endforeach; ?>
+                                    <?php if (!empty($confidence['dataKecamatan'][0])) : ?>
+                                        <?php foreach ($confidence['dataKecamatan'][0]->hargaRata as $hargaRata) : ?>
+                                            <th><?= $hargaRata['tahun'] ?> </th>
+                                        <?php endforeach; ?>
+                                    <?php endif; ?>
                                 </tr>
                             </thead>
                             <tbody>
@@ -340,7 +344,7 @@
     function cetakKalkulasi() {
         let limit = $('#limit').val()
         let support = $('#support').val()
-        let url = '/admin/pdf/calculate?limit=' + limit + '&support=' + support
+        let url = '/user/pdf/calculate?limit=' + limit + '&support=' + support
         $.ajax({
             type: "GET",
             url: url,

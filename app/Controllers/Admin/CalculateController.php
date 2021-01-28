@@ -82,6 +82,9 @@ class CalculateController extends BaseController
             $data['newItemSet'] = $this->newItemSet($data['support']);
             $data['support']    = $this->support($data['newItemSet'], $data['supportSearch']);
             $data['confidence'] = $this->confidence($data['support']);
+            // if (empty($data['confidence'])) {
+            //     return 'false';
+            // }
             // return $this->respond($data['confidence'], 200);
         }
 
