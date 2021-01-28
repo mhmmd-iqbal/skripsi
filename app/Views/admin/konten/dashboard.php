@@ -87,11 +87,12 @@
 $dataKecamatan  = null;
 $jmlDesa        = null;
 $color          = null;
-
-foreach ($kecamatan as $d) {
-    $dataKecamatan .=  '"' . $d['kecamatan'] . '"' . ',';
-    $jmlDesa .= $d['totalDesa'] . ',';
-    $color .= '"' . 'rgba(' . rand(1, 255) . ',' . rand(1, 255) . ',' . rand(1, 255) . ' )' . '"' . ',';
+if (!empty($kecamatan)) {
+    foreach ($kecamatan as $d) {
+        $dataKecamatan .=  '"' . $d['kecamatan'] . '"' . ',';
+        $jmlDesa .= $d['totalDesa'] . ',';
+        $color .= '"' . 'rgba(' . rand(1, 255) . ',' . rand(1, 255) . ',' . rand(1, 255) . ' )' . '"' . ',';
+    }
 }
 
 $colorUser = null;

@@ -311,3 +311,14 @@ CRITICAL - 2021-01-28 04:21:27 --> count(): Parameter must be an array or an obj
 #5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
 #7 {main}
+CRITICAL - 2021-01-28 05:13:22 --> Undefined variable: kecamatan
+#0 D:\My Project\project_ta\app\Views\admin\konten\dashboard.php(91): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 91, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/da...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\AdminController.php(46): view('admin/konten/da...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\AdminController->index()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
