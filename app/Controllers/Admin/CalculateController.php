@@ -77,6 +77,7 @@ class CalculateController extends BaseController
             $data['limitSearch'] = $this->request->getVar('limit');
             $data['analist']    = true;
             $data['itemSet']    = $this->itemSet($data['raw'], $data['limitSearch']);
+
             $data['support']    = $this->support($data['itemSet'], $data['supportSearch']);
             $data['newItemSet'] = $this->newItemSet($data['support']);
             $data['support']    = $this->support($data['newItemSet'], $data['supportSearch']);

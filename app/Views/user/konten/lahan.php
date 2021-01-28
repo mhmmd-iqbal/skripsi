@@ -31,23 +31,20 @@
         text-align: center;
     }
 
-    .aksi button {
+    .aksi button,
+    .aksi a {
         margin-right: 5px;
-    }
-
-    .nopadding {
-        padding: 0 !important;
-        margin: 0 !important;
     }
 </style>
 <?= $this->endSection('css') ?>
+
 <?= $this->section('konten') ?>
 <!--state overview start-->
 <div class="row state-overview">
     <div class="col-lg-12">
         <div class="panel">
             <div class="panel-footer">
-                <p class="title">Data Penjualan Karet Tahun <span id="year"><?= date('Y') ?></span> <br>Kabupaten Aceh Tenggara</p>
+                <p class="title">Data Lahan Pada Penjualan Kabupaten Aceh Tenggara </p>
             </div>
             <div class="panel-body">
                 <div class="filter">
@@ -81,41 +78,9 @@
                         </div>
                     </div>
                 </div>
-
-                <?php
-                if (session()->getFlashdata('success')) :
-                ?>
-                    <div class="alert alert-success alert-dismissible" role="alert">
-                        <?= session()->getFlashdata('success') ?>
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                <?php
-                endif;
-
-                if (session()->getFlashdata('error')) :
-                ?>
-                    <div class="alert alert-warning alert-dismissible" role="alert">
-                        <?= session()->getFlashdata('error') ?>
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <br>
-                        <b>
-                            <a class="" id="exampleModalScrollable">Lihat Detail</a>
-                        </b>
-                    </div>
-                <?php
-                endif;
-                ?>
-
                 <div class="row">
-                    <div class="col-lg-6">
-                        <a href="/admin/penjualan/new" class="btn btn-primary btn-sm" id="">Tambah Data</a>
-                    </div>
-                    <div class="col-lg-6 text-right">
-                        <button class="btn btn-danger btn-sm" onclick="cetakPdf()"><i class="fa fa-file-excel"></i> Export Data</button>
+                    <div class="col-lg-12 text-right">
+                        <button onclick="cetakPdf()" class="btn btn-danger btn-sm"><i class="fa fa-file-excel"></i> Export Data</button>
                     </div>
                 </div>
                 <div class="group" style="border: 1px solid #eee; border-radius: 5px; margin: 20px 5px; padding: 5px">
@@ -124,13 +89,16 @@
                             <thead>
                                 <tr>
                                     <th width="5%">No</th>
-                                    <th>Tahun</th>
-                                    <th>Kecamatan</th>
                                     <th>Desa</th>
+                                    <th>Tahun</th>
+                                    <th>TBM</th>
+                                    <th>TM</th>
+                                    <th>TTM</th>
+                                    <th>Jumlah</th>
                                     <th>Produksi (Ton)</th>
-                                    <th>Harga (Per/Kg)</th>
-                                    <th>Total Pendapatan</th>
-                                    <th width="15%">Aksi</th>
+                                    <th>Produktivitas (Kg/Ha)</th>
+                                    <th>Jumlah Petani (KK)</th>
+                                    <th width="20%">Created At</th>
                                 </tr>
                             </thead>
                         </table>
@@ -144,11 +112,11 @@
 
 <?= $this->section('js') ?>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
-
 <script>
     function cetakPdf() {
         let year = $('#filter-year').val()
-        let url = '/admin/pdf/penjualan?tahun=' + year
+        let url = '/user/pdf/lahan?tahun=' + year
+
         $.ajax({
             type: "GET",
             url: url,
@@ -185,7 +153,7 @@
             order: [],
 
             ajax: {
-                url: "/admin/get/penjualan",
+                url: "/user/get/lahan",
                 type: "POST",
                 data: {
                     'year': params.year,
@@ -213,9 +181,6 @@
         });
 
     }
-    $('#showErrorData').on('click', function() {
-        $('#modalForErrorData').modal('toggle')
-    })
 
     function filterData() {
         let year = $('#filter-year').val()
@@ -226,65 +191,5 @@
             kecamatan
         })
     }
-
-    $('#data-table').on('click', '.ubah', function(e) {
-        let uid = $(this).data('uid')
-        window.location.href = '/admin/penjualan/' + uid + '/edit'
-    })
-
-    $('#data-table').on('click', '.hapus', function() {
-        let uid = $(this).data('uid')
-        Swal.fire({
-            title: 'Menghapus Data!',
-            text: "Apa anda yakin akan menghapus data ini?",
-            type: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: 'Lanjutkan Hapus Data!',
-            cancelButtonText: 'Batalkan'
-        }).then((result) => {
-            if (result.value) {
-                $.ajax({
-                    type: "DELETE",
-                    url: baseUrl + "/admin/penjualan/" + uid,
-                    dataType: "JSON",
-                    beforeSend: function() {
-                        loading()
-                    },
-                    success: function(response) {
-                        console.log(response)
-                        swal.close()
-                        if (response.err === false) {
-                            toaster('Data Berhasil Dihapus', ' ', 'success')
-                        }
-                        filterData()
-                    }
-                });
-            }
-        })
-    })
 </script>
 <?= $this->endSection('js') ?>
-
-<?= $this->section('modal') ?>
-<div class="modal fade" id="modalForErrorData" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Daftar Data Yang Gagal Di Import</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                ...
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-        </div>
-    </div>
-</div>
-<?= $this->endSection('modal') ?>

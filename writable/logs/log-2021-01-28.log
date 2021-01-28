@@ -93,3 +93,158 @@ CRITICAL - 2021-01-28 01:18:44 --> Undefined property: stdClass::$id
 CRITICAL - 2021-01-28 01:31:02 --> Cannot declare class App\Controllers\Admin\KecamatanController, because the name is already in use
 #0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
 #1 {main}
+CRITICAL - 2021-01-28 02:37:04 --> Invalid file: admin/user-template.php
+#0 D:\My Project\project_ta\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/user-temp...')
+#1 D:\My Project\project_ta\system\View\View.php(257): CodeIgniter\View\View->render('admin/user-temp...', Array, true)
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('user/konten/lah...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\User\LahanController.php(40): view('user/konten/lah...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\User\LahanController->index()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\LahanController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2021-01-28 02:56:39 --> Undefined property: App\Controllers\User\CalculateController::$dbDesa
+#0 D:\My Project\project_ta\app\Controllers\User\CalculateController.php(119): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 119, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\User\CalculateController->kecamatan('f19d764d-8d2e-4...')
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\CalculateController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2021-01-28 02:57:09 --> Undefined property: App\Controllers\User\CalculateController::$dbDesa
+#0 D:\My Project\project_ta\app\Controllers\User\CalculateController.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 133, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\User\CalculateController->kecamatan('f19d764d-8d2e-4...')
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\CalculateController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2021-01-28 03:05:12 --> Undefined variable: menu
+#0 D:\My Project\project_ta\app\Views\admin\konten\account.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 52, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/ac...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\User\AccountController.php(34): view('admin/konten/ac...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\User\AccountController->index()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\AccountController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2021-01-28 03:07:55 --> Undefined property: stdClass::$id
+#0 D:\My Project\project_ta\app\Views\user\konten\account.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 52, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('user/konten/acc...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\User\AccountController.php(34): view('user/konten/acc...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\User\AccountController->index()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\AccountController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2021-01-28 03:08:11 --> Undefined property: stdClass::$id
+#0 D:\My Project\project_ta\app\Views\user\konten\account.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 52, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('user/konten/acc...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\User\AccountController.php(34): view('user/konten/acc...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\User\AccountController->index()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\AccountController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2021-01-28 03:10:44 --> Undefined property: stdClass::$id
+#0 D:\My Project\project_ta\app\Views\user\konten\account.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 52, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('user/konten/acc...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\User\AccountController.php(37): view('user/konten/acc...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\User\AccountController->index()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\AccountController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2021-01-28 03:16:07 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'D:\\My Project\\p...', 34, Array)
+#1 D:\My Project\project_ta\app\Controllers\User\AccountController.php(34): count(Object(stdClass))
+#2 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\User\AccountController->index()
+#3 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\AccountController))
+#4 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#7 {main}
+CRITICAL - 2021-01-28 03:47:50 --> Undefined variable: data
+#0 D:\My Project\project_ta\app\Views\admin\konten\kalkulasi.php(268): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 268, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/ka...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(91): view('admin/konten/ka...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2021-01-28 03:49:10 --> Undefined variable: data
+#0 D:\My Project\project_ta\app\Views\admin\konten\kalkulasi.php(268): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 268, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/ka...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(91): view('admin/konten/ka...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2021-01-28 03:49:24 --> Undefined variable: data
+#0 D:\My Project\project_ta\app\Views\admin\konten\kalkulasi.php(268): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 268, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/ka...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(91): view('admin/konten/ka...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2021-01-28 03:53:29 --> Cannot use object of type stdClass as array
+#0 D:\My Project\project_ta\system\View\View.php(246): include()
+#1 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/ka...', Array, true)
+#2 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(92): view('admin/konten/ka...', Array)
+#3 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#4 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#5 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2021-01-28 03:53:40 --> Cannot use object of type stdClass as array
+#0 D:\My Project\project_ta\system\View\View.php(246): include()
+#1 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/ka...', Array, true)
+#2 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(92): view('admin/konten/ka...', Array)
+#3 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#4 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#5 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2021-01-28 03:53:50 --> count(): Parameter must be an array or an object that implements Countable
+#0 D:\My Project\project_ta\app\Views\admin\konten\kalkulasi.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'D:\\My Project\\p...', 189, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/ka...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(92): view('admin/konten/ka...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2021-01-28 03:54:07 --> Undefined variable: data
+#0 D:\My Project\project_ta\app\Views\admin\konten\kalkulasi.php(270): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 270, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/ka...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\CalculateController.php(92): view('admin/konten/ka...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\CalculateController->index()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CalculateController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}

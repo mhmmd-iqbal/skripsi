@@ -1,3 +1,8 @@
+<?php
+
+$session = \Config\Services::session();
+
+?>
 <?= $this->extend('admin/admin-template') ?>
 
 <?= $this->section('css') ?>
@@ -111,10 +116,7 @@
                 ?>
 
                 <div class="row">
-                    <div class="col-lg-6">
-                        <a href="/admin/penjualan/new" class="btn btn-primary btn-sm" id="">Tambah Data</a>
-                    </div>
-                    <div class="col-lg-6 text-right">
+                    <div class="col-lg-12 text-right">
                         <button class="btn btn-danger btn-sm" onclick="cetakPdf()"><i class="fa fa-file-excel"></i> Export Data</button>
                     </div>
                 </div>
@@ -130,7 +132,6 @@
                                     <th>Produksi (Ton)</th>
                                     <th>Harga (Per/Kg)</th>
                                     <th>Total Pendapatan</th>
-                                    <th width="15%">Aksi</th>
                                 </tr>
                             </thead>
                         </table>
@@ -148,7 +149,7 @@
 <script>
     function cetakPdf() {
         let year = $('#filter-year').val()
-        let url = '/admin/pdf/penjualan?tahun=' + year
+        let url = '/user/pdf/penjualan?tahun=' + year
         $.ajax({
             type: "GET",
             url: url,
@@ -185,7 +186,7 @@
             order: [],
 
             ajax: {
-                url: "/admin/get/penjualan",
+                url: "/user/get/penjualan",
                 type: "POST",
                 data: {
                     'year': params.year,
@@ -229,7 +230,7 @@
 
     $('#data-table').on('click', '.ubah', function(e) {
         let uid = $(this).data('uid')
-        window.location.href = '/admin/penjualan/' + uid + '/edit'
+        window.location.href = '/user/penjualan/' + uid + '/edit'
     })
 
     $('#data-table').on('click', '.hapus', function() {
@@ -247,7 +248,7 @@
             if (result.value) {
                 $.ajax({
                     type: "DELETE",
-                    url: baseUrl + "/admin/penjualan/" + uid,
+                    url: baseUrl + "/user/penjualan/" + uid,
                     dataType: "JSON",
                     beforeSend: function() {
                         loading()
@@ -266,25 +267,3 @@
     })
 </script>
 <?= $this->endSection('js') ?>
-
-<?= $this->section('modal') ?>
-<div class="modal fade" id="modalForErrorData" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Daftar Data Yang Gagal Di Import</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                ...
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-        </div>
-    </div>
-</div>
-<?= $this->endSection('modal') ?>

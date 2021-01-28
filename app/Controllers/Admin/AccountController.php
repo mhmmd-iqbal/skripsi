@@ -23,12 +23,25 @@ class AccountController extends BaseController
         $data['username'] = $this->session->username;
         $data['active'] = 'account';
 
+        if (
+            $this->db
+            ->where([
+                'username' => $this->session->username,
+                'email' => $this->session->email
+            ])->countAllResults() === 0
+        ) {
+            return redirect()->to('/');
+        }
+
         $data['user'] = (object) $this->db
             ->where([
                 'username' => $this->session->username,
                 'email' => $this->session->email
             ])
             ->first();
+        if ($data['user'] === null) {
+            return redirect()->to('/');
+        }
         return view('admin/konten/account', $data);
     }
 

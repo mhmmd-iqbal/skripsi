@@ -61,6 +61,7 @@ $routes->group('user', ['filter' => 'kepala_auth', 'namespace' => 'App\Controlle
 	$routes->get('pdf/lahan', 'LahanController::exportPdf');
 
 	$routes->get('calculate', 'CalculateController::index');
+	$routes->get('calculate/kecamatan/(:any)', 'CalculateController::kecamatan/$1');
 	$routes->post('calculate', 'CalculateController::index');
 	$routes->get('pdf/calculate', 'CalculateController::exportPdf');
 
@@ -70,37 +71,12 @@ $routes->group('user', ['filter' => 'kepala_auth', 'namespace' => 'App\Controlle
 		'controller' => 'AccountController'
 	]);
 
+
 	$routes->resource('master/kecamatan', [
 		'controller' => 'KecamatanController',
 		'only'		 => ['show']
 	]);
 });
-$routes->group('admin', ['namespace' => 'App\Controllers\Admin'], function ($routes) {
-	$routes->post('get/penjualan', 'PenjualanController::get');
-	$routes->get('export/penjualan', 'PenjualanController::export');
-	$routes->post('import/penjualan', 'PenjualanController::import');
-	$routes->get('pdf/penjualan', 'PenjualanController::exportPdf');
-
-	$routes->post('get/lahan', 'LahanController::get');
-	$routes->post('import/lahan', 'LahanController::import');
-	$routes->get('export/lahan', 'LahanController::export');
-	$routes->get('pdf/lahan', 'LahanController::exportPdf');
-
-	$routes->get('calculate', 'CalculateController::index');
-	$routes->post('calculate', 'CalculateController::index');
-	$routes->get('pdf/calculate', 'CalculateController::exportPdf');
-
-	$routes->get('laporan', 'CalculateController::laporan');
-
-	// $routes->resource('account', [
-	// 	'controller' => 'AccountController',
-	// 	'only'		 => ['update']
-	// ]);
-	$routes->put('account/(:any)', function () {
-		return 'ok';
-	});
-});
-
 $routes->group('admin', ['filter' => 'admin_auth', 'namespace' => 'App\Controllers\Admin'], function ($routes) {
 	$routes->get('', 'AdminController::index');
 
@@ -141,6 +117,22 @@ $routes->group('admin', ['filter' => 'admin_auth', 'namespace' => 'App\Controlle
 	$routes->resource('account', [
 		'controller' => 'AccountController'
 	]);
+
+	$routes->post('get/penjualan', 'PenjualanController::get');
+	$routes->get('export/penjualan', 'PenjualanController::export');
+	$routes->post('import/penjualan', 'PenjualanController::import');
+	$routes->get('pdf/penjualan', 'PenjualanController::exportPdf');
+
+	$routes->post('get/lahan', 'LahanController::get');
+	$routes->post('import/lahan', 'LahanController::import');
+	$routes->get('export/lahan', 'LahanController::export');
+	$routes->get('pdf/lahan', 'LahanController::exportPdf');
+
+	$routes->get('calculate', 'CalculateController::index');
+	$routes->post('calculate', 'CalculateController::index');
+	$routes->get('pdf/calculate', 'CalculateController::exportPdf');
+
+	$routes->get('laporan', 'CalculateController::laporan');
 });
 
 /**

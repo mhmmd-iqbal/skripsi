@@ -96,7 +96,7 @@
                             ?>
                                 <tr>
                                     <td><?= $no++ ?></td>
-                                    <td><a href="master/kecamatan/<?= $d->uid ?>" class="text-success"><?= $d->kecamatan ?></a> </td>
+                                    <td><a href="calculate/kecamatan/<?= $d->uid ?>" class="text-success"><?= $d->kecamatan ?></a> </td>
                                     <?php
                                     for ($year = $raw['tahunMulai']; $year <= date('Y'); $year++) :
                                         foreach ($d->total as $ii => $dd) :
@@ -186,7 +186,6 @@
                             <tbody>
                                 <?php
                                 $no = 1;
-                                // if (count($itemSet['dataKecamatan'] !== 0)) :
                                 foreach ($itemSet['dataKecamatan'] as $item) :
                                     if ($item->support > 30) :
                                 ?>
@@ -201,7 +200,6 @@
                                 <?php
                                     endif;
                                 endforeach;
-                                // endif;
                                 ?>
                             </tbody>
                         </table>
