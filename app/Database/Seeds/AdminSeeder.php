@@ -9,8 +9,8 @@ class AdminSeeder extends \CodeIgniter\Database\Seeder
     {
         for ($i = 1; $i <= 1; $i++) {
             $data = [
-                'username'      => 'admin2',
-                'email'         => 'admin2@admin.com',
+                'username'      => 'admin',
+                'email'         => 'admin@admin.com',
                 'password'      => password_hash("admin", PASSWORD_DEFAULT),
                 'status'        => TRUE,
                 'level'          => 'admin',
