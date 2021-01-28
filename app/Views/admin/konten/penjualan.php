@@ -1,3 +1,8 @@
+<?php
+
+$session = \Config\Services::session();
+
+?>
 <?= $this->extend('admin/admin-template') ?>
 
 <?= $this->section('css') ?>
@@ -109,14 +114,17 @@
                 <?php
                 endif;
                 ?>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <a href="/admin/penjualan/new" class="btn btn-primary btn-sm" id="">Tambah Data</a>
+
+                <?php if ($session === 'admin') : ?>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <a href="/admin/penjualan/new" class="btn btn-primary btn-sm" id="">Tambah Data</a>
+                        </div>
+                        <div class="col-lg-6 text-right">
+                            <button class="btn btn-danger btn-sm" onclick="cetakPdf()"><i class="fa fa-file-excel"></i> Export Data</button>
+                        </div>
                     </div>
-                    <div class="col-lg-6 text-right">
-                        <button class="btn btn-danger btn-sm" onclick="cetakPdf()"><i class="fa fa-file-excel"></i> Export Data</button>
-                    </div>
-                </div>
+                <?php endif; ?>
                 <div class="group" style="border: 1px solid #eee; border-radius: 5px; margin: 20px 5px; padding: 5px">
                     <div class="table-responsive">
                         <table class="table table-bordered table-hover" id="data-table">

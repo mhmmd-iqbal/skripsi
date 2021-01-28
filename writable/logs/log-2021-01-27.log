@@ -249,3 +249,18 @@ CRITICAL - 2021-01-27 09:36:46 --> Could not open  for reading! File does not ex
 #6 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #7 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
 #8 {main}
+CRITICAL - 2021-01-27 23:02:50 --> Undefined variable: session
+#0 D:\My Project\project_ta\app\Views\admin\admin-sidebar.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\My Project\\p...', 13, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\View\View.php(525): CodeIgniter\View\View->render('admin/admin-sid...', NULL, true)
+#3 D:\My Project\project_ta\app\Views\admin\admin-template.php(15): CodeIgniter\View\View->include('admin/admin-sid...')
+#4 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#5 D:\My Project\project_ta\system\View\View.php(257): CodeIgniter\View\View->render('admin/admin-tem...', Array, true)
+#6 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/da...', Array, true)
+#7 D:\My Project\project_ta\app\Controllers\User\UserController.php(46): view('admin/konten/da...', Array)
+#8 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\User\UserController->index()
+#9 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\UserController))
+#10 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#13 {main}

@@ -25,7 +25,7 @@ class AccountController extends BaseController
 
         $data['user'] = (object) $this->db
             ->where([
-                'level' => $this->session->username,
+                'username' => $this->session->username,
                 'email' => $this->session->email
             ])
             ->first();

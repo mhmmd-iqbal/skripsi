@@ -1,3 +1,16 @@
+<?php
+$session = \Config\Services::session();
+switch ($session->level) {
+    case 'admin':
+        $menu = '/admin';
+        break;
+    case 'kepala':
+        $menu = '/user';
+        break;
+    default:
+        break;
+}
+?>
 <?= $this->extend('admin/admin-template') ?>
 
 <?= $this->section('css') ?>
@@ -49,7 +62,7 @@
             <div class="panel-footer">
                 <p class="title">My Profile</p>
             </div>
-            <form action="<?= base_url() ?>/admin/account/<?= $user->id ?>" method="POST" enctype="multipart/form-data" id="add">
+            <form action="<?= base_url() . $menu ?>/account/<?= $user->id ?>" method="POST" enctype="multipart/form-data" id="add">
                 <div class="panel-body">
                     <div class="group" style="border: 1px solid #eee; border-radius: 5px; margin: 20px 5px; padding: 10px">
                         <?php
@@ -75,12 +88,17 @@
                                 <label for="kecamatan" class="">Email</label>
                                 <input type="email" required id="update-email" name="email" placeholder="Input Email..." value="<?= $user->email ?>" class="form-control">
                             </div>
-                            <div class="col-lg-5 form-group">
-                                <label for="kecamatan" class="">Level User</label>
-                                <br>
-                                <input type="radio" id="update-level" name="level" value="admin" <?= $user->level == 'admin' ? 'checked' : '' ?> style="margin: 10px 20px;"> Admin
-                                <input type="radio" id="update-level" name="level" value="user" <?= $user->level == 'user' ? 'checked' : '' ?> style="margin: 10px 20px;"> User
-                            </div>
+                            <?php if ($session->level === 'admin') : ?>
+                                <div class="col-lg-5 form-group">
+                                    <label for="kecamatan" class="">Level User</label>
+                                    <br>
+                                    <input type="radio" id="update-level" name="level" value="admin" <?= $user->level == 'admin' ? 'checked' : '' ?> style="margin: 10px 20px;"> Admin
+                                    <input type="radio" id="update-level" name="level" value="user" <?= $user->level == 'kepala' ? 'checked' : '' ?> style="margin: 10px 20px;"> Kepala Dinas
+                                    <input type="radio" id="update-level" name="level" value="user" <?= $user->level == 'user' ? 'checked' : '' ?> style="margin: 10px 20px;"> User
+                                </div>
+                            <?php else : ?>
+                                <input type="hidden" id="update-level" name="level" value="<?= $user->level ?>">
+                            <?php endif; ?>
                             <div class="col-lg-7 form-group">
                                 <label for="kecamatan" class="">Password</label>
                                 <input type="password" id="update-password" name="password" placeholder="Password..." class="form-control">

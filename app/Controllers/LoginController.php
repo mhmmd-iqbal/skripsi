@@ -48,6 +48,9 @@ class LoginController extends BaseController
                 case 'admin':
                     return redirect()->to('/admin');
                     break;
+                case 'kepala':
+                    return redirect()->to('/user');
+                    break;
             }
         } else {
             $data['success'] = $this->session->success;

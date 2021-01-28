@@ -1,0 +1,92 @@
+CRITICAL - 2021-01-28 00:08:53 --> Argument 1 passed to CodeIgniter\Router\RouteCollection::group() must be of the type string, array given, called in D:\My Project\project_ta\app\Config\Routes.php on line 75
+#0 D:\My Project\project_ta\app\Config\Routes.php(75): CodeIgniter\Router\RouteCollection->group(Array, Object(Closure))
+#1 D:\My Project\project_ta\system\Router\RouteCollection.php(750): CodeIgniter\CodeIgniter->Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+#2 D:\My Project\project_ta\app\Config\Routes.php(133): CodeIgniter\Router\RouteCollection->group('admin', Array, Object(Closure))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(776): require('D:\\My Project\\p...')
+#4 D:\My Project\project_ta\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#5 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2021-01-28 00:08:55 --> Argument 1 passed to CodeIgniter\Router\RouteCollection::group() must be of the type string, array given, called in D:\My Project\project_ta\app\Config\Routes.php on line 75
+#0 D:\My Project\project_ta\app\Config\Routes.php(75): CodeIgniter\Router\RouteCollection->group(Array, Object(Closure))
+#1 D:\My Project\project_ta\system\Router\RouteCollection.php(750): CodeIgniter\CodeIgniter->Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+#2 D:\My Project\project_ta\app\Config\Routes.php(133): CodeIgniter\Router\RouteCollection->group('admin', Array, Object(Closure))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(776): require('D:\\My Project\\p...')
+#4 D:\My Project\project_ta\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#5 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2021-01-28 00:09:26 --> Argument 1 passed to CodeIgniter\Router\RouteCollection::group() must be of the type string, array given, called in D:\My Project\project_ta\app\Config\Routes.php on line 75
+#0 D:\My Project\project_ta\app\Config\Routes.php(75): CodeIgniter\Router\RouteCollection->group(Array, Object(Closure))
+#1 D:\My Project\project_ta\system\Router\RouteCollection.php(750): CodeIgniter\CodeIgniter->Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+#2 D:\My Project\project_ta\app\Config\Routes.php(133): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(776): require('D:\\My Project\\p...')
+#4 D:\My Project\project_ta\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#5 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2021-01-28 00:09:28 --> Argument 1 passed to CodeIgniter\Router\RouteCollection::group() must be of the type string, array given, called in D:\My Project\project_ta\app\Config\Routes.php on line 75
+#0 D:\My Project\project_ta\app\Config\Routes.php(75): CodeIgniter\Router\RouteCollection->group(Array, Object(Closure))
+#1 D:\My Project\project_ta\system\Router\RouteCollection.php(750): CodeIgniter\CodeIgniter->Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+#2 D:\My Project\project_ta\app\Config\Routes.php(133): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(776): require('D:\\My Project\\p...')
+#4 D:\My Project\project_ta\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#5 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2021-01-28 00:09:31 --> Argument 1 passed to CodeIgniter\Router\RouteCollection::group() must be of the type string, array given, called in D:\My Project\project_ta\app\Config\Routes.php on line 75
+#0 D:\My Project\project_ta\app\Config\Routes.php(75): CodeIgniter\Router\RouteCollection->group(Array, Object(Closure))
+#1 D:\My Project\project_ta\system\Router\RouteCollection.php(750): CodeIgniter\CodeIgniter->Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+#2 D:\My Project\project_ta\app\Config\Routes.php(133): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(776): require('D:\\My Project\\p...')
+#4 D:\My Project\project_ta\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#5 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2021-01-28 00:09:37 --> Argument 1 passed to CodeIgniter\Router\RouteCollection::group() must be of the type string, array given, called in D:\My Project\project_ta\app\Config\Routes.php on line 73
+#0 D:\My Project\project_ta\app\Config\Routes.php(73): CodeIgniter\Router\RouteCollection->group(Array, Object(Closure))
+#1 D:\My Project\project_ta\system\Router\RouteCollection.php(750): CodeIgniter\CodeIgniter->Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+#2 D:\My Project\project_ta\app\Config\Routes.php(131): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(776): require('D:\\My Project\\p...')
+#4 D:\My Project\project_ta\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#5 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2021-01-28 00:47:41 --> Argument 1 passed to CodeIgniter\Router\RouteCollection::group() must be of the type string, array given, called in D:\My Project\project_ta\app\Config\Routes.php on line 97
+#0 D:\My Project\project_ta\app\Config\Routes.php(97): CodeIgniter\Router\RouteCollection->group(Array, Object(Closure))
+#1 D:\My Project\project_ta\system\Router\RouteCollection.php(750): CodeIgniter\CodeIgniter->Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+#2 D:\My Project\project_ta\app\Config\Routes.php(98): CodeIgniter\Router\RouteCollection->group('admin', Array, Object(Closure))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(776): require('D:\\My Project\\p...')
+#4 D:\My Project\project_ta\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#5 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2021-01-28 01:08:57 --> Undefined property: stdClass::$id
+#0 D:\My Project\project_ta\app\Views\admin\konten\account.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 52, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/ac...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\User\AccountController.php(32): view('admin/konten/ac...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\User\AccountController->index()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\AccountController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}
+CRITICAL - 2021-01-28 01:18:44 --> Undefined property: stdClass::$id
+#0 D:\My Project\project_ta\app\Views\admin\konten\account.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 52, Array)
+#1 D:\My Project\project_ta\system\View\View.php(246): include('D:\\My Project\\p...')
+#2 D:\My Project\project_ta\system\Common.php(1087): CodeIgniter\View\View->render('admin/konten/ac...', Array, true)
+#3 D:\My Project\project_ta\app\Controllers\Admin\AccountController.php(32): view('admin/konten/ac...', Array)
+#4 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\AccountController->index()
+#5 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\AccountController))
+#6 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#9 {main}

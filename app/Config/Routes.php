@@ -39,6 +39,64 @@ $routes->group('/', function ($routes) {
 	$routes->post('/login', 'LoginController::index');
 	$routes->get('/logout', 'LoginController::sign_out');
 });
+$routes->group('user', ['filter' => 'kepala_auth', 'namespace' => 'App\Controllers\User'], function ($routes) {
+	$routes->get('', 'UserController::index');
+	$routes->resource('penjualan', [
+		'controller' => 'PenjualanController'
+	]);
+
+
+	$routes->get('grafik/penjualan/(:any)', 'PenjualanController::grafik/$1');
+	$routes->post('get/penjualan', 'PenjualanController::get');
+	$routes->get('export/penjualan', 'PenjualanController::export');
+	$routes->post('import/penjualan', 'PenjualanController::import');
+	$routes->get('pdf/penjualan', 'PenjualanController::exportPdf');
+
+	$routes->resource('lahan', [
+		'controller' => 'LahanController'
+	]);
+	$routes->post('get/lahan', 'LahanController::get');
+	$routes->post('import/lahan', 'LahanController::import');
+	$routes->get('export/lahan', 'LahanController::export');
+	$routes->get('pdf/lahan', 'LahanController::exportPdf');
+
+	$routes->get('calculate', 'CalculateController::index');
+	$routes->post('calculate', 'CalculateController::index');
+	$routes->get('pdf/calculate', 'CalculateController::exportPdf');
+
+	$routes->get('laporan', 'CalculateController::laporan');
+
+	$routes->resource('account', [
+		'controller' => 'AccountController'
+	]);
+
+	$routes->resource('master/kecamatan', [
+		'controller' => 'KecamatanController',
+		'only'		 => ['show']
+	]);
+});
+$routes->group('admin', ['namespace' => 'App\Controllers\Admin'], function ($routes) {
+	$routes->post('get/penjualan', 'PenjualanController::get');
+	$routes->get('export/penjualan', 'PenjualanController::export');
+	$routes->post('import/penjualan', 'PenjualanController::import');
+	$routes->get('pdf/penjualan', 'PenjualanController::exportPdf');
+
+	$routes->post('get/lahan', 'LahanController::get');
+	$routes->post('import/lahan', 'LahanController::import');
+	$routes->get('export/lahan', 'LahanController::export');
+	$routes->get('pdf/lahan', 'LahanController::exportPdf');
+
+	$routes->get('calculate', 'CalculateController::index');
+	$routes->post('calculate', 'CalculateController::index');
+	$routes->get('pdf/calculate', 'CalculateController::exportPdf');
+
+	$routes->get('laporan', 'CalculateController::laporan');
+
+	$routes->resource('master/user', [
+		'controller' => 'UserController',
+		'only'		 => ['update']
+	]);
+});
 
 $routes->group('admin', ['filter' => 'admin_auth', 'namespace' => 'App\Controllers\Admin'], function ($routes) {
 	$routes->get('', 'AdminController::index');
@@ -71,24 +129,11 @@ $routes->group('admin', ['filter' => 'admin_auth', 'namespace' => 'App\Controlle
 
 
 	$routes->get('grafik/penjualan/(:any)', 'PenjualanController::grafik/$1');
-	$routes->post('get/penjualan', 'PenjualanController::get');
-	$routes->get('export/penjualan', 'PenjualanController::export');
-	$routes->post('import/penjualan', 'PenjualanController::import');
-	$routes->get('pdf/penjualan', 'PenjualanController::exportPdf');
 
 	$routes->resource('lahan', [
 		'controller' => 'LahanController'
 	]);
-	$routes->post('get/lahan', 'LahanController::get');
-	$routes->post('import/lahan', 'LahanController::import');
-	$routes->get('export/lahan', 'LahanController::export');
-	$routes->get('pdf/lahan', 'LahanController::exportPdf');
 
-	$routes->get('calculate', 'CalculateController::index');
-	$routes->post('calculate', 'CalculateController::index');
-	$routes->get('pdf/calculate', 'CalculateController::exportPdf');
-
-	$routes->get('laporan', 'CalculateController::laporan');
 
 	$routes->resource('account', [
 		'controller' => 'AccountController'
