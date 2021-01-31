@@ -30,6 +30,7 @@ class AccountController extends BaseController
                 'email' => $this->session->email
             ])->countAllResults() === 0
         ) {
+            $this->session->destroy();
             return redirect()->to('/');
         }
 
@@ -40,6 +41,7 @@ class AccountController extends BaseController
             ])
             ->first();
         if ($data['user'] === null) {
+            $this->session->destroy();
             return redirect()->to('/');
         }
         return view('admin/konten/account', $data);

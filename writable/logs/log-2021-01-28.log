@@ -322,3 +322,19 @@ CRITICAL - 2021-01-28 05:13:22 --> Undefined variable: kecamatan
 #7 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
 #9 {main}
+CRITICAL - 2021-01-28 22:01:15 --> Undefined property: App\Controllers\Admin\LahanController::$desa
+#0 D:\My Project\project_ta\app\Controllers\Admin\LahanController.php(224): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 224, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\LahanController->import()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LahanController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2021-01-28 22:04:14 --> Undefined property: App\Controllers\Admin\LahanController::$db
+#0 D:\My Project\project_ta\app\Controllers\Admin\LahanController.php(244): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\My Project\\p...', 244, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\LahanController->import()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LahanController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}

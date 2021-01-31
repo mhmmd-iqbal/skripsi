@@ -117,17 +117,19 @@
         let year = $('#filter-year').val()
         let url = '/user/pdf/lahan?tahun=' + year
 
-        $.ajax({
-            type: "GET",
-            url: url,
-            dataType: "JSON",
-            beforeSend: function() {
-                loading()
-            },
-            complete: function() {
-                swal.close()
-            }
-        });
+        // $.ajax({
+        //     type: "GET",
+        //     url: url,
+        //     dataType: "JSON",
+        //     beforeSend: function() {
+        //         loading()
+        //     },
+        //     complete: function() {
+        //         swal.close()
+        //     }
+        // });
+        window.location.href = url
+
     }
 
     $('.select2').select2({

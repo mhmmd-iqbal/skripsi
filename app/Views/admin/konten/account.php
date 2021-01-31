@@ -75,14 +75,17 @@
                                 <label for="kecamatan" class="">Email</label>
                                 <input type="email" required id="update-email" name="email" placeholder="Input Email..." value="<?= $user->email ?>" class="form-control">
                             </div>
-                            <div class="col-lg-5 form-group">
+                            <!-- <div class="col-lg-5 form-group">
                                 <label for="kecamatan" class="">Level User</label>
                                 <br>
                                 <input type="radio" id="update-level" name="level" value="admin" <?= $user->level == 'admin' ? 'checked' : '' ?> style="margin: 10px 20px;"> Admin
                                 <input type="radio" id="update-level" name="level" value="user" <?= $user->level == 'kepala' ? 'checked' : '' ?> style="margin: 10px 20px;"> Kepala Dinas
-                                <input type="radio" id="update-level" name="level" value="user" <?= $user->level == 'user' ? 'checked' : '' ?> style="margin: 10px 20px;"> User
+                            </div> -->
+                            <input type="hidden" id="update-level" name="level" value="<?= $user->level ?>">
+                            <div class="col-lg-7 form-group">
+                                <label for="kecamatan" class="">Password</label>
+                                <input type="password" id="update-password" name="password" placeholder="Password..." class="form-control">
                             </div>
-
                         </div>
                     </div>
                     <div class="row">

@@ -1,0 +1,16 @@
+CRITICAL - 2021-01-31 00:29:00 --> Array to string conversion
+#0 D:\My Project\project_ta\app\Controllers\LoginController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\My Project\\p...', 47, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\LoginController->index()
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2021-01-31 00:51:53 --> Division by zero
+#0 D:\My Project\project_ta\app\Controllers\User\KecamatanController.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', 'D:\\My Project\\p...', 74, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\User\KecamatanController->show('a47fb28d-8031-4...')
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\KecamatanController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}

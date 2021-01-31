@@ -322,7 +322,7 @@
                             <br>
                             <input type="radio" id="update-level" name="level" value="admin" checked style="margin: 10px 20px;"> Admin
                             <input type="radio" id="update-level" name="level" value="kepala" style="margin: 10px 20px;"> Kepala Dinas
-                            <input type="radio" id="update-level" name="level" value="user" style="margin: 10px 20px;"> Masyarakat
+                            <!-- <input type="radio" id="update-level" name="level" value="user" style="margin: 10px 20px;"> Masyarakat -->
                         </div>
                         <div class="col-lg-7 form-group">
                             <label for="kecamatan" class="">Password</label>
@@ -367,7 +367,7 @@
                             <br>
                             <input type="radio" id="update-level" name="level" value="admin" checked style="margin: 10px 20px;"> Admin
                             <input type="radio" id="update-level" name="level" value="kepala" style="margin: 10px 20px;"> Kepala Dinas
-                            <input type="radio" id="update-level" name="level" value="user" style="margin: 10px 20px;"> Masyarakat
+                            <!-- <input type="radio" id="update-level" name="level" value="user" style="margin: 10px 20px;"> Masyarakat -->
                         </div>
                         <div class="col-lg-7 form-group">
                             <label for="kecamatan" class="">Password</label>

@@ -72,7 +72,7 @@ $routes->group('user', ['filter' => 'kepala_auth', 'namespace' => 'App\Controlle
 	]);
 
 
-	$routes->resource('master/kecamatan', [
+	$routes->resource('kecamatan', [
 		'controller' => 'KecamatanController',
 		'only'		 => ['show']
 	]);

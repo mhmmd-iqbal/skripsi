@@ -96,7 +96,7 @@
                             ?>
                                 <tr>
                                     <td><?= $no++ ?></td>
-                                    <td><a href="master/kecamatan/<?= $d->uid ?>" class="text-success"><?= $d->kecamatan ?></a> </td>
+                                    <td><a href="kecamatan/<?= $d->uid ?>" class="text-success"><?= $d->kecamatan ?></a> </td>
                                     <?php
                                     for ($year = $raw['tahunMulai']; $year <= date('Y'); $year++) :
                                         foreach ($d->total as $ii => $dd) :
@@ -345,18 +345,18 @@
         let limit = $('#limit').val()
         let support = $('#support').val()
         let url = '/user/pdf/calculate?limit=' + limit + '&support=' + support
-        $.ajax({
-            type: "GET",
-            url: url,
-            dataType: "JSON",
-            beforeSend: function() {
-                loading()
-            },
-            complete: function() {
-                swal.close()
-            }
-        });
-        // window.location.href = url
+        // $.ajax({
+        //     type: "GET",
+        //     url: url,
+        //     dataType: "JSON",
+        //     beforeSend: function() {
+        //         loading()
+        //     },
+        //     complete: function() {
+        //         swal.close()
+        //     }
+        // });
+        window.location.href = url
     }
 </script>
 <?= $this->endSection('js') ?>

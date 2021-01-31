@@ -106,17 +106,26 @@ class UserController extends BaseController
         $list = $this->db->get_datatables();
         $data = array();
         $no = $this->request->getPost('start');
+        $session = \Config\Services::session();
         foreach ($list as $field) {
-            $aksi = '<div class="aksi">' .
-                '<button class="btn btn-success btn-sm ubah" 
-                    data-uid="' . $field->id . '" 
-                    data-username= "' . $field->username . '"
-                    data-email= "' . $field->email . '"
-                    data-level= "' . $field->level . '"
-                ><i class="fa fa-edit"></i> </button>' .
-                '<button class="btn btn-danger btn-sm hapus" data-uid="' . $field->id . '"><i class="fa fa-times"></i> </button>' .
-                ($field->status == FALSE ? '<button class="btn btn-info btn-sm aktif" data-uid="' . $field->id . '"><i class="fa fa-check"></i> </button>' : '<button class="btn btn-info btn-sm nonaktif" data-uid="' . $field->id . '"><i class="fa fa-power-off"></i> </button>') .
-                '</div>';
+            if (
+                $session->username === $field->username &&
+                $session->email === $field->email &&
+                $session->level === $field->level
+            ) {
+                $aksi = '';
+            } else {
+                $aksi = '<div class="aksi">' .
+                    '<button class="btn btn-success btn-sm ubah" 
+                        data-uid="' . $field->id . '" 
+                        data-username= "' . $field->username . '"
+                        data-email= "' . $field->email . '"
+                        data-level= "' . $field->level . '"
+                    ><i class="fa fa-edit"></i> </button>' .
+                    '<button class="btn btn-danger btn-sm hapus" data-uid="' . $field->id . '"><i class="fa fa-times"></i> </button>' .
+                    ($field->status == FALSE ? '<button class="btn btn-info btn-sm aktif" data-uid="' . $field->id . '"><i class="fa fa-check"></i> </button>' : '<button class="btn btn-info btn-sm nonaktif" data-uid="' . $field->id . '"><i class="fa fa-power-off"></i> </button>') .
+                    '</div>';
+            }
             $no++;
             $row = array();
             $row[] = $no;

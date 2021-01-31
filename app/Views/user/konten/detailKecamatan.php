@@ -61,6 +61,9 @@
                             <div class="col-lg-12">
                                 <canvas id="chartPendapatan" width="auto" height="100"></canvas>
                             </div>
+                            <div class="col-lg-12">
+                                <canvas id="chartHargaRata" width="auto" height="100"></canvas>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -118,6 +121,7 @@
 <?php
 $dataProduksi = null;
 $dataPendapatan = null;
+$dataHargaRata = null;
 $dataTahun = null;
 foreach ($totalProduksi as $produksi) {
     $dataProduksi .= $produksi . ",";
@@ -128,11 +132,16 @@ foreach ($totalPendapatan as $pendapatan) {
 foreach ($tahun as $d) {
     $dataTahun .= $d . ",";
 }
+foreach ($hargaRata as $hargaRata) {
+    $dataHargaRata .= $hargaRata . ",";
+}
 ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
 <script>
+    console.log('<?= $dataHargaRata ?>')
     var produksi = document.getElementById('chartProduksi').getContext('2d');
     var pendapatan = document.getElementById('chartPendapatan').getContext('2d');
+    var hargaRata = document.getElementById('chartHargaRata').getContext('2d');
     var dataProduksi = {
         label: "Data Produksi",
         data: [<?= $dataProduksi ?>],
@@ -151,6 +160,18 @@ foreach ($tahun as $d) {
         // Set More Options
         lineTension: 0,
         borderColor: 'orange',
+        backgroundColor: 'transparent',
+        pointBorderColor: 'orange',
+        pointBackgroundColor: 'rgba(255,150,0,0.5)',
+        pointRadius: 3,
+    };
+
+    var dataHargaRata = {
+        label: "Data HargaRata",
+        data: [<?= $dataHargaRata ?>],
+        // Set More Options
+        lineTension: 0,
+        borderColor: 'lightgreen',
         backgroundColor: 'transparent',
         pointBorderColor: 'orange',
         pointBackgroundColor: 'rgba(255,150,0,0.5)',
@@ -186,6 +207,25 @@ foreach ($tahun as $d) {
     var chartPendapatan = new Chart(pendapatan, {
         type: 'line',
         data: chartPendapatanData,
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    var chartHargaRataData = {
+        labels: [<?= $dataTahun ?>],
+        datasets: [dataHargaRata]
+    };
+
+
+    var chartHargaRata = new Chart(hargaRata, {
+        type: 'line',
+        data: chartHargaRataData,
         options: {
             scales: {
                 yAxes: [{

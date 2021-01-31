@@ -25,7 +25,7 @@ class AdminSession implements FilterInterface
             ])
             ->first();
 
-        if (($this->session->level != 'admin') || (!$user['status'])) {
+        if (($this->session->level != 'admin')) {
             return redirect()->to('/');
         }
     }

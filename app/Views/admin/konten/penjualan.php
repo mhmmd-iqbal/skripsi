@@ -103,7 +103,7 @@
                         </button>
                         <br>
                         <b>
-                            <a class="" id="exampleModalScrollable">Lihat Detail</a>
+                            <!-- <a class="" id="exampleModalScrollable">Lihat Detail</a> -->
                         </b>
                     </div>
                 <?php
@@ -149,17 +149,19 @@
     function cetakPdf() {
         let year = $('#filter-year').val()
         let url = '/admin/pdf/penjualan?tahun=' + year
-        $.ajax({
-            type: "GET",
-            url: url,
-            dataType: "JSON",
-            beforeSend: function() {
-                loading()
-            },
-            complete: function() {
-                swal.close()
-            }
-        });
+        // $.ajax({
+        //     type: "GET",
+        //     url: url,
+        //     dataType: "JSON",
+        //     beforeSend: function() {
+        //         loading()
+        //     },
+        //     complete: function() {
+        //         swal.close()
+        //     }
+        // });
+
+        window.location.href = url
     }
 
     $('.select2').select2({

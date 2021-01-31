@@ -83,8 +83,12 @@ class PenjualanController extends BaseController
             ->findAll();
 
         foreach ($response as $kecamatan) {
+
             $kecamatan->totalPendapatan = 0;
             $kecamatan->totalProduksi = 0;
+            $kecamatan->totalHarga = 0;
+            $totalHarga = 0;
+            $iterasi = 0;
             $allDesa = $this->desa
                 ->where('id_kecamatan', $kecamatan->id)
                 ->asObject()
@@ -96,9 +100,15 @@ class PenjualanController extends BaseController
                     ->where('tahun', $year)
                     ->first();
 
-                $kecamatan->totalPendapatan += (int) $desa->penjualan['total_pendapatan'];
-                $kecamatan->totalProduksi += (int) $desa->penjualan['total_produksi'];
+                if ($desa->penjualan['harga'] !== '0') {
+                    $totalHarga +=  (float) $desa->penjualan['harga'];
+                    $iterasi++;
+                }
+
+                $kecamatan->totalPendapatan += (float) $desa->penjualan['total_pendapatan'];
+                $kecamatan->totalProduksi += (float) $desa->penjualan['total_produksi'];
             }
+            $kecamatan->totalHarga = $iterasi !== 0 ? (float) $totalHarga / $iterasi : 0;
         }
 
         return $this->respond($response, 200);

@@ -25,9 +25,9 @@ class KepalaSession implements FilterInterface
             ])
             ->first();
 
-        // if (($this->session->level != 'kepala') || (!$user['status'])) {
-        // return redirect()->to('/');
-        // }
+        if (($this->session->level != 'kepala')) {
+            return redirect()->to('/');
+        }
     }
 
     //--------------------------------------------------------------------

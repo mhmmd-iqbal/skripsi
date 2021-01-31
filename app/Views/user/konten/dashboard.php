@@ -58,15 +58,19 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="group" style="border: 1px solid #eee; border-radius: 5px; margin: 20px 5px; padding: 10px">
-                                <canvas id="chartPendapatan" width="auto" height="100"></canvas>
+                            <div class="group" id="graphChartPendapatan" style="border: 1px solid #eee; border-radius: 5px; margin: 20px 5px; padding: 10px">
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="group" style="border: 1px solid #eee; border-radius: 5px; margin: 20px 5px; padding: 10px">
-                                <canvas id="chartProduksi" width="auto" height="100"></canvas>
+                            <div class="group" id="graphChartProduksi" style="border: 1px solid #eee; border-radius: 5px; margin: 20px 5px; padding: 10px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="group" id="graphChartHarga" style="border: 1px solid #eee; border-radius: 5px; margin: 20px 5px; padding: 10px">
                             </div>
                         </div>
                     </div>
@@ -87,11 +91,12 @@
 $dataKecamatan  = null;
 $jmlDesa        = null;
 $color          = null;
-
-foreach ($kecamatan as $d) {
-    $dataKecamatan .=  '"' . $d['kecamatan'] . '"' . ',';
-    $jmlDesa .= $d['totalDesa'] . ',';
-    $color .= '"' . 'rgba(' . rand(1, 255) . ',' . rand(1, 255) . ',' . rand(1, 255) . ' )' . '"' . ',';
+if (!empty($kecamatan)) {
+    foreach ($kecamatan as $d) {
+        $dataKecamatan .=  '"' . $d['kecamatan'] . '"' . ',';
+        $jmlDesa .= $d['totalDesa'] . ',';
+        $color .= '"' . 'rgba(' . rand(1, 255) . ',' . rand(1, 255) . ',' . rand(1, 255) . ' )' . '"' . ',';
+    }
 }
 
 $colorUser = null;
@@ -160,21 +165,31 @@ foreach ($countUser as $d) {
     })
     grafikPenjualan(year)
 
+    function resetCanvas() {
+        $('#graphChartPendapatan').html('<canvas id="chartPendapatan" width="auto" height="100"></canvas>');
+        $('#graphChartProduksi').html('<canvas id="chartProduksi" width="auto" height="100"></canvas>');
+        $('#graphChartHarga').html('<canvas id="chartHarga" width="auto" height="100"></canvas>');
+    };
+
     function grafikPenjualan(year) {
+        resetCanvas()
         var pendapatan = document.getElementById('chartPendapatan').getContext('2d');
         var produksi = document.getElementById('chartProduksi').getContext('2d');
+        var harga = document.getElementById('chartHarga').getContext('2d');
         $.ajax({
             type: "GET",
-            url: "admin/grafik/penjualan/" + year,
+            url: "user/grafik/penjualan/" + year,
             dataType: "JSON",
             success: function(res) {
                 dataPendapatan = []
                 dataProduksi = []
+                dataHarga = []
                 labelName = []
                 colorChange = []
                 $.each(res, function(index, value) {
                     dataPendapatan.push(value.totalPendapatan);
                     dataProduksi.push(value.totalProduksi);
+                    dataHarga.push(value.totalHarga);
                     labelName.push(value.kecamatan);
                     r = Math.floor(Math.random() * 256);
                     g = Math.floor(Math.random() * 256);
@@ -207,6 +222,7 @@ foreach ($countUser as $d) {
                     }
                 });
 
+
                 var chartProduksi = new Chart(produksi, {
                     type: 'bar',
                     data: {
@@ -214,6 +230,31 @@ foreach ($countUser as $d) {
                         datasets: [{
                             label: "Data Produksi",
                             data: dataProduksi,
+                            lineTension: 0,
+                            pointBorderColor: 'orange',
+                            pointBackgroundColor: 'rgba(255,150,0,0.5)',
+                            pointRadius: 3,
+                            backgroundColor: colorChange,
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero: true
+                                }
+                            }]
+                        }
+                    }
+                });
+
+                var chartHarga = new Chart(harga, {
+                    type: 'bar',
+                    data: {
+                        labels: labelName,
+                        datasets: [{
+                            label: "Data Harga",
+                            data: dataHarga,
                             lineTension: 0,
                             pointBorderColor: 'orange',
                             pointBackgroundColor: 'rgba(255,150,0,0.5)',

@@ -1,0 +1,26 @@
+CRITICAL - 2021-01-29 08:36:27 --> Could not open  for reading! File does not exist.
+#0 D:\My Project\project_ta\app\ThirdParty\PHPExcel\PHPExcel\IOFactory.php(281): PHPExcel_Reader_Excel2007->canRead('')
+#1 D:\My Project\project_ta\app\ThirdParty\PHPExcel\PHPExcel\IOFactory.php(191): PHPExcel_IOFactory::createReaderForFile('')
+#2 D:\My Project\project_ta\app\Controllers\Admin\PenjualanController.php(196): PHPExcel_IOFactory::load('')
+#3 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\PenjualanController->import()
+#4 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PenjualanController))
+#5 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#8 {main}
+CRITICAL - 2021-01-29 08:53:19 --> Division by zero
+#0 D:\My Project\project_ta\app\Controllers\Admin\PenjualanController.php(308): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', 'D:\\My Project\\p...', 308, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\PenjualanController->grafik('2018')
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PenjualanController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}
+CRITICAL - 2021-01-29 09:01:56 --> Division by zero
+#0 D:\My Project\project_ta\app\Controllers\Admin\PenjualanController.php(308): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', 'D:\\My Project\\p...', 308, Array)
+#1 D:\My Project\project_ta\system\CodeIgniter.php(914): App\Controllers\Admin\PenjualanController->grafik('2019')
+#2 D:\My Project\project_ta\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\PenjualanController))
+#3 D:\My Project\project_ta\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\My Project\project_ta\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 D:\My Project\project_ta\system\Commands\Server\rewrite.php(34): require_once('D:\\My Project\\p...')
+#6 {main}

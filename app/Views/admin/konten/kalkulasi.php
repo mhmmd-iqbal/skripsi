@@ -345,18 +345,18 @@
         let limit = $('#limit').val()
         let support = $('#support').val()
         let url = '/admin/pdf/calculate?limit=' + limit + '&support=' + support
-        $.ajax({
-            type: "GET",
-            url: url,
-            dataType: "JSON",
-            beforeSend: function() {
-                loading()
-            },
-            complete: function() {
-                swal.close()
-            }
-        });
-        // window.location.href = url
+        // $.ajax({
+        //     type: "GET",
+        //     url: url,
+        //     dataType: "JSON",
+        //     beforeSend: function() {
+        //         loading()
+        //     },
+        //     complete: function() {
+        //         swal.close()
+        //     }
+        // });
+        window.location.href = url
     }
 </script>
 <?= $this->endSection('js') ?>

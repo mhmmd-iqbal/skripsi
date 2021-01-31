@@ -13,7 +13,7 @@ class AdminSeeder extends \CodeIgniter\Database\Seeder
                 'email'         => 'admin@admin.com',
                 'password'      => password_hash("admin", PASSWORD_DEFAULT),
                 'status'        => TRUE,
-                'level'          => 'admin',
+                'level'         => 'admin',
                 'created_at'    => date('Y-m-d h:i:s'),
                 'updated_at'    => date('Y-m-d h:i:s'),
 

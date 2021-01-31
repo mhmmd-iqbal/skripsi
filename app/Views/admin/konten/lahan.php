@@ -78,6 +78,33 @@
                         </div>
                     </div>
                 </div>
+                <?php
+                if (session()->getFlashdata('success')) :
+                ?>
+                    <div class="alert alert-success alert-dismissible" role="alert">
+                        <?= session()->getFlashdata('success') ?>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                <?php
+                endif;
+
+                if (session()->getFlashdata('error')) :
+                ?>
+                    <div class="alert alert-warning alert-dismissible" role="alert">
+                        <?= session()->getFlashdata('error') ?>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <br>
+                        <b>
+                            <!-- <a class="" id="exampleModalScrollable">Lihat Detail</a> -->
+                        </b>
+                    </div>
+                <?php
+                endif;
+                ?>
                 <div class="row">
                     <div class="col-lg-6">
                         <a href="/admin/lahan/new" class="btn btn-primary btn-sm" id="">Tambah Data</a>
@@ -121,17 +148,19 @@
         let year = $('#filter-year').val()
         let url = '/admin/pdf/lahan?tahun=' + year
 
-        $.ajax({
-            type: "GET",
-            url: url,
-            dataType: "JSON",
-            beforeSend: function() {
-                loading()
-            },
-            complete: function() {
-                swal.close()
-            }
-        });
+        // $.ajax({
+        //     type: "GET",
+        //     url: url,
+        //     dataType: "JSON",
+        //     beforeSend: function() {
+        //         loading()
+        //     },
+        //     complete: function() {
+        //         swal.close()
+        //     }
+        // });
+        window.location.href = url
+
     }
 
     $('.select2').select2({

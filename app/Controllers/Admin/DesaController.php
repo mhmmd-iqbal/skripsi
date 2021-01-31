@@ -55,7 +55,7 @@ class DesaController extends BaseController
         $data = [
             'uid'   => Uuid::uuid4(),
             'id_kecamatan' => $id_kecamatan,
-            'desa' => $desa
+            'desa' => strtoupper($desa)
         ];
         $validate = $this->validation->run($data, 'desa');
         if ($validate) {
@@ -78,7 +78,7 @@ class DesaController extends BaseController
         $desa = $this->request->getVar('desa', FILTER_SANITIZE_STRING);
         $data = [
             'id_kecamatan' => $id_kecamatan,
-            'desa' => $desa
+            'desa' => strtoupper($desa)
         ];
         $validate = $this->validation->run($data, 'desa');
         if ($validate) {

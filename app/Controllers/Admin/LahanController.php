@@ -221,7 +221,7 @@ class LahanController extends BaseController
                 if ($idx == 1) {
                     continue;
                 }
-                $desa = $this->desa->where('desa', $d['B'])->first();
+                $desa = $this->dbDesa->where('desa', strtoupper($d['B']))->first();
                 if ($desa !== null) {
                     $tbm    = $d['D'] ?? 0;
                     $tm     = $d['E'] ?? 0;
@@ -241,21 +241,20 @@ class LahanController extends BaseController
                     ];
 
                     $validate = $this->validation->run($data, 'penjualan');
-                    $checkPenjualan = $this->db->where('id_desa', $desa['id'])
+                    $checkPenjualan = $this->dbLahan->where('id_desa', $desa['id'])
                         ->where('tahun', $d['C']);
                     if ($checkPenjualan->countAllResults() === 0) {
-                        $this->db->save($data);
+                        $this->dbLahan->save($data);
                     } else {
-                        $this->db->where('id_desa', $desa['id'])
+                        $this->dbLahan->where('id_desa', $desa['id'])
                             ->where('tahun', $d['C'])
                             ->set($data)
                             ->update();
                     }
 
-                    $this->db->save($data);
                     $countSuccess++;
                 } else {
-                    $countError;
+                    $countError++;
                 }
             }
         }
