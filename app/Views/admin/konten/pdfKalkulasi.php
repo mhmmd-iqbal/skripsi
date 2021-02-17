@@ -69,13 +69,13 @@
                     $color = null;
                     switch ($data->resultOfPrice) {
                         case 'minus':
-                            $color = 'background-color: #CD5C5C; color: white';
+                            $color = 'background-color: #B22222; color: white';
                             break;
                         case 'stable':
-                            $color = 'background-color: #ADD8E6; color: white';
+                            $color = 'background-color: #1E90FF; color: white';
                             break;
                         case 'plus':
-                            $color = 'background-color: #00FF7F; color: white';
+                            $color = 'background-color: #FFD700; color: white';
                             break;
                     }
                     ?>
@@ -91,15 +91,15 @@
         <h4 style="font-weight: bold">KETERANGAN WARNA</h4>
         <table class="table table-bordered">
             <tr>
-                <td style="width: 200px; background-color: #00FF7F"></td>
+                <td style="width: 200px; background-color: #FFD700"></td>
                 <th>Harga Rata-rata Meningkat</th>
             </tr>
             <tr>
-                <td style="background-color: #ADD8E6;"></td>
+                <td style="background-color: #1E90FF;"></td>
                 <th>Harga Rata-rata Tidak Ada Perubahan</th>
             </tr>
             <tr>
-                <td style="background-color: #CD5C5C;"></td>
+                <td style="background-color: #B22222;"></td>
                 <th>Harga Rata-rata Menurun</th>
             </tr>
         </table>

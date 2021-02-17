@@ -205,7 +205,10 @@ class PenjualanController extends BaseController
                 if ($idx == 1) {
                     continue;
                 }
-                $desa = $this->desa->where('desa', strtoupper($d['B']))->first();
+                $kecamatan = $this->kecamatan->where('kecamatan', strtoupper($d['G']))->first();
+                $desa = $this->desa->where('desa', strtoupper($d['B']))
+                    ->where('id_kecamatan', $kecamatan['id'])
+                    ->first();
                 if ($desa !== null) {
                     $data = [
                         'uid'               => Uuid::uuid4(),

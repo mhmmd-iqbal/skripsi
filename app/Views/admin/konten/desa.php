@@ -118,6 +118,7 @@
                     toaster("Berhasil", "Data Telah Disimpan", "success")
                     showData()
                     $(this).trigger("reset");
+                    $(".select2").val('').trigger('change')
                     return $('#modal-id').modal('toggle')
                 }
                 toaster("Gagal", "Gagal menyimpan data", "error")
@@ -235,6 +236,7 @@
                         <div class="col-lg-5 col-md-5">
                             <label for="">Kecamatan</label>
                             <select class="form-control select2" style="width: 100%;" name="id_kecamatan" id="id_kecamatan">
+                                <option value="" selected disable>-- Pilih Kecamatan --</option>
                                 <?php foreach ($kecamatan as $d) : ?>
                                     <option value="<?= $d->id ?>"><?= $d->kecamatan ?></option>
                                 <?php endforeach ?>

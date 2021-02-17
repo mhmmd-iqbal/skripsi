@@ -221,7 +221,10 @@ class LahanController extends BaseController
                 if ($idx == 1) {
                     continue;
                 }
-                $desa = $this->dbDesa->where('desa', strtoupper($d['B']))->first();
+                $kecamatan = $this->dbKecamatan->where('kecamatan', strtoupper($d['J']))->first();
+                $desa = $this->dbDesa->where('desa', strtoupper($d['B']))
+                    ->where('id_kecamatan', $kecamatan['id'])
+                    ->first();
                 if ($desa !== null) {
                     $tbm    = $d['D'] ?? 0;
                     $tm     = $d['E'] ?? 0;

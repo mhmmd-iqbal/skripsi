@@ -74,7 +74,20 @@ class AccountController extends BaseController
         $this->db->where('id', $id)
             ->set($data)
             ->update();
-
+        if ($password !== '') {
+            $this->session->destroy();
+            return redirect()->to('/');
+        }
+        if (
+            $this->db
+            ->where([
+                'username' => $this->session->username,
+                'email' => $this->session->email
+            ])->countAllResults() === 0
+        ) {
+            $this->session->destroy();
+            return redirect()->to('/');
+        }
         session()->setFlashdata('success', 'Berhasil Mengubah Data');
         return redirect()->to('/user/account');
     }

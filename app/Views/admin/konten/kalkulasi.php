@@ -296,17 +296,17 @@
                                     $color = null;
                                     switch ($data->resultOfPrice) {
                                         case 'minus':
-                                            $color = 'bg-danger text-white';
+                                            $color = 'background-color: #B22222; color: white';
                                             break;
                                         case 'stable':
-                                            $color = 'bg-info text-white';
+                                            $color = 'background-color: #1E90FF; color: white';
                                             break;
                                         case 'plus':
-                                            $color = 'bg-success text-white';
+                                            $color = 'background-color: #FFD700; color: white';
                                             break;
                                     }
                                     ?>
-                                    <tr class="<?= $color ?>">
+                                    <tr style="<?= $color ?>">
                                         <th>Rata-Rata</th>
                                         <?php foreach ($data->hargaRata as $hargaRata) : ?>
                                             <th>Rp. <?= number_format($hargaRata['produksi'], 2, ",", ".") ?></th>
@@ -318,15 +318,15 @@
                         <h4 style="font-weight: bold">KETERANGAN WARNA</h4>
                         <table class="table table-bordered">
                             <tr>
-                                <td class="bg-success"></td>
+                                <td style="background-color: #FFD700"></td>
                                 <th>Harga Rata-rata Meningkat</th>
                             </tr>
                             <tr>
-                                <td class="bg-info"></td>
+                                <td style="background-color: #1E90FF;"></td>
                                 <th>Harga Rata-rata Tidak Ada Perubahan</th>
                             </tr>
                             <tr>
-                                <td class="bg-danger"></td>
+                                <td style="background-color: #B22222;"></td>
                                 <th>Harga Rata-rata Menurun</th>
                             </tr>
                         </table>

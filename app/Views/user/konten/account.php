@@ -90,6 +90,12 @@
                                 <p>Kosongkan input <b>Password</b> jika tidak ingin merubah password user</p>
                             </div>
                         </div>
+                        <div class="col-lg-12">
+                            <div class="alert alert-danger">
+                                <b><i class="fa fa-exclamation"></i> PERHATIAN</b>
+                                <p>Setelah merubah data akun Anda harus login ulang</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-12 text-right" id="button-hide">
@@ -110,5 +116,24 @@
     $('.select2').select2({
         allowClear: true
     })
+
+    $('#simpan').on('click', function(e) {
+        e.preventDefault();
+        var form = $(this).parents('form');
+        Swal.fire({
+            title: "Konfirmasi Perubahan Data",
+            text: "Apakah anda yakin akan merubah data akun ?",
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            confirmButtonText: "Ya, Lajutkan!",
+            closeOnConfirm: false,
+            cancelButtonColor: '#d33',
+            cancelButtonText: 'Batalkan'
+        }).then((res) => {
+            console.log(res)
+            if (res.isConfirmed) form.submit();
+        });
+    });
 </script>
 <?= $this->endSection('js') ?>
